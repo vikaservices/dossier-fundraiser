@@ -359,7 +359,7 @@ img {
 
 .header__brand--large {
         font-family: Aleo;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 1;
         text-align: left;
         color: #fbfbfb;
@@ -381,7 +381,7 @@ img {
 
 .header__brand--small {
         font-family: Lato;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 300;
         line-height: 1;
         text-align: left;
@@ -942,7 +942,7 @@ img {
 
 .footer__brand--large {
       font-family: Aleo;
-      font-size: 22px;
+      font-size: 18px;
       line-height: 1;
       text-align: left;
       color: #fbfbfb;
@@ -956,7 +956,7 @@ img {
       line-height: 1;
       text-align: left;
       color: #fbfbfb;
-      padding-top: 3px;
+      padding-top: 4px;
     }
 
 .footer__links {

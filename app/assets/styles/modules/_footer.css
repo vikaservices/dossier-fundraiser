@@ -32,11 +32,11 @@
       margin: 0;
     }
     &--large {
-      @mixin nav-brand--large;
+      @mixin footer-brand--large;
     }
     &--small {
       @mixin nav-brand--mobile--small;
-      padding-top: 3px;
+      padding-top: 4px;
     }
   }
 
