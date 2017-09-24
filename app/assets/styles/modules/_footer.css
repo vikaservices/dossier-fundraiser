@@ -1,0 +1,71 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1024px;
+  line-height: 1;
+  background-color: $greyish-brown;
+  font-size: 0;
+  padding-top: 17px;
+
+  @mixin atSmall {
+    line-height: 66px;
+    padding-top: 0;
+  }
+
+  &__brand {
+    display: block;
+    padding-left: 22px;
+
+    @mixin atSmall {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 33px;
+    }
+
+    @mixin atMedium {
+      padding-left: 66px;
+    }
+
+    span {
+      display: block;
+      margin: 0;
+    }
+    &--large {
+      @mixin nav-brand--large;
+    }
+    &--small {
+      @mixin nav-brand--mobile--small;
+      padding-top: 3px;
+    }
+  }
+
+  &__links {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 15px 22px;
+    line-height: 36px;
+
+    @mixin atSmall {
+      line-height: 66px;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding-right: 37px;
+
+      @mixin atSmall {
+        padding-right: 0;
+        padding-left: 37px;
+      }
+
+      a {
+        @mixin footer-link;
+        text-decoration: none;
+        vertical-align: middle;
+      }
+    }
+  }
+}

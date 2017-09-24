@@ -1,0 +1,385 @@
+@font-face {
+  font-family: Aleo;
+  src: url('/assets/fonts/aleo-light-webfont.woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: Aleo;
+  src: url('/assets/fonts/aleo-regular-webfont.woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Aleo;
+  src: url('/assets/fonts/aleo-bold-webfont.woff');
+  font-weight: bold;
+}
+
+/* navigation links in header and footer */
+@define-mixin nav-link {
+  font-family: Aleo;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $white;
+  font-weight: 300;
+}
+
+@define-mixin nav-sticky {
+  font-family: Lato;
+  font-size: 15px;
+  text-align: left;
+  color: $pinkish-grey;
+}
+
+@define-mixin nav-sticky-item {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1;
+  text-align: left;
+  color: $pinkish-grey;
+}
+
+@define-mixin footer-link {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.47;
+  text-align: left;
+  color: $white
+}
+
+/* dossier brand in header and footer */
+@define-mixin nav-brand--large {
+  font-family: Aleo;
+  font-size: 22px;
+  line-height: 1;
+  text-align: left;
+  color: $white;
+  font-weight: 300;
+}
+
+@define-mixin nav-brand--mobile--large {
+  font-family: Aleo;
+  font-size: 19px;
+  line-height: 1;
+  text-align: left;
+  color: $white;
+  font-weight: 300;
+}
+
+@define-mixin nav-brand--small {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+  color: $white
+}
+
+@define-mixin nav-brand--mobile--small {
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+  color: $white
+}
+
+@define-mixin nav-btn {
+  font-family: Aleo;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  font-weight: 300;
+}
+
+@define-mixin nav-btn--mobile--aleo {
+  font-family: Aleo;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  color: $white
+}
+
+@define-mixin nav-btn--small {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  color: $white
+}
+
+@define-mixin nav-btn--mobile-lato {
+  font-family: Lato;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  font-weight: 300;
+}
+
+.title {
+  font-family: Aleo;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.title--small {
+  font-family: Aleo;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.title--small {
+  font-family: Aleo;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.title--small--support {
+  font-family: Aleo;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: left;
+  color: $tomato;
+}
+
+.title--mobile {
+  font-family: Aleo;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.heading {
+  font-family: Aleo;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.27;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.title--small-support--mobile {
+  font-family: Aleo;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.27;
+  text-align: left;
+  color: $tomato;
+}
+
+.heading {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.27;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.lead {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.27;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.heading--small {
+  font-family: Aleo;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.heading--mobile {
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.05;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.lead--mobile {
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.05;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.heading--small {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.83;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.text {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.link {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.text--placeholder {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $warm-grey;
+}
+
+.heading--small--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.text--placeholder--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: $warm-grey;
+}
+
+.link--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 2.06;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.text--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.heading--special {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.47;
+  text-align: left;
+  color: $brownish-grey;
+}
+
+.text--small {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1.47;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.link--small {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1.47;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.link--small--support {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1.47;
+  text-align: left;
+  color: $tomato;
+}
+
+.heading--xsmall {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.69;
+  text-align: left;
+  color: $white;
+}
+
+.note {
+  font-family: Lato;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.69;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.text--input-label {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $topaz-two;
+}
+
+.heading--special--small {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $warm-grey;
+}
+
+.text--xsmall {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.heading--special--small {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $brownish-grey;
+}
+
+.text--input-label--error {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $tomato;
+}

@@ -1,0 +1,68 @@
+.share {
+  background-color: $greyish-brown;
+  display: inline-block;
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 12px;
+      position: relative;
+
+      img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__mail {
+    background-color: $brownish-grey;
+  }
+  &__mail:hover {
+    background-color: $warm-grey;
+  }
+  &__mail--focus {
+    background-color: $greyish-brown;
+  }
+  &__mail--disabled {
+    background-color: $white-three;
+  }
+
+  &__facebook {
+    background-color: $blue-green;
+  }
+  &__facebook:hover {
+    background-color: $topaz;
+  }
+  &__facebook--focus {
+    background-color: $blue-green;
+  }
+  &__facebook--disabled {
+    background-color: $light-teal;
+  }
+
+  &__twitter {
+    background-color: $topaz;
+  }
+  &__twitter:hover {
+    background-color: $tiffany-blue;
+  }
+  &__twitter--focus {
+    background-color: $topaz-two;
+  }
+  &__twitter--disabled {
+    background-color: $light-teal;
+  }
+}

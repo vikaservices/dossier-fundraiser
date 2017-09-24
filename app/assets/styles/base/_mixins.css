@@ -1,0 +1,25 @@
+/* Mobile */
+/* width: 0 -> 767px */
+
+/* tablet */
+/* width: 768px -> 1023px */
+@define-mixin atSmall {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+/* Desktop */
+/* width: 1024px ->  */
+@define-mixin atMedium {
+  @media (min-width: 1024px) {
+    @mixin-content;
+  }
+}
+
+/* Large */
+@define-mixin atLarge {
+  @media (min-width: 1300px) {
+    @mixin-content;
+  }
+}

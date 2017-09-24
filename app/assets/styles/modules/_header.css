@@ -1,0 +1,109 @@
+.header {
+  line-height: 55px;
+  background-color: $greyish-brown;
+  padding-left: 22px;
+  padding-right: 11px;
+  font-size: 0;
+
+  @mixin atSmall {
+    line-height: 66px;
+    padding-left: 33px;
+  }
+  @mixin atMedium {
+    padding-left: 44px;
+  }
+
+
+  &__brand {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    span {
+      display: block;
+      margin: 0;
+    }
+    &--large {
+      @mixin nav-brand--mobile--large;
+
+      @mixin atSmall {
+        @mixin nav-brand--large;
+      }
+    }
+    &--small {
+      @mixin nav-brand--mobile--small;
+      padding-top: 3px;
+
+      @mixin atSmall {
+        @mixin nav-brand--small;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  &__links {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      @mixin atSmall {
+        margin-left: 31px;
+      }
+      @mixin atMedium {
+        margin-left: 22px;
+      }
+
+      a {
+        @mixin nav-link;
+        display: inline-block;
+        line-height: 66px;
+        text-decoration: none;
+        vertical-align: middle;
+      }
+      a:hover {
+        color: $pinkish-grey;
+      }
+    }
+    &--active {
+      color: $topaz !important;
+    }
+  }
+
+  .link-c-1 {
+    display: none;
+    @mixin atSmall {
+      display: inline-block;
+    }
+  }
+  .link-c-2 {
+    display: none;
+    @mixin atMedium {
+      display: inline-block;
+    }
+  }
+
+  &__share {
+    display: none;
+    margin-left: 22px;
+
+    @mixin atMedium {
+      display: inline-block;
+    }
+  }
+
+  &__buttons {
+    float: right;
+    display: flex;
+    margin-right: 40px;
+    height: 55px;
+
+    @mixin atSmall {
+      margin-right: 0;
+      height: 66px;
+    }
+  }
+}
