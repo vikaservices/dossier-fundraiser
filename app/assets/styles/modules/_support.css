@@ -1,0 +1,31 @@
+.support {
+  flex: 1 100%;
+  display: block;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 33px;
+
+  @mixin atSmall {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 45px;
+  }
+
+  @mixin atMedium {
+    padding-top: 0;
+  }
+
+  @mixin atSmall {
+    flex: 0 0 284px;
+  }
+
+  .support-container {
+    padding: 17px 22px;
+  }
+
+  .support-container--bg-grey {
+    background-color: $white-two;
+    padding: 17px 22px;
+  }
+}

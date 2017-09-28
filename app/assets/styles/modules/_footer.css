@@ -1,6 +1,4 @@
-.footer {
-  position: absolute;
-  bottom: 0;
+footer {
   width: 100%;
   max-width: 1024px;
   line-height: 1;
@@ -13,7 +11,7 @@
     padding-top: 0;
   }
 
-  &__brand {
+  .footer__brand {
     display: block;
     padding-left: 22px;
 
@@ -40,7 +38,7 @@
     }
   }
 
-  &__links {
+  .footer__links {
     display: inline-block;
     list-style-type: none;
     margin: 0;

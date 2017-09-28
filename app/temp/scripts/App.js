@@ -74,9 +74,9 @@ var _nav = __webpack_require__(1);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _headerSticky = __webpack_require__(2);
+var _menu = __webpack_require__(2);
 
-var _headerSticky2 = _interopRequireDefault(_headerSticky);
+var _menu2 = _interopRequireDefault(_menu);
 
 var _btn = __webpack_require__(3);
 
@@ -85,7 +85,7 @@ var _btn2 = _interopRequireDefault(_btn);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var nav = new _nav2.default();
-var headerSticky = new _headerSticky2.default();
+var headerMenu = new _menu2.default();
 var btnPrimary = new _btn2.default("btn--primary");
 var btnSecondary = new _btn2.default("btn--secondary");
 
@@ -111,18 +111,17 @@ var Nav = function () {
     // regular header links
     this.navLinks = document.getElementsByClassName("nav-link");
     // sticky menu title
-    this.stickyMenu = document.getElementsByClassName("header-sticky__title")[0];
+    this.Menu = document.getElementsByClassName("menu__title")[0];
     // sticky menu links box
-    this.stickyMenuContent = document.getElementsByClassName("header-sticky__links")[0];
+    this.menuContent = document.getElementsByClassName("menu__links")[0];
     // sticky header links
-    this.stickyLinks = document.getElementsByClassName("sticky-link");
+    this.menuLinks = document.getElementsByClassName("menu-link");
     this.events();
   }
 
   _createClass(Nav, [{
     key: "events",
     value: function events() {
-      console.log(this.navLinks);
       for (var i = 0; i < this.navLinks.length; i++) {
         this.navLinks[i].addEventListener("click", this.handleClick.bind(this));
       }
@@ -137,14 +136,14 @@ var Nav = function () {
         this.navLinks[i].classList.remove("header__links--active");
       }
       // remove active from all sticky header links
-      for (var _i = 0; _i < this.stickyLinks.length; _i++) {
-        this.stickyLinks[_i].classList.remove("header-sticky__links--active");
+      for (var _i = 0; _i < this.menuLinks.length; _i++) {
+        this.menuLinks[_i].classList.remove("menu__links--active");
       }
       // make clicked link active
       e.target.classList.toggle("header__links--active");
       // hide sticky menu if open and remove active state from it't title
-      this.stickyMenu.classList.remove("header-sticky__title--is-active");
-      this.stickyMenuContent.classList.remove("header-sticky__links--is-visible");
+      this.Menu.classList.remove("menu__title--is-active");
+      this.menuContent.classList.remove("menu__links--is-visible");
     }
   }]);
 
@@ -168,24 +167,24 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var HeaderSticky = function () {
-  function HeaderSticky() {
-    _classCallCheck(this, HeaderSticky);
+var Menu = function () {
+  function Menu() {
+    _classCallCheck(this, Menu);
 
     // sticky menu title
-    this.menu = document.getElementsByClassName("header-sticky__title")[0];
+    this.menu = document.getElementsByClassName("menu__title")[0];
     // sticky menu links box
-    this.menuContent = document.getElementsByClassName("header-sticky__links")[0];
+    this.menuContent = document.getElementsByClassName("menu__links")[0];
     // sticky header links
-    this.stickyLinks = document.getElementsByClassName("sticky-link");
+    this.menuLinks = document.getElementsByClassName("menu-link");
     // mobile hamburger icon
-    this.menuIcon = document.getElementsByClassName("header-sticky__menu-icon")[0];
+    this.menuIcon = document.getElementsByClassName("menu__menu-icon")[0];
     // regular header links
     this.navLinks = document.getElementsByClassName("nav-link");
     this.events();
   }
 
-  _createClass(HeaderSticky, [{
+  _createClass(Menu, [{
     key: "events",
     value: function events() {
       // click handler for sticky menu title
@@ -193,41 +192,41 @@ var HeaderSticky = function () {
       // click handler for mobile
       this.menuIcon.addEventListener("click", this.handleTitleClick.bind(this));
       // click handlers for sticky menu link items
-      for (var i = 0; i < this.stickyLinks.length; i++) {
-        this.stickyLinks[i].addEventListener("click", this.handleLinkClick.bind(this));
+      for (var i = 0; i < this.menuLinks.length; i++) {
+        this.menuLinks[i].addEventListener("click", this.handleLinkClick.bind(this));
       }
     }
   }, {
     key: "handleLinkClick",
     value: function handleLinkClick(e) {
       // close menu
-      this.menuContent.classList.remove("header-sticky__links--is-visible");
+      this.menuContent.classList.remove("menu__links--is-visible");
       // remove active from all sticky header links
-      for (var i = 0; i < this.stickyLinks.length; i++) {
-        this.stickyLinks[i].classList.remove("header-sticky__links--active");
+      for (var i = 0; i < this.menuLinks.length; i++) {
+        this.menuLinks[i].classList.remove("menu__links--active");
       }
       // remove selected class from regular header nav links
       for (var _i = 0; _i < this.navLinks.length; _i++) {
         this.navLinks[_i].classList.remove("header__links--active");
       }
-      e.target.classList.toggle("header-sticky__links--active");
+      e.target.classList.toggle("menu__links--active");
     }
   }, {
     key: "handleTitleClick",
     value: function handleTitleClick(e) {
       // toggle active class from menu title
-      this.menu.classList.toggle("header-sticky__title--is-active");
+      this.menu.classList.toggle("menu__title--is-active");
       // toggle menu visibility
-      this.menuContent.classList.toggle("header-sticky__links--is-visible");
+      this.menuContent.classList.toggle("menu__links--is-visible");
 
-      this.menuIcon.classList.toggle("header-sticky__menu-icon--close-x");
+      this.menuIcon.classList.toggle("menu__menu-icon--close-x");
     }
   }]);
 
-  return HeaderSticky;
+  return Menu;
 }();
 
-exports.default = HeaderSticky;
+exports.default = Menu;
 
 /***/ }),
 /* 3 */

@@ -1,0 +1,48 @@
+.frontpage {
+
+  position: relative;
+
+  @mixin atSmall {
+
+  }
+
+  /* main image */
+  &--1 {
+    width: 100%;
+
+    @mixin atMedium {
+      width: calc(100% - 284px);
+      padding-right: 33px;
+    }
+
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  /* article content */
+  &--2 {
+    width: 100%;
+
+    @mixin atMedium {
+      width: calc(100% - 284px);
+      padding-right: 33px;
+    }
+  }
+
+  /* aside */
+  &--3 {
+    width: 100%;
+
+    @mixin atMedium {
+      width: 284px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  padding-bottom: 80px;
+}

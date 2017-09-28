@@ -1,0 +1,8 @@
+.main {
+  flex: 1 100%;
+
+  @mixin atSmall {
+    flex: 1 calc(100% - 284px);
+    padding-right: 33px;
+  }
+}

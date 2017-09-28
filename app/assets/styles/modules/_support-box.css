@@ -1,0 +1,10 @@
+.support-box {
+
+  &__header {
+    padding-bottom: 16px;
+  }
+
+  &__footer {
+
+  }
+}

@@ -1,4 +1,4 @@
-.header-sticky {
+.menu {
   display: inline-block;
   background-color: $greyish-brown;
   position: relative;
@@ -95,7 +95,7 @@
     &::before {
       transform: rotate(45deg) translateY(-3px);
     }
-    .header-sticky__menu-icon__middle {
+    .menu__menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
     }

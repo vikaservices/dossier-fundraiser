@@ -1,0 +1,41 @@
+.article {
+  padding-bottom: 80px;
+
+  h1 {
+    @mixin heading--mobile;
+
+    @mixin atSmall {
+      @mixin heading;
+    }
+  }
+
+  h2 {
+    @mixin heading--small--mobile;
+
+    @mixin atSmall {
+      @mixin heading--small;
+    }
+  }
+
+  p {
+    @mixin text--mobile;
+
+    @mixin atSmall {
+      @mixin text;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1, h2, p, img {
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @mixin atSmall {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

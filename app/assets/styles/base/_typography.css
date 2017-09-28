@@ -116,7 +116,7 @@
   font-size: 15px;
   line-height: 1;
   text-align: center;
-  color: $white
+  color: $white;
 }
 
 @define-mixin nav-btn--mobile-lato {
@@ -128,6 +128,149 @@
   font-weight: 300;
 }
 
+@define-mixin btn-support--primary--lg {
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+}
+
+@define-mixin btn-support--primary--sm {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+}
+
+@define-mixin btn-support--small {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: $brownish-grey;
+}
+
+@define-mixin text--small {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1.47;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+@define-mixin text--xsmall {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+/*
+ * page heading and lead for desktop/tablet
+ */
+@define-mixin title--small {
+  font-family: Aleo;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: left;
+  color: $topaz-two;
+}
+
+@define-mixin lead {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.27;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+/*
+ * page heading and lead for mobile
+ */
+@define-mixin title--mobile {
+  font-family: Aleo;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: $topaz-two;
+}
+
+@define-mixin lead--mobile {
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.05;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+/*
+ * article styles for desktop/tablet
+ */
+@define-mixin heading {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.27;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+@define-mixin heading--small {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.83;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+@define-mixin text {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+/*
+ * article styles for mobile
+ */
+@define-mixin heading--mobile {
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.05;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+@define-mixin heading--small--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+@define-mixin text--mobile {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: $greyish-brown;
+}
+
 .title {
   font-family: Aleo;
   font-size: 80px;
@@ -137,15 +280,7 @@
   color: $topaz-two;
 }
 
-.title--small {
-  font-family: Aleo;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: left;
-  color: $topaz-two;
-}
-
+/* page header h1 */
 .title--small {
   font-family: Aleo;
   font-size: 48px;
@@ -173,6 +308,7 @@
   color: $topaz-two;
 }
 
+/*
 .heading {
   font-family: Aleo;
   font-size: 26px;
@@ -181,6 +317,7 @@
   text-align: left;
   color: $greyish-brown;
 }
+*/
 
 .title--small-support--mobile {
   font-family: Aleo;
@@ -191,6 +328,7 @@
   color: $tomato;
 }
 
+/* h1 heading for article, desktop/tablet */
 .heading {
   font-family: Lato;
   font-size: 26px;
@@ -200,6 +338,7 @@
   color: $greyish-brown;
 }
 
+/* page lead, desktop/tablet */
 .lead {
   font-family: Lato;
   font-size: 26px;
@@ -209,6 +348,7 @@
   color: $greyish-brown;
 }
 
+/*
 .heading--small {
   font-family: Aleo;
   font-size: 22px;
@@ -217,7 +357,9 @@
   text-align: left;
   color: $greyish-brown;
 }
+*/
 
+/* h1 heading for article, mobile */
 .heading--mobile {
   font-family: Lato;
   font-size: 21px;
@@ -236,6 +378,7 @@
   color: $greyish-brown;
 }
 
+/* h2 heading for article, desktop/tablet */
 .heading--small {
   font-family: Lato;
   font-size: 18px;
@@ -245,6 +388,7 @@
   color: $greyish-brown;
 }
 
+/* bread text for article, desktop/mobile */
 .text {
   font-family: Lato;
   font-size: 18px;
@@ -269,6 +413,7 @@
   color: $warm-grey;
 }
 
+/* h2 heading for article, mobile */
 .heading--small--mobile {
   font-family: Lato;
   font-size: 16px;
@@ -294,6 +439,7 @@
   color: $topaz-two;
 }
 
+/* bread text for article, mobile */
 .text--mobile {
   font-family: Lato;
   font-size: 16px;
@@ -305,7 +451,6 @@
 .heading--special {
   font-family: Lato;
   font-size: 15px;
-  font-weight: bold;
   line-height: 1.47;
   text-align: left;
   color: $brownish-grey;
@@ -344,6 +489,7 @@
   color: $white;
 }
 
+/* support-box footer */
 .note {
   font-family: Lato;
   font-size: 13px;

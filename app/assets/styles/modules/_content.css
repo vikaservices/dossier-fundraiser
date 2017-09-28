@@ -1,0 +1,12 @@
+.content {
+
+  @mixin atSmall {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @mixin atMedium {
+    padding-left: 66px;
+    padding-right: 0;
+  }
+}

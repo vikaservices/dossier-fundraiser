@@ -1,0 +1,81 @@
+.btn-support {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+
+  @mixin atSmall {
+    width: 100%;
+  }
+
+  &--primary {
+    background-color: $tomato;
+    font-size: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0;
+
+    @mixin atMedium {
+      order: 2;
+    }
+
+    &--label-lg {
+      @mixin btn-support--primary--lg;
+    }
+
+    &--label-sm {
+      padding-top: 5px;
+      @mixin btn-support--primary--sm;
+    }
+
+    &:hover {
+      background-color: $copper;
+      color: $blush;
+    }
+    &--pressed {
+      background-color: $copper;
+      color: $white !important;
+    }
+    &--dispabled {
+
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $pinkish-grey;
+    font-size: 0;
+    padding: 0 4px;
+    @mixin btn-support--small;
+    display: flex;
+    order: 2;
+    padding: 11px 0;
+    margin-top: 22px;
+    margin-bottom: 28px;
+
+    @mixin atSmall {
+      @mixin btn-support--small;
+    }
+
+    @mixin atMedium {
+      order: 1;
+    }
+
+    &:hover {
+      border-color: $warm-grey;
+      color: $warm-grey;
+    }
+    &--pressed {
+      border-color: $brownish-grey;
+      color: $brownish-grey !important;
+    }
+    &--dispabled {
+
+    }
+  }
+
+  &--pull-right {
+    float: right;
+  }
+}

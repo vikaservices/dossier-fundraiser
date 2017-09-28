@@ -4,6 +4,7 @@
   padding-left: 22px;
   padding-right: 11px;
   font-size: 0;
+  flex: 1;
 
   @mixin atSmall {
     line-height: 66px;
@@ -86,7 +87,7 @@
     }
   }
 
-  &__share {
+  &__share-buttons {
     display: none;
     margin-left: 22px;
 

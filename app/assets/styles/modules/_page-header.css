@@ -1,0 +1,27 @@
+.page-header {
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @mixin atSmall {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h1 {
+    @mixin title--mobile;
+    margin-top: 49px;
+    margin-bottom: 20px;
+
+    @mixin atSmall {
+      @mixin title--small;
+    }
+  }
+
+  p {
+    @mixin lead--mobile;
+
+    @mixin atSmall {
+      @mixin lead;
+    }
+  }
+}
