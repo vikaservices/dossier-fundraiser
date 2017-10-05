@@ -1809,7 +1809,7 @@ footer .footer__links li a {
     }
 
 .support-info ul li::before {
-      content: url('/assets/images/arrow.png');
+      content: url('/app/assets/images/arrow.png');
       padding-right: 7px;
       margin-left: -22px;
     }
@@ -1852,7 +1852,7 @@ footer .footer__links li a {
       }
 
 .support-info__perks ul li::before {
-        content: url('/assets/images/arrow.png');
+        content: url('/app/assets/images/arrow.png');
         padding-right: 7px;
         margin-left: -22px;
       }
