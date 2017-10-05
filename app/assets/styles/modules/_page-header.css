@@ -1,10 +1,11 @@
 .page-header {
-  padding-left: 22px;
-  padding-right: 22px;
 
-  @mixin atSmall {
-    padding-left: 0;
-    padding-right: 0;
+  margin-bottom: 60px;
+
+  &--small-btm-margin-mobile {
+    @mixin onMobile {
+      margin-bottom: 30px;
+    }
   }
 
   h1 {
@@ -22,6 +23,13 @@
 
     @mixin atSmall {
       @mixin lead;
+    }
+  }
+
+  &--padding-mobile {
+    @mixin onMobile {
+      padding-left: 22px;
+      padding-right: 22px;
     }
   }
 }

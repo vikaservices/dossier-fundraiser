@@ -21,18 +21,45 @@
     cursor: pointer;
 
     span {
-      display: block;
       margin: 0;
     }
     &--large {
+      display: block;
+      line-height: 24px !important;
       @mixin nav-brand--mobile--large;
 
       @mixin atSmall {
         @mixin nav-brand--large;
+        line-height: 28px !important;
+      }
+
+      &__title {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &__logo {
+        display: inline-block;
+        background: $topaz-two url('/assets/images/magnifier.png') no-repeat center;
+        margin-left: 5px;
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+        left: -2px;
+
+        @mixin atSmall {
+          width: 28px;
+          height: 28px;
+          border-radius: 28px;
+        }
       }
     }
     &--small {
       @mixin nav-brand--mobile--small;
+      display: block;
       padding-top: 3px;
 
       @mixin atSmall {
@@ -89,7 +116,7 @@
 
   &__share-buttons {
     display: none;
-    margin-left: 22px;
+    margin-left: 28px;
 
     @mixin atMedium {
       display: inline-block;

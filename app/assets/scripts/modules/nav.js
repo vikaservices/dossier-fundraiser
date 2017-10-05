@@ -18,8 +18,6 @@ class Nav {
   }
 
   handleClick(e) {
-    console.log("click");
-    console.log(e.target);
     // remove active from all links
     for( let i=0; i  < this.navLinks.length; i++ ) {
       this.navLinks[i].classList.remove("header__links--active");

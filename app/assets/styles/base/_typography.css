@@ -60,7 +60,7 @@
 
 @define-mixin footer-brand--large {
   font-family: Aleo;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1;
   text-align: left;
   color: $white;
@@ -69,7 +69,7 @@
 
 @define-mixin nav-brand--mobile--large {
   font-family: Aleo;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1;
   text-align: left;
   color: $white;
@@ -131,7 +131,7 @@
 @define-mixin btn-support--primary--lg {
   font-family: Lato;
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   text-align: center;
   color: $white;
@@ -237,6 +237,7 @@
 @define-mixin text {
   font-family: Lato;
   font-size: 18px;
+  font-weight: 300;
   line-height: 1.83;
   text-align: left;
   color: $greyish-brown;
@@ -266,10 +267,43 @@
 @define-mixin text--mobile {
   font-family: Lato;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.38;
   text-align: left;
   color: $greyish-brown;
 }
+
+/*
+ * teaser
+ */
+ @define-mixin heading--special--small {
+   font-family: Lato;
+   font-size: 13px;
+   line-height: 1.69;
+   text-align: left;
+   color: $brownish-grey;
+ }
+
+@define-mixin text--special {
+  font-family: Aleo;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.29;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+/*
+ * news
+ */
+@define-mixin heading--special {
+ font-family: Lato;
+ font-size: 15px;
+ line-height: 1.47;
+ text-align: left;
+ color: $brownish-grey;
+}
+
 
 .title {
   font-family: Aleo;
@@ -448,6 +482,7 @@
   color: $greyish-brown;
 }
 
+/* news item date */
 .heading--special {
   font-family: Lato;
   font-size: 15px;

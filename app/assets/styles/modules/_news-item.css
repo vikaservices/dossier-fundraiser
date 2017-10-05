@@ -1,5 +1,19 @@
-.article {
-  padding-bottom: 50px;
+.news-item {
+  padding-bottom: 25px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid $white-three;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @mixin atSmall {
+    padding-bottom: 20px;
+  }
+
+  @mixin atMedium {
+    padding-bottom: 15px;
+  }
 
   h1 {
     @mixin heading--mobile;
@@ -11,10 +25,11 @@
 
   h2 {
     @mixin heading--small--mobile;
+    margin-top: 1.5em;
 
     @mixin atSmall {
       @mixin heading--small;
-      margin-top: 46px;
+      margin-top: 10px;
       margin-bottom: 14px;
     }
   }
@@ -30,6 +45,11 @@
 
   img {
     width: 100%;
+    margin-top: 20px;
+  }
+
+  &__date {
+    @mixin heading--special;
   }
 
   &--padding-mobile {

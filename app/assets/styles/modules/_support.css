@@ -1,27 +1,39 @@
 .support {
   flex: 1 100%;
-  display: block;
+  display: none;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 33px;
 
   @mixin atSmall {
-    display: block;
+    flex: 0 0 284px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 45px;
   }
 
   @mixin atMedium {
+    display: block;
     padding-top: 0;
   }
 
-  @mixin atSmall {
-    flex: 0 0 284px;
+  &--show-on-mobile-and-tablet {
+    display: block;
   }
 
   .support-container {
+    display: flex;
+    flex-flow: row wrap;
     padding: 17px 22px;
+
+    @mixin atSmall {
+      padding: 17px 0 17px 22px;
+    }
+
+    @mixin atMedium {
+      padding: 17px 22px;
+    }
+
   }
 
   .support-container--bg-grey {

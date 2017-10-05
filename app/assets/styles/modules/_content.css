@@ -1,4 +1,8 @@
 .content {
+  padding-bottom: 80px;
+  padding-left: 22px;
+  padding-right: 22px;
+
 
   @mixin atSmall {
     padding-left: 33px;
@@ -8,5 +12,36 @@
   @mixin atMedium {
     padding-left: 66px;
     padding-right: 0;
+  }
+
+  &--no-left-padding-mobile {
+    @mixin onMobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &__main {
+      width: 100%;
+
+      @mixin atMedium {
+        width: calc(100% - 284px);
+        padding-right: 33px;
+      }
+    }
+
+    &__aside {
+      width: 100%;
+
+      @mixin atMedium {
+        width: 284px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
   }
 }

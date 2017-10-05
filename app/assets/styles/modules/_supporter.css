@@ -1,0 +1,23 @@
+.supporter {
+
+  &__item {
+    float: left;
+    display: inline;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 22px;
+
+    @mixin atSmall {
+      width: 30%;
+    }
+
+    @mixin atMedium {
+      width: 20%;
+      max-width: 25%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

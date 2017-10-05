@@ -1,0 +1,59 @@
+.team-item {
+  margin-bottom: 45px;
+  min-height: 144px;
+
+  &__image {
+    float: right;
+    margin-bottom: 10px;
+
+    @mixin atSmall {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: inline-block;
+      height: 111px;
+      width: 111px;
+      border-radius: 111px;
+      overflow: hidden;
+
+      @mixin atSmall {
+        height: 144px;
+        width: 144px;
+        border-radius: 144px;
+      }
+
+      img {
+        width: 111px;
+
+        @mixin atSmall {
+          width: 144px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    @mixin heading--special--small;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+
+    @mixin atSmall {
+      margin: 0 0 10px 168px;
+    }
+  }
+
+  &__description {
+    @mixin text--small;
+    margin: 0;
+
+    @mixin atSmall {
+      margin: 0 0 10px 168px;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

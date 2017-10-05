@@ -1,5 +1,10 @@
 /* Mobile */
 /* width: 0 -> 767px */
+@define-mixin onMobile {
+  @media (max-width: 767px) {
+    @mixin-content;
+  }
+}
 
 /* tablet */
 /* width: 768px -> 1023px */

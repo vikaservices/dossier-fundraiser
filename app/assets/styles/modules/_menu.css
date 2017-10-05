@@ -114,6 +114,7 @@
     top: 55px;
     right: 0;
     left: 0;
+    z-index: 100;
 
     @mixin atSmall {
       position: absolute;
@@ -157,11 +158,16 @@
     }
   }
 
-  &__share {
+  &__share-container {
     display: inline-block;
-    margin-left: 11px;
-    margin-top: 13px;
+    line-height: normal;
+    padding-left: 23px;
+    margin-top: 20px;
     margin-bottom: 15px;
+
+    ul li {
+      margin-bottom: 0;
+    }
 
     @mixin atMedium {
       display: none;

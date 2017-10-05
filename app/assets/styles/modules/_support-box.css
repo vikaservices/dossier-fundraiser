@@ -1,10 +1,176 @@
 .support-box {
 
+  .support-container--bg-grey {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   &__header {
+    flex: 1 100%;
+    order: 1;
     padding-bottom: 16px;
   }
 
-  &__footer {
+  &__stats {
+    display: flex;
+    flex-flow: column;
+    flex: 1 100%;
+    order: 2;
+    margin-bottom: 28px;
+    @mixin text--small;
 
+    @mixin atSmall {
+      flex-flow: row wrap;
+    }
+
+    @mixin atMedium {
+      flex-flow: column;
+    }
+
+    &__valuebar {
+      flex: 1 100%;
+      height: 33px;
+      background-color: $white;
+      margin-bottom: 7px;
+
+      span {
+        height: 33px;
+        display: inline-block;
+        background-color: $tomato;
+      }
+    }
+    &__participant {
+      flex: 1 100%;
+      display: flex;
+      flex-flow: row wrap;
+      margin-bottom: 7px;
+
+      @mixin atSmall {
+        flex: 1 auto;
+        margin-bottom: 0;
+        justify-content: flex-start;
+      }
+
+      @mixin atMedium {
+        flex: 1 100%;
+      }
+
+      .max {
+        flex: 1 auto;
+        text-align: right;
+        align-self: flex-end;
+
+        @mixin atSmall {
+          flex: none;
+          text-align: left;
+          padding-left: 10px;
+        }
+
+        @mixin atMedium {
+          flex: 1 auto;
+          text-align: right;
+          padding-left: 0;
+        }
+      }
+      .val {
+        flex: 1 auto;
+
+        @mixin atSmall {
+          flex: none;
+          text-align: left;
+        }
+
+        @mixin atMedium {
+          flex: 1 auto;
+          text-align: left;
+        }
+
+        span:first-child {
+          @mixin heading;
+          padding-right: 5px;
+          align-self: flex-end;
+          line-height: 1;
+        }
+      }
+    }
+    &__amount {
+      flex: 1 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items:flex-end;
+
+      @mixin atSmall {
+        flex: 1 auto;
+      }
+
+      @mixin atMedium {
+        flex: 1 100%;
+      }
+
+      .max {
+        flex: 1 auto;
+        text-align: right;
+
+        @mixin atSmall {
+          flex: none;
+          text-align: left;
+          padding-left: 10px;
+        }
+
+        @mixin atMedium {
+          flex: 1 auto;
+          text-align: right;
+          padding-left: 0;
+        }
+      }
+      .val {
+        flex: 1 auto;
+
+        @mixin atSmall {
+          flex: none;
+          text-align: left;
+        }
+
+        @mixin atMedium {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .btn-support--primary {
+    flex: 1 100%;
+    order: 3;
+  }
+
+  .btn-support--secondary {
+    flex: 1 100%;
+    order: 4;
+
+    @mixin atSmall {
+      flex: 1 auto;
+      order: 5;
+    }
+
+    @mixin atMedium {
+      flex: 1 100%;
+      order: 4;
+    }
+  }
+
+  &__footer {
+    flex: 1 100%;
+    order: 5;
+
+    @mixin atSmall {
+      align-self: center;
+      flex: 1 auto;
+      order: 4;
+    }
+
+    @mixin atMedium {
+      flex: 1 100%;
+      order: 5;
+    }
   }
 }

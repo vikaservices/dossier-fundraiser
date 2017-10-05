@@ -6,7 +6,7 @@
   vertical-align: middle;
   text-align: center;
 
-  @mixin atSmall {
+  @mixin atMedium {
     width: 100%;
   }
 
@@ -16,10 +16,6 @@
     display: flex;
     flex-flow: column;
     padding: 10px 0;
-
-    @mixin atMedium {
-      order: 2;
-    }
 
     &--label-lg {
       @mixin btn-support--primary--lg;
@@ -49,17 +45,12 @@
     padding: 0 4px;
     @mixin btn-support--small;
     display: flex;
-    order: 2;
     padding: 11px 0;
     margin-top: 22px;
     margin-bottom: 28px;
 
     @mixin atSmall {
       @mixin btn-support--small;
-    }
-
-    @mixin atMedium {
-      order: 1;
     }
 
     &:hover {

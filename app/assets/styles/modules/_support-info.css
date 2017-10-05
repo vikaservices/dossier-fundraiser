@@ -1,5 +1,4 @@
 .support-info {
-  display: block;
   border-top: 1px solid $white-three;
   border-bottom: 1px solid $white-three;
   margin-top: 21px;
@@ -9,37 +8,90 @@
   }
 
   &__header {
+    flex: 1 100%;
+    margin: 15px 0;
 
+    @mixin atSmall {
+      margin-top: 0;
+    }
+
+    @mixin atMedium {
+      margin: 15px 0;
+    }
   }
 
   ul {
+    flex: 1 100%;
     margin: 0;
     padding: 0;
+
+    @mixin atSmall {
+      flex: 1 50%;
+      padding-right: 40px;
+    }
+
+    @mixin atMedium {
+      flex: 1 100%;
+      padding-right: 0;
+    }
+
     li {
       @mixin text--small;
       list-style-type: none;
       padding-bottom: 10px;
     }
     li::before {
-      content: "->  ";
-      font-size: 18px;
-      font-weight: bold;
-      color: $tomato;
+      content: url('/assets/images/arrow.png');
+      padding-right: 7px;
+      margin-left: -22px;
     }
   }
 
   &__perks {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 1 100%;
+
+    @mixin atSmall {
+      flex: 1 50%;
+    }
+
+    @mixin atMedium {
+      flex: 1 100%;
+    }
+
+    ul {
+      flex: 1 100%;
+      margin: 0;
+      padding: 0;
+      li {
+        @mixin text--small;
+        list-style-type: none;
+        padding-bottom: 10px;
+      }
+      li::before {
+        content: url('/assets/images/arrow.png');
+        padding-right: 7px;
+        margin-left: -22px;
+      }
+    }
 
     figure {
       margin: 12px 0 0 0;
-      flex: 0 50%;
+      flex: 0 48%;
       border: 0px solid black;
+
+      @mixin atSmall {
+        margin-top: 5px;
+      }
+
+      @mixin atMedium {
+        margin-top: 12px;
+      }
 
       img {
         width: 100%;
-        padding-right: 10px;
       }
 
       figcaption {
