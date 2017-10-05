@@ -10,7 +10,7 @@ var hexrgba = require('postcss-hexrgba');
 var reference = require('postcss-reference');
 
 gulp.task('styles', function(){
-  return gulp.src('./app/assets/styles/style.css')
+  return gulp.src('./app/assets/styles/styles.css')
     // .pipe(postcss([cssimport, mixins, cssvars, nested, hexrgba, autoprefixer]))
     .pipe(postcss([cssimport, mixins, cssvars, nested, hexrgba, reference]))
     .on('error', function(errorInfo){

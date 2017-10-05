@@ -31,8 +31,6 @@ class Support {
     var target_elem = document.getElementById(target_elem_id);
     target_elem.setAttribute('class', 'support-box__stats');
     target_elem.innerHTML = s;
-
-    console.log(target_elem);
   }
 }
 

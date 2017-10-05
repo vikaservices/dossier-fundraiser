@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dossier fundraiser</title>
-  <link rel="stylesheet" href="/temp/styles/style.css">
+  <link rel="stylesheet" href="/temp/styles/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,7 @@
 
     <header>
       <nav class="header">
-        <a class="header__brand">
+        <a href="frontpage.html" class="header__brand">
           <span class="header__brand--large">
             <span class="header__brand--large__title">DOSSIER</span>
             <span class="header__brand--large__logo"></span>
@@ -22,9 +22,9 @@
         </a>
 
         <ul class="header__links">
-          <li class="link-c-1"><a href="#" class="nav-link">Aktuelles</a></li>
-          <li class="link-c-1"><a href="#" class="nav-link">Mission</a></li>
-          <li class="link-c-2"><a href="#" class="nav-link">Team</a></li>
+          <li class="link-c-1"><a href="news.html" class="nav-link">Aktuelles</a></li>
+          <li class="link-c-1"><a href="" class="nav-link">Mission</a></li>
+          <li class="link-c-2"><a href="team.html" class="nav-link">Team</a></li>
           <li class="link-c-2"><a href="#" class="nav-link">Fragen</a></li>
         </ul>
 
@@ -34,9 +34,9 @@
             <div class="menu__menu-icon__middle"></div>
           </div>
           <ul class="menu__links">
-            <li class="link-c-1"><a href="#" class="menu-link">Aktuelles</a></li>
+            <li class="link-c-1"><a href="news.html" class="menu-link">Aktuelles</a></li>
             <li class="link-c-1"><a href="#" class="menu-link">Mission</a></li>
-            <li class="link-c-2"><a href="#" class="menu-link">Team</a></li>
+            <li class="link-c-2"><a href="team.html" class="menu-link">Team</a></li>
             <li class="link-c-2"><a href="#" class="menu-link">Fragen</a></li>
             <li><a href="#" class="menu-link">Genossenschaft</a></li>
             <li><a href="#" class="menu-link">Kontakt</a></li>
@@ -89,12 +89,12 @@
 
         <div class="header__buttons">
           <a href="#" class="btn btn--secondary">Einfach<br />spenden</a>
-          <a href="#" class="btn btn--primary">Mitglied werden</a>
+          <a href="donate.html" class="btn btn--primary">Mitglied werden</a>
         </div>
       </nav>
     </header>
 
-    <div class="content">
+    <div class="content content--rl-narrow-margin-desktop content--extra-narrow-right-margin">
 
       <header class="page-header">
         <h1>
@@ -105,50 +105,49 @@
         </p>
       </header>
 
-
       <!--
       PAGE MAIN CONTENT
       -->
-      <div class="content__wrapper">
         <div class="supporter">
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/eka.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/frontpage-article.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/team-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/news-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/team-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/teaser-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/eka.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/frontpage-article.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/kolmas.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/news-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/teaser-1.png" />
-          </div>
-          <div class="supporter__item">
-            <img src="/assets/images/dummy/teaser-1.png" />
+          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/eka.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/frontpage-article.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/team-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/news-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/team-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/teaser-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/eka.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/frontpage-article.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/kolmas.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/news-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/teaser-1.png" />
+            </div>
+            <div class="grid-item">
+              <img src="/assets/images/dummy/teaser-1.png" />
+            </div>
           </div>
         </div>
-      </div> <!-- content__wrapper -->
 
     </div> <!-- content -->
 
@@ -174,5 +173,6 @@
   </div>
 
   <script src="/temp/scripts/App.js"></script>
+  <script src="/temp/scripts/vendor/masonry.pkgd.min.js"></script>
 </body>
 </html>

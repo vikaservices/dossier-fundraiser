@@ -4,6 +4,7 @@
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 33px;
+  margin-bottom: 50px;
 
   @mixin atSmall {
     flex: 0 0 284px;
@@ -15,6 +16,7 @@
   @mixin atMedium {
     display: block;
     padding-top: 0;
+    margin-bottom: 0;
   }
 
   &--show-on-mobile-and-tablet {

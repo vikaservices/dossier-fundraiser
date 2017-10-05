@@ -21,6 +21,22 @@
     }
   }
 
+  &--rl-narrow-margin-desktop {
+    @mixin atMedium {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+
+  &--extra-narrow-right-margin {
+    @mixin atSmall {
+      padding-right: 0px;
+    }
+    @mixin atMedium {
+      padding-right: 12px;
+    }
+  }
+
   &__wrapper {
     position: relative;
 

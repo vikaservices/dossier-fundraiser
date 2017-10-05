@@ -1,19 +1,19 @@
 .supporter {
 
-  &__item {
-    float: left;
-    display: inline;
+  .grid-item {
     width: 100%;
-    margin-top: 30px;
-    margin-right: 22px;
+    margin-bottom: 30px;
 
     @mixin atSmall {
       width: 30%;
+      margin-right: 3%;
+      margin-bottom: 30px;
     }
 
     @mixin atMedium {
-      width: 20%;
-      max-width: 25%;
+      width: 22%;
+      margin-right: 3%;
+      margin-bottom: 30px;
     }
 
     img {
