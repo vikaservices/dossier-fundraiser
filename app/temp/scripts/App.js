@@ -70,21 +70,16 @@
 "use strict";
 
 
-var _nav = __webpack_require__(1);
-
-var _nav2 = _interopRequireDefault(_nav);
-
-var _menu = __webpack_require__(2);
+var _menu = __webpack_require__(1);
 
 var _menu2 = _interopRequireDefault(_menu);
 
-var _btn = __webpack_require__(3);
+var _btn = __webpack_require__(2);
 
 var _btn2 = _interopRequireDefault(_btn);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var nav = new _nav2.default();
 var headerMenu = new _menu2.default();
 var btnPrimary = new _btn2.default("btn--primary");
 var btnSecondary = new _btn2.default("btn--secondary");
@@ -104,81 +99,16 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Nav = function () {
-  function Nav() {
-    _classCallCheck(this, Nav);
-
-    // regular header links
-    this.navLinks = document.getElementsByClassName("nav-link");
-    // sticky menu title
-    this.Menu = document.getElementsByClassName("menu__title")[0];
-    // sticky menu links box
-    this.menuContent = document.getElementsByClassName("menu__links")[0];
-    // sticky header links
-    this.menuLinks = document.getElementsByClassName("menu-link");
-    this.events();
-  }
-
-  _createClass(Nav, [{
-    key: "events",
-    value: function events() {
-      for (var i = 0; i < this.navLinks.length; i++) {
-        this.navLinks[i].addEventListener("click", this.handleClick.bind(this));
-      }
-    }
-  }, {
-    key: "handleClick",
-    value: function handleClick(e) {
-      // remove active from all links
-      for (var i = 0; i < this.navLinks.length; i++) {
-        this.navLinks[i].classList.remove("header__links--active");
-      }
-      // remove active from all sticky header links
-      for (var _i = 0; _i < this.menuLinks.length; _i++) {
-        this.menuLinks[_i].classList.remove("menu__links--active");
-      }
-      // make clicked link active
-      e.target.classList.toggle("header__links--active");
-      // hide sticky menu if open and remove active state from it't title
-      this.Menu.classList.remove("menu__title--is-active");
-      this.menuContent.classList.remove("menu__links--is-visible");
-    }
-  }]);
-
-  return Nav;
-}();
-
-exports.default = Nav;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 var Menu = function () {
   function Menu() {
     _classCallCheck(this, Menu);
 
-    // sticky menu title
+    // menu title
     this.menu = document.getElementsByClassName("menu__title")[0];
-    // sticky menu links box
+    // menu links box
     this.menuContent = document.getElementsByClassName("menu__links")[0];
-    // sticky header links
-    this.menuLinks = document.getElementsByClassName("menu-link");
     // mobile hamburger icon
     this.menuIcon = document.getElementsByClassName("menu__menu-icon")[0];
-    // regular header links
-    this.navLinks = document.getElementsByClassName("nav-link");
     this.events();
   }
 
@@ -189,25 +119,6 @@ var Menu = function () {
       this.menu.addEventListener("click", this.handleTitleClick.bind(this));
       // click handler for mobile
       this.menuIcon.addEventListener("click", this.handleTitleClick.bind(this));
-      // click handlers for sticky menu link items
-      for (var i = 0; i < this.menuLinks.length; i++) {
-        this.menuLinks[i].addEventListener("click", this.handleLinkClick.bind(this));
-      }
-    }
-  }, {
-    key: "handleLinkClick",
-    value: function handleLinkClick(e) {
-      // close menu
-      this.menuContent.classList.remove("menu__links--is-visible");
-      // remove active from all sticky header links
-      for (var i = 0; i < this.menuLinks.length; i++) {
-        this.menuLinks[i].classList.remove("menu__links--active");
-      }
-      // remove selected class from regular header nav links
-      for (var _i = 0; _i < this.navLinks.length; _i++) {
-        this.navLinks[_i].classList.remove("header__links--active");
-      }
-      e.target.classList.toggle("menu__links--active");
     }
   }, {
     key: "handleTitleClick",
@@ -216,7 +127,7 @@ var Menu = function () {
       this.menu.classList.toggle("menu__title--is-active");
       // toggle menu visibility
       this.menuContent.classList.toggle("menu__links--is-visible");
-
+      // change menu icon
       this.menuIcon.classList.toggle("menu__menu-icon--close-x");
     }
   }]);
@@ -227,7 +138,7 @@ var Menu = function () {
 exports.default = Menu;
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
