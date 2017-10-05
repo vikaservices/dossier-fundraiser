@@ -40,7 +40,7 @@
 
       &__logo {
         display: inline-block;
-        background: $topaz-two url('/assets/images/magnifier.png') no-repeat center;
+        background: $topaz-two url('/app/assets/images/magnifier.png') no-repeat center;
         margin-left: 5px;
         width: 24px;
         height: 24px;

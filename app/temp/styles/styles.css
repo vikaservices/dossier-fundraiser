@@ -26,19 +26,19 @@ img {
 
 @font-face {
   font-family: Aleo;
-  src: url('/assets/fonts/aleo-light-webfont.woff');
+  src: url('/app/assets/fonts/aleo-light-webfont.woff');
   font-weight: 300;
 }
 
 @font-face {
   font-family: Aleo;
-  src: url('/assets/fonts/aleo-regular-webfont.woff');
+  src: url('/app/assets/fonts/aleo-regular-webfont.woff');
   font-weight: 400;
 }
 
 @font-face {
   font-family: Aleo;
-  src: url('/assets/fonts/aleo-bold-webfont.woff');
+  src: url('/app/assets/fonts/aleo-bold-webfont.woff');
   font-weight: bold;
 }
 
@@ -350,7 +350,7 @@ img {
 
 .header__brand--large__logo {
         display: inline-block;
-        background: #17adbd url('/assets/images/magnifier.png') no-repeat center;
+        background: #17adbd url('/app/assets/images/magnifier.png') no-repeat center;
         margin-left: 5px;
         width: 24px;
         height: 24px;
@@ -987,7 +987,7 @@ footer .footer__brand--large__title {
 
 footer .footer__brand--large__logo {
         display: inline-block;
-        background: #17adbd url('/assets/images/magnifier.png') no-repeat center;
+        background: #17adbd url('/app/assets/images/magnifier.png') no-repeat center;
         margin-left: 5px;
         width: 24px;
         height: 24px;
