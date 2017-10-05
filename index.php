@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="0; url=app/frontpage.html" />
 </head>
 <body>
+  <a href="app/frontpage.html">frontpage</a>
 </body>
 </html>
