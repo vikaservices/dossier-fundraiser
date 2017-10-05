@@ -7,11 +7,11 @@ gulp.task('watch-files', function(){
   browserSync.init({
     notify: false,
     server: {
-      baseDir: 'app'
+      baseDir: '.'
     }
   });
 
-  watch('./app/front.html', function(){
+  watch('./frontpage.html', function(){
     browserSync.reload();
   });
 

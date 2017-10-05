@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dossier fundraiser</title>
-  <link rel="stylesheet" href="/temp/styles/styles.css">
+  <link rel="stylesheet" href="/app/temp/styles/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body>
@@ -22,9 +22,9 @@
         </a>
 
         <ul class="header__links">
-          <li class="link-c-1"><a href="news.html" class="nav-link">Aktuelles</a></li>
+          <li class="link-c-1"><a href="news.html" class="nav-link header__links--active">Aktuelles</a></li>
           <li class="link-c-1"><a href="" class="nav-link">Mission</a></li>
-          <li class="link-c-2"><a href="team.html" class="nav-link header__links--active">Team</a></li>
+          <li class="link-c-2"><a href="team.html" class="nav-link">Team</a></li>
           <li class="link-c-2"><a href="#" class="nav-link">Fragen</a></li>
         </ul>
 
@@ -34,9 +34,9 @@
             <div class="menu__menu-icon__middle"></div>
           </div>
           <ul class="menu__links">
-            <li class="link-c-1"><a href="news.html" class="menu-link">Aktuelles</a></li>
+            <li class="link-c-1"><a href="news.html" class="menu-link header__links--active">Aktuelles</a></li>
             <li class="link-c-1"><a href="#" class="menu-link">Mission</a></li>
-            <li class="link-c-2"><a href="team.html" class="menu-link header__links--active">Team</a></li>
+            <li class="link-c-2"><a href="team.html" class="menu-link">Team</a></li>
             <li class="link-c-2"><a href="#" class="menu-link">Fragen</a></li>
             <li><a href="#" class="menu-link">Genossenschaft</a></li>
             <li><a href="#" class="menu-link">Kontakt</a></li>
@@ -175,76 +175,30 @@
         ARTICLES
         -->
         <div class="content__wrapper__main">
-
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Redakteur · Wohnen, Glücksspiel</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Peter Sim</span> leitet den Bereich Datenjournalismus bei DOSSIER. Er war zuvor wissenschaftlicher Mitarbeiter bei der Statistik Austria und als freier Journalist für das Wirtschaftsblatt und den Falter tätig. Sim unterrichtet Datenjournalismus an der Fachhochschule Joanneum in Graz und dem Kuratorium für Journalistenausbildung in Salzburg.
+          <div class="news-item">
+            <div class="news-item__date">15.10.2017</div>
+            <h2>Manchmal Sätze, die alle Buchstaben des Alphabets enthalten Manchmal Sätze, die alle Buchstaben des Alphabets</h2>
+            <img class="news-item__image" src="/assets/images/dummy/news-1.png" />
+            <p>
+              Man nennt diese Sätze »Pangrams«. Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog. Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL® and Wefox™ are testing aussi la Kerning), um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast jede Schrift gut aus. Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur Pflicht werden. Nichteinhaltung wird mit bis zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren Schriften aber fast immer enthalten sind.
             </p>
           </div>
 
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Redakteurin · Asyl, Bildung, Forschung</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Sahel Zarinfard</span> ist bei DOSSIER für Recherche und die Konzeption neuer Darstellungsformen zuständig. Sie leitet die DOSSIER: Academy, unterrichtet Journalismus an der Fachhochschule Wien und der Universität Wien und ist Mitbegründerin des Onlinemagazins paroli.
+          <div class="news-item-video">
+            <div class="news-item__date">12.10.2017</div>
+            <h2>The quick brown fox jumps over the lazy old dog</h2>
+            <img class="news-item__image" src="/assets/images/dummy/news-2.png" />
+            <p>
+              Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur Pflicht werden. Nichteinhaltung wird mit bis zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren Schriften aber fast immer enthalten sind. Ein wichtiges aber schwierig zu integrierendes Feld sind OpenType-Funktionalitäten. Je nach Software und Voreinstellungen können eingebaute Kapitälchen, Kerning oder Ligaturen (sehr pfiffig) nicht richtig dargestellt werden.Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen.
             </p>
           </div>
 
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Chef vom Dienst · Eurofighter</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Georg Eckelsberger</span> ist Textchef bei DOSSIER und im Bereich Datenjournalismus für Recherche und Visualisierung zuständig. Er unterrichtet Datenjournalismus an der Fachhochschule Wien der Wirtschaftskammer und dem Kuratorium für Journalistenausbildung in Salzburg.
-            </p>
-          </div>
-
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Redakteur · Wohnen, Glücksspiel</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Peter Sim</span> leitet den Bereich Datenjournalismus bei DOSSIER. Er war zuvor wissenschaftlicher Mitarbeiter bei der Statistik Austria und als freier Journalist für das Wirtschaftsblatt und den Falter tätig. Sim unterrichtet Datenjournalismus an der Fachhochschule Joanneum in Graz und dem Kuratorium für Journalistenausbildung in Salzburg.
-            </p>
-          </div>
-
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Redakteurin · Asyl, Bildung, Forschung</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Sahel Zarinfard</span> ist bei DOSSIER für Recherche und die Konzeption neuer Darstellungsformen zuständig. Sie leitet die DOSSIER: Academy, unterrichtet Journalismus an der Fachhochschule Wien und der Universität Wien und ist Mitbegründerin des Onlinemagazins paroli.
-            </p>
-          </div>
-
-          <div class="team-item">
-            <div class="team-item__image">
-              <span>
-                <img src="/assets/images/dummy/team-1.png" />
-              </span>
-            </div>
-            <p class="team-item__title">Chef vom Dienst · Eurofighter</p>
-            <p class="team-item__description">
-              <span class="team-item__description--bold">Georg Eckelsberger</span> ist Textchef bei DOSSIER und im Bereich Datenjournalismus für Recherche und Visualisierung zuständig. Er unterrichtet Datenjournalismus an der Fachhochschule Wien der Wirtschaftskammer und dem Kuratorium für Journalistenausbildung in Salzburg.
+          <div class="news-item">
+            <div class="news-item__date">10.10.2017</div>
+            <h2>Beinahe und wäre er dabei über den umgestürzten Mülleimer gefallen</h2>
+            <img class="news-item__image" src="/assets/images/dummy/news-3.png" />
+            <p>
+              Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag. Er versuchte, sich in der Dunkelheit seinen Weg zu ertasten und erstarrte: Anscheinend gab es keinen anderen Ausweg aus diesem kleinen Hof als den Durchgang, durch den er gekommen war. Die Schritte wurden lauter und lauter, er sah eine dunkle Gestalt um die Ecke biegen. Fieberhaft irrten seine Augen durch die nächtliche Dunkelheit und suchten einen Ausweg.
             </p>
           </div>
 
@@ -275,13 +229,12 @@
     </footer>
   </div>
 
-  <script src="/temp/scripts/App.js"></script>
-  <script src="/temp/scripts/support.js"></script>
+  <script src="/app/temp/scripts/App.js"></script>
+  <script src="/app/temp/scripts/support.js"></script>
   <script>
     var support;
     window.onload = function() {
       support = new Support();
-      console.log(typeof(support));
       support.init({
         participants_max: 3000,
         participants_val: 1200,
