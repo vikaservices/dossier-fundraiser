@@ -1,0 +1,69 @@
+/******************* VARIABLES ********************/
+/******************* BREAKPOINTS ********************/
+/******************* PAGE ********************/
+/* step-1 */
+.label--donation, #donation {
+  font-size: 34px;
+  color: #EA5D36;
+  display: block;
+  line-height: 35px; }
+
+.label--donation {
+  float: left;
+  padding-right: 4px;
+  position: relative;
+  top: 3px; }
+
+#donation {
+  background-color: transparent;
+  border: 1px solid #BEBEBE;
+  width: 120px; }
+
+.support-anonymous {
+  padding-top: 12px; }
+
+/* step-2 */
+.stated_supporter-wrap {
+  visibility: hidden; }
+
+.stated_supporter-wrap--act {
+  visibility: visible; }
+
+.checkbox--hidden {
+  display: none; }
+
+.label--hidden {
+  visibility: hidden; }
+
+.stated_supporter-wrap__info {
+  display: none; }
+
+.stated_supporter-wrap__info--act {
+  display: block; }
+
+/* step-3 */
+.validate-title {
+  display: none; }
+
+.validate-title--visible {
+  display: block; }
+
+.validate-memb {
+  clear: both; }
+
+.newsletter-wrap--invisible {
+  display: none; }
+
+/* step-4 */
+/******************* RESPONSIVE ********************/
+/********** tablet **********/
+/********** smartphone **********/
+@media screen and (max-width: 568px) {
+  /***** step 1 *****/
+  .carousel .label--donation {
+    line-height: 35px; }
+  /***** step 2 *****/
+  .carousel .stated_supporter-wrap__info--act.small {
+    display: block; }
+  /***** step 3 *****/
+  /***** step 4 *****/ }

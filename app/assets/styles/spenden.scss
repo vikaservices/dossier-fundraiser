@@ -1,0 +1,100 @@
+/******************* VARIABLES ********************/
+
+$color-greyscale-100    : #0F0F0F;
+$color-greyscale-80     : #3B3B3B;
+$color-greyscale-60     : #505050;
+$color-greyscale-50     : #666666;
+$color-greyscale-40     : #929292;
+$color-greyscale-30     : #BEBEBE;
+$color-greyscale-20     : #EAEAEA;
+$color-greyscale-0      : #FFFFFF;
+
+$color-primary-60      : #00BBCE;
+
+$color-support-60       : #EA5D36;
+$color-support-40       : #EB7A5B;
+$color-support-20       : #FBDFD7;
+
+$size-grid : 24px;
+$size-base : 16px;
+
+$font-size-xlarge       : 34px;
+$font-size-large        : 20px;
+$line-height-large      : $size-grid * 1.25;
+$font-size-small        : 14px;
+
+$transition-all         : all 500ms ease-in-out;
+$transition-all-fast    : all 200ms ease-in-out;
+
+
+/******************* BREAKPOINTS ********************/
+
+$bp-tablet     : 816px;
+$bp-smartphone : 568px;
+
+
+/******************* PAGE ********************/
+
+
+
+/* step-1 */
+
+.label--donation, #donation { font-size: $font-size-xlarge; color: $color-support-60; display: block; line-height: 35px; }
+.label--donation { float: left; padding-right: 4px; position: relative; top: 3px; }
+#donation { background-color: transparent; border: 1px solid $color-greyscale-30; width: $size-grid * 5; }
+.support-anonymous { padding-top: $size-grid / 2; }
+
+/* step-2 */
+
+.stated_supporter-wrap { visibility: hidden; }
+.stated_supporter-wrap--act { visibility: visible; }
+
+.checkbox--hidden { display: none; }
+.label--hidden { visibility: hidden;  }
+
+.stated_supporter-wrap__info { display: none; }
+.stated_supporter-wrap__info--act { display: block; }
+
+
+/* step-3 */
+
+.validate-title { display: none; }
+.validate-title--visible { display: block; }
+.validate-memb { clear: both; }
+
+.newsletter-wrap--invisible { display: none; }
+
+/* step-4 */
+
+
+/******************* RESPONSIVE ********************/
+
+/********** tablet **********/
+
+@media screen and (max-width: $bp-tablet) {
+
+
+
+}
+
+/********** smartphone **********/
+
+@media screen and (max-width: $bp-smartphone) {
+
+
+/***** step 1 *****/
+
+.carousel .label--donation { line-height: 35px; }
+
+/***** step 2 *****/
+
+.carousel .stated_supporter-wrap__info--act.small { display: block; }
+
+
+/***** step 3 *****/
+
+
+/***** step 4 *****/
+
+
+}

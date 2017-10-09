@@ -78,11 +78,16 @@ var _btn = __webpack_require__(2);
 
 var _btn2 = _interopRequireDefault(_btn);
 
+var _fluid_video = __webpack_require__(3);
+
+var _fluid_video2 = _interopRequireDefault(_fluid_video);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var headerMenu = new _menu2.default();
 var btnPrimary = new _btn2.default("btn--primary");
 var btnSecondary = new _btn2.default("btn--secondary");
+var fluidVideo = new _fluid_video2.default();
 
 /***/ }),
 /* 1 */
@@ -186,6 +191,57 @@ var Btn = function () {
 }();
 
 exports.default = Btn;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var FluidVideo = function () {
+  function FluidVideo() {
+    _classCallCheck(this, FluidVideo);
+
+    this.allVideos = $(".news-item__video iframe, .news-item__video object, .news-item__video embed"), this.fluidEl = $(".news-item__video");
+
+    this.allVideos.each(function () {
+
+      $(this)
+      // jQuery .data does not work on object/embed elements
+      .attr('data-aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+    });
+
+    this.events();
+  }
+
+  _createClass(FluidVideo, [{
+    key: "events",
+    value: function events() {
+      var that = this;
+      $(window).resize(function () {
+        var newWidth = that.fluidEl.width();
+        that.allVideos.each(function () {
+          var $el = $(this);
+          $el.width(newWidth);
+          $el.height(newWidth * $el.attr('data-aspectRatio'));
+        });
+      }).resize();
+    }
+  }]);
+
+  return FluidVideo;
+}();
+
+exports.default = FluidVideo;
 
 /***/ })
 /******/ ]);

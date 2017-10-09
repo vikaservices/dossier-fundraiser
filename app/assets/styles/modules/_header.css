@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 1024px;
   line-height: 55px;
   background-color: $greyish-brown;
   padding-left: 22px;
@@ -19,6 +24,7 @@
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+    text-decoration: none;
 
     span {
       margin: 0;

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dossier fundraiser</title>
+  <link rel="stylesheet" href="/app/temp/styles/styles.css">
+  <link rel="stylesheet" href="/app/temp/styles/spenden.css">
+  <link rel="stylesheet" href="/app/temp/styles/unterstuetzen.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <nav class="header">
+        <a href="frontpage.html" class="header__brand">
+          <span class="header__brand--large">
+            <span class="header__brand--large__title">DOSSIER</span>
+            <span class="header__brand--large__logo"></span>
+          </span>
+          <span class="header__brand--small">GENOSSENSCHAFT</span>
+        </a>
+
+        <ul class="header__links">
+          <li class="link-c-1"><a href="news.html" class="nav-link">Aktuelles</a></li>
+          <li class="link-c-1"><a href="mission.html" class="nav-link">Mission</a></li>
+          <li class="link-c-2"><a href="team.html" class="nav-link">Team</a></li>
+          <li class="link-c-2"><a href="#" class="nav-link">Fragen</a></li>
+        </ul>
+
+        <div class="menu"> <!-- COMPONENT -->
+          <span class="menu__title">MEHR </span>
+          <div class="menu__menu-icon">
+            <div class="menu__menu-icon__middle"></div>
+          </div>
+          <ul class="menu__links">
+            <li class="link-c-1"><a href="news.html" class="menu-link">Aktuelles</a></li>
+            <li class="link-c-1"><a href="mission.html" class="menu-link">Mission</a></li>
+            <li class="link-c-2"><a href="team.html" class="menu-link">Team</a></li>
+            <li class="link-c-2"><a href="#" class="menu-link">Fragen</a></li>
+            <li><a href="#" class="menu-link">Genossenschaft</a></li>
+            <li><a href="#" class="menu-link">Kontakt</a></li>
+            <li><a href="#" class="-link">Geschichten</a></li>
+            <div class="menu__share-container">
+              <div class="header-share"> <!-- COMPONENT -->
+                <ul>
+                  <li>
+                    <a href="" target="_blank" class="header-share__mail">
+                      <img src="/app/assets/images/mail.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" class="header-share__facebook">
+                      <img src="/app/assets/images/facebook.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" class="header-share__twitter">
+                      <img src="/app/assets/images/twitter.png">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="header__share-buttons">
+          <div class="header-share"> <!-- COMPONENT -->
+            <ul>
+              <li>
+                <a href="" target="_blank" class="header-share__mail">
+                  <img src="/app/assets/images/mail.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="header-share__facebook">
+                  <img src="/app/assets/images/facebook.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="header-share__twitter">
+                  <img src="/app/assets/images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__buttons">
+          <a href="#" class="btn btn--secondary">Einfach<br />spenden</a>
+          <a href="donate.html" class="btn btn--primary">Mitglied werden</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+
+      <!--
+      PAGE MAIN CONTENT
+      -->
+      <div class="content__wrapper">
+
+
+
+        <!--###SPENDEN_HEADER###-->
+        <!--
+        <header class="article-header article-header--support">
+            <h1 class="article-header__title article-header__title--support">Helfen Sie uns, Missstände aufzudecken!</h1>
+            <p class="article-header__tagline article-header__tagline--support">Es gibt viel zu tun, werden Sie jetzt aktiv!</p>
+        </header>
+        -->
+        <!--###SPENDEN_HEADER###-->
+
+        <!--###SPENDEN_FORM###-->
+        <main class="carousel">
+        	<form id="form" action="/fileadmin/php/checkout.php?mode=spende" method="post">
+        	<section class="carousel-step carousel-step--1">
+        		<header class="carousel-header">
+        			<h2 class="carousel-header__title">Ihre Spende</h2>
+        		</header>
+        		<section class="carousel-content">
+        			<div class="carousel-content-wrap">
+        				<p class="error-msg error-msg--1"></p>
+        				<div class="carousel-content__col carousel-content__col--col1 carousel-content__col--col1-1">
+        					<label for="donation" class="label--donation">€</label>
+        					<input type="number" id="donation" name="donation">
+        					<p class="support-anonymous">Wollen Sie lieber <a href="###MITGLIED_LINK###">Mitglied werden?</a></p>
+        					<h3>Sie können auch direkt per Banküberweisung spenden:</h3>
+        						<p>IBAN: AT881200050375861801<br>
+        BIC-Code: BKAUATWW<br>
+        UniCredit Bank Austria</p>
+        <p><em>Spenden ab € 1.200 pro Jahr legen wir im Sinne der Transparenz offen.</em></p>
+        				</div>
+        			</div>
+        		</section>
+        	</section>
+
+        	<section class="carousel-step carousel-step--2 carousel-step--next">
+        		<header class="carousel-header">
+        			<h2 class="carousel-header__title">Ihre Daten</h2>
+        		</header>
+        		<section class="carousel-content">
+        			<div class="carousel-content-wrap">
+        				<p class="error-msg error-msg--2"></p>
+        				<div class="carousel-content__col carousel-content__col--col1 carousel-content__col--col1-2">
+        					<div class="form">
+        						<div class="form__row">
+        							<input class="checkbox" type="checkbox" id="stated_supporter" name="stated_supporter" checked="checked">
+        							<label for="stated_supporter">Als UnterstützerIn genannt werden</label>
+        						</div>
+        						<div class="form__row">
+        							<div class="stated_supporter-wrap stated_supporter-wrap--act">
+        								<div class="form__row__col">
+        									<label for="firstname">Vorname:</label>
+        									<input type="text" id="firstname" name="firstname">
+        								</div>
+        								<div class="form__row__col">
+        									<label for="lastname">Nachname:</label>
+        									<input type="text" id="lastname" name="lastname">
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="carousel-content__col carousel-content__col--col1-2">
+        					<div class="form">
+        						<div class="form__row">
+        							<input class="checkbox" type="checkbox" id="invoice" name="invoice">
+        							<label for="invoice">Rechnung erhalten</label>
+        						</div>
+        						<div class="invoice-wrap">
+        							<div class="form__row">
+        								<div class="form__row__col">
+        									<label for="firstname-invoice">Vorname:</label>
+        									<input type="text" id="firstname-invoice" name="firstname-invoice">
+        								</div>
+        								<div class="form__row__col">
+        									<label for="lastname-invoice">Nachname:</label>
+        									<input type="text" id="lastname-invoice" name="lastname-invoice">
+        								</div>
+        							</div>
+        							<div class="form__row">
+        								<label for="email">E-Mail-Adresse:</label>
+        								<input type="email" id="email" name="email">
+        							</div>
+        							<div class="form__row">
+        								<label for="address">Straße & Hausnummer:</label>
+        								<input type="text" id="address" name="address">
+        							</div>
+        							<div class="form__row">
+        								<div class="form__row__col">
+        									<label for="city">PLZ & Ort:</label>
+        									<input type="text" id="city" name="city">
+        								</div>
+        								<div class="form__row__col">
+        									<label for="country">Land:</label>
+        									<input type="text" id="country" name="country">
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</section>
+        	</section>
+
+        	<section class="carousel-step carousel-step--3 carousel-step--next">
+        		<header class="carousel-header">
+        			<h2 class="carousel-header__title">Ihre Zahlungsdetails</h2>
+        		</header>
+        		<section class="carousel-content">
+        			<div class="carousel-content-wrap">
+        				<p class="error-msg error-msg--3"></p>
+        				<div class="carousel-content__col carousel-content__col--col1 carousel-content__col--col1-2">
+        					<h3 class="validate-title">Ihre Daten:</h3>
+        					<p class="validate-user"></p>
+        				</div>
+        				<div class="carousel-content__col carousel-content__col--col1-2">
+        					<p class="validate-address"></p>
+        				</div>
+        				<hr class="separator">
+        				<p class="important validate-memb"></p>
+
+        				<hr class="separator">
+        				<div class="form">
+
+        					<div class="form__row form__row--payment-method">
+        						<h3>Ihre Zahlungsart:</h3>
+        						<input class="radio payment-method__radio" type="radio" name="payment-method" value="credit-card" id="credit-card" checked="checked">
+        						<label for="credit-card">Kreditkarte</label>
+        						<input class="radio payment-method__radio" type="radio" name="payment-method" value="sofort" id="sofort">
+        						<label for="sofort">Sofortüberweisung</label>
+        					</div>
+        					<div class="form__row">
+        						<input class="checkbox" type="checkbox" id="agb" name="agb">
+        						<label for="agb"><a href="###AGB_LINK###">AGB / Datenschutzrichtlinien</a> gelesen und akzeptiert</label>
+        					</div>
+        					<div class="form__row">
+        						<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" checked="checked">
+        						<label for="newsletter">Für den Newsletter anmelden</label>
+        					</div>
+        					<div class="newsletter-wrap">
+        						<div class="form__row">
+        							<div class="form__row__col">
+        								<label for="email-step-3">E-Mail-Adresse:</label>
+        								<input type="email" id="email-step-3" name="email-step-3">
+        							</div>
+        						</div>
+        					</div>
+        					<input type="hidden" name="payment-failed" id="payment-failed" value="false">
+        					<input type="hidden" name="uid" id="uid" value="">
+        				</div>
+        			</div>
+        		</section>
+        	</section>
+
+        	</form>
+
+        </main>
+        <div class="carousel-controls">
+        	<div class="carousel-controls__button carousel-controls__button--back">zurück</div>
+        	<div class="carousel-controls__button carousel-controls__button--next carousel-controls__button--enabled">weiter</div>
+        </div>
+        <footer class="progress">
+        	<div class="progress__line"></div>
+        	<ol class="progress-wrap">
+        		<li class="progress__item progress__item--1">
+        			<div class="progress__item__bullet"></div>
+        			<p class="progress__item__name">Spende</p>
+        		</li>
+        		<li class="progress__item progress__item--2">
+        			<div class="progress__item__line"></div>
+        			<div class="progress__item__bullet"></div>
+        			<p class="progress__item__name">Daten</p>
+        		</li>
+        		<li class="progress__item progress__item--3">
+        			<div class="progress__item__line"></div>
+        			<div class="progress__item__bullet"></div>
+        			<p class="progress__item__name">Zahlungsdetails</p>
+        		</li>
+        		<li class="progress__item progress__item--4">
+        			<div class="progress__item__line"></div>
+        			<div class="progress__item__bullet"></div>
+        			<p class="progress__item__name">Danke!</p>
+        		</li>
+        	</ol>
+        </footer>
+        <!--###SPENDEN_FORM###-->
+
+
+
+      </div> <!-- content_wrapper -->
+
+    </div> <!-- content -->
+
+    <footer> <!-- COMPONENT -->
+      <nav>
+        <a href="#" class="footer__brand">
+          <span class="footer__brand--large">
+            <span class="footer__brand--large__title">DOSSIER</span>
+            <span class="footer__brand--large__logo"></span>
+          </span>
+          <span class="footer__brand--small">GENOSSENSCHAFT</span>
+        </a>
+
+        <ul class="footer__links">
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Statuten</a></li>
+          <li><a href="#">AGB</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">Impressum</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="/app/temp/scripts/vendor/jquery-3.2.1.min.js"></script>
+  <script src="/app/temp/scripts/vendor/jquery.validate.min.js"></script>
+  <script src="/app/temp/scripts/App.js"></script>
+  <script src="/app/temp/scripts/spenden.js"></script>
+</body>
+</html>

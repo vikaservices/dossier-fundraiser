@@ -16,6 +16,7 @@ footer {
     display: block;
     cursor: pointer;
     padding-left: 22px;
+    text-decoration: none;
 
     @mixin atSmall {
       display: inline-block;
