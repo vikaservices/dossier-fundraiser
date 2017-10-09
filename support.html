@@ -109,7 +109,7 @@
       PAGE MAIN CONTENT
       -->
         <div class="supporter">
-          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+          <div class="grid" >
             <div class="grid-item">
               <img src="/app/assets/images/dummy/eka.png" />
             </div>
@@ -175,5 +175,9 @@
   <script src="/app/temp/scripts/vendor/jquery-3.2.1.min.js"></script>
   <script src="/app/temp/scripts/App.js"></script>
   <script src="/app/temp/scripts/vendor/masonry.pkgd.min.js"></script>
+  <script>
+    // data-masonry='{ "itemSelector": ".grid-item" }'
+    $('.grid').masonry({ "itemSelector": ".grid-item" });
+  </script>
 </body>
 </html>
