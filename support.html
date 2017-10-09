@@ -178,12 +178,12 @@
   <script>
     // data-masonry='{ "itemSelector": ".grid-item" }'
     $(document).ready(function() {
+      $('.grid').masonry({ "itemSelector": ".grid-item" });
       setTimeout(function() {
-        $('.grid').masonry({ "itemSelector": ".grid-item" });
         var $grid = $('.grid');
         $grid.masonry("layout");
-        alert("layout");
-      }, 5000);
+        // alert("layout");
+      }, 1000);
     });
   </script>
 </body>
