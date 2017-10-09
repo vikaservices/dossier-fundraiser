@@ -177,9 +177,9 @@
   <script src="/app/temp/scripts/vendor/masonry.pkgd.min.js"></script>
   <script>
     // data-masonry='{ "itemSelector": ".grid-item" }'
-    var $grid = $('.grid').masonry({ "itemSelector": ".grid-item" });
     $(document).ready(function() {
       console.log("layout");
+      var $grid = $('.grid').masonry({ "itemSelector": ".grid-item" });
       $grid.masonry("layout");
     });
   </script>
