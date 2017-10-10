@@ -6,6 +6,8 @@ class Menu {
     this.menuContent = document.getElementsByClassName("menu__links")[0];
     // mobile hamburger icon
     this.menuIcon = document.getElementsByClassName("menu__menu-icon")[0];
+    // global menu close handler
+    window.addEventListener("click", this.hideMenu);
     this.events();
   }
 
@@ -17,10 +19,16 @@ class Menu {
   }
 
   handleTitleClick(e) {
+    e.stopPropagation();
     // toggle menu visibility
     this.menuContent.classList.toggle("menu__links--is-visible");
     // change menu icon
     this.menuIcon.classList.toggle("menu__menu-icon--close-x");
+  }
+
+  hideMenu() {
+    document.getElementsByClassName("menu__links")[0].classList.remove("menu__links--is-visible");
+    document.getElementsByClassName("menu__menu-icon")[0].classList.remove("menu__menu-icon--close-x");
   }
 
 }
