@@ -10,14 +10,18 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body>
-
+  
   <header class="main-header">
     <nav class="header">
       <a href="frontpage.html" class="header__brand">
         <span class="header__brand--large">
-          <img src="/app/assets/images/logo.png"
-               srcset="/app/assets/images/logo@2x.png 2x,
-                       /app/assets/images/logo@3x.png 3x">
+          <img srcset="/app/assets/images/logo.png 140w,
+                       /app/assets/images/logo@2x.png 280w,
+                       /app/assets/images/logo@3x.png 420w"
+               sizes="(max-width: 320px) 140px,
+                      (max-width: 480px) 140px,
+                      140px"
+               src="/app/assets/images/logo.png">
         </span>
         <span class="header__brand--small">GENOSSENSCHAFT</span>
       </a>
@@ -47,17 +51,35 @@
               <ul>
                 <li>
                   <a href="" target="_blank" class="header-share__mail">
-                    <img src="/app/assets/images/mail.png">
+                    <img srcset="/app/assets/images/mail.png 20w,
+                                 /app/assets/images/mail@2x.png 40w,
+                                 /app/assets/images/mail@3x.png 60w"
+                         sizes="(max-width: 320px) 20px,
+                                (max-width: 480px) 20px,
+                                20px"
+                         src="/app/assets/images/mail.png">
                   </a>
                 </li>
                 <li>
                   <a href="" target="_blank" class="header-share__facebook">
-                    <img src="/app/assets/images/facebook.png">
+                    <img srcset="/app/assets/images/facebook.png 20w,
+                                 /app/assets/images/facebook@2x.png 40w,
+                                 /app/assets/images/facebook@3x.png 60w"
+                         sizes="(max-width: 320px) 20px,
+                                (max-width: 480px) 20px,
+                                20px"
+                         src="/app/assets/images/facebook.png">
                   </a>
                 </li>
                 <li>
                   <a href="" target="_blank" class="header-share__twitter">
-                    <img src="/app/assets/images/twitter.png">
+                    <img srcset="/app/assets/images/twitter.png 20w,
+                                 /app/assets/images/twitter@2x.png 40w,
+                                 /app/assets/images/twitter@3x.png 60w"
+                         sizes="(max-width: 320px) 20px,
+                                (max-width: 480px) 20px,
+                                20px"
+                         src="/app/assets/images/twitter.png">
                   </a>
                 </li>
               </ul>
@@ -71,17 +93,35 @@
           <ul>
             <li>
               <a href="" target="_blank" class="header-share__mail">
-                <img src="/app/assets/images/mail.png">
+                <img srcset="/app/assets/images/mail.png 20w,
+                             /app/assets/images/mail@2x.png 40w,
+                             /app/assets/images/mail@3x.png 60w"
+                     sizes="(max-width: 320px) 20px,
+                            (max-width: 480px) 20px,
+                            20px"
+                     src="/app/assets/images/mail.png">
               </a>
             </li>
             <li>
               <a href="" target="_blank" class="header-share__facebook">
-                <img src="/app/assets/images/facebook.png">
+                <img srcset="/app/assets/images/facebook.png 20w,
+                             /app/assets/images/facebook@2x.png 40w,
+                             /app/assets/images/facebook@3x.png 60w"
+                     sizes="(max-width: 320px) 20px,
+                            (max-width: 480px) 20px,
+                            20px"
+                     src="/app/assets/images/facebook.png">
               </a>
             </li>
             <li>
               <a href="" target="_blank" class="header-share__twitter">
-                <img src="/app/assets/images/twitter.png">
+                <img srcset="/app/assets/images/twitter.png 20w,
+                             /app/assets/images/twitter@2x.png 40w,
+                             /app/assets/images/twitter@3x.png 60w"
+                     sizes="(max-width: 320px) 20px,
+                            (max-width: 480px) 20px,
+                            20px"
+                     src="/app/assets/images/twitter.png">
               </a>
             </li>
           </ul>
@@ -89,8 +129,8 @@
       </div>
 
       <div class="header__buttons">
-        <a href="#" class="btn btn--secondary">Einfach<br />spenden</a>
-        <a href="donate.html" class="btn btn--primary">Mitglied werden</a>
+        <a href="donate.html" class="btn btn--secondary">Einfach<br />spenden</a>
+        <a href="" class="btn btn--primary">Mitglied werden</a>
       </div>
     </nav>
   </header>
