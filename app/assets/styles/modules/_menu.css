@@ -145,15 +145,17 @@
     }
 
     .link-c-1 {
-      display: block;
+      display: block !important;
+
       @mixin atSmall {
-        display: none;
+        display: none !important;
       }
     }
     .link-c-2 {
-      display: block;
+      display: block !important;
+
       @mixin atMedium {
-        display: none;
+        display: none !important;
       }
     }
   }
