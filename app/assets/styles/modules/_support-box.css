@@ -19,7 +19,6 @@
     order: 2;
     width: 100%;
     margin-bottom: 28px;
-    @mixin text--small;
 
     &__valuebar {
       width: 100%;
@@ -58,6 +57,7 @@
         display: inline-block;
         width: 40%;
         text-align: right;
+        @mixin text--small;
 
         @mixin atSmall {
           width: auto;
@@ -95,6 +95,7 @@
     &__amount {
       display: block;
       width: 100%;
+      @mixin text--xsmall;
 
       @mixin atSmall {
         display: inline-block;
@@ -125,6 +126,7 @@
         display: inline-block;
         width: 50%;
         text-align: left;
+        font-weight: bold;
 
         @mixin atSmall {
           width: auto;

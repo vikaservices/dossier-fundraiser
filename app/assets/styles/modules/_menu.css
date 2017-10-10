@@ -166,3 +166,15 @@
     }
   }
 }
+
+.disable-scroll {
+  @mixin onMobile {
+    overflow: hidden;
+  }
+}
+
+.opaque {
+  @mixin onMobile {
+    opacity: 0.5;
+  }
+}
