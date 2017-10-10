@@ -831,6 +831,7 @@ img {
     line-height: 1;
     text-align: center;
     color: #fbfbfb;
+    font-weight: bold;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -845,7 +846,7 @@ img {
       line-height: 1;
       text-align: center;
       color: #fbfbfb;
-      font-weight: 300
+      font-weight: bold
   }
   }
 

@@ -100,7 +100,7 @@
   line-height: 1;
   text-align: center;
   color: $white;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 @define-mixin nav-btn--mobile--aleo {
@@ -108,7 +108,8 @@
   font-size: 11px;
   line-height: 1;
   text-align: center;
-  color: $white
+  color: $white;
+  font-weight: bold;
 }
 
 @define-mixin nav-btn--small {
