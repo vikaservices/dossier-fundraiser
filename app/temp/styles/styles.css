@@ -1029,6 +1029,10 @@ footer .footer .footer__links li a {
           vertical-align: middle;
         }
 
+footer .footer .footer__links li a:hover {
+          color: #bdbdbd;
+        }
+
 .content {
   padding: 117px;
   padding-bottom: 80px;

@@ -83,6 +83,9 @@ footer {
           text-decoration: none;
           vertical-align: middle;
         }
+        a:hover {
+          color: $pinkish-grey;
+        }
       }
     }
   }
