@@ -17,8 +17,6 @@ class Menu {
   }
 
   handleTitleClick(e) {
-    // toggle active class from menu title
-    this.menu.classList.toggle("menu__title--is-active");
     // toggle menu visibility
     this.menuContent.classList.toggle("menu__links--is-visible");
     // change menu icon

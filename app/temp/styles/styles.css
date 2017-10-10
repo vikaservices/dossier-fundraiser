@@ -527,27 +527,15 @@ img {
   }
 
 .menu__title::after {
-      content: ">";
+      content: url('/app/assets/images/menu-arrow.png');
       font-size: 22px;
       position: relative;
       top: 2px;
+      left: 2px;
     }
 
-.menu__title:hover,
-  .menu__title--is-active {
+.menu__title:hover {
     color: #d6d6d6;
-  }
-
-.menu__title:hover::after, .menu__title--is-active::after {
-      content: ">";
-      display: inline-block;
-      font-size: 22px;
-      transform: rotateZ(90deg);
-      -webkit-transform: rotateZ(90deg);
-    }
-
-.menu__title--is-active {
-    color: #efefef;
   }
 
 .menu__menu-icon {
