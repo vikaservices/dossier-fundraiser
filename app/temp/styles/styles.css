@@ -369,7 +369,7 @@ img {
 
 .main-header .header__brand--small {
         font-family: Lato;
-        font-size: 11px;
+        font-size: 10.5px;
         font-weight: normal;
         line-height: 1;
         text-align: left;
@@ -991,57 +991,24 @@ footer .footer .footer__brand span {
 
 footer .footer .footer__brand--large {
         display: block;
-        line-height: 24px !important;
+        height: 23px;
+        line-height: 23px !important;
       }
 
-footer .footer .footer__brand--large__title {
-          display: inline-block;
-          vertical-align: middle;
-          font-family: Aleo;
-          font-size: 22px;
-          line-height: 1;
-          text-align: left;
-          color: #fbfbfb;
-          font-weight: 300;
+footer .footer .footer__brand--large img {
+          height: 25px;
         }
 
 @media (min-width: 768px) {
 
-footer .footer .footer__brand--large__title {
-            font-family: Aleo;
-            font-size: 17px;
-            line-height: 1;
-            text-align: left;
-            color: #fbfbfb;
-            font-weight: 300
-        }
-  }
-
-footer .footer .footer__brand--large__logo {
-          display: inline-block;
-          background: #17adbd url('/app/assets/images/magnifier.png') no-repeat center;
-          margin-left: 5px;
-          width: 24px;
-          height: 24px;
-          border-radius: 24px;
-          vertical-align: middle;
-          position: relative;
-          top: -1px;
-          left: 2px;
-        }
-
-@media (min-width: 768px) {
-
-footer .footer .footer__brand--large__logo {
-            width: 21px;
-            height: 21px;
-            border-radius: 21px
+footer .footer .footer__brand--large img {
+            height: 23px
         }
   }
 
 footer .footer .footer__brand--small {
         font-family: Lato;
-        font-size: 11px;
+        font-size: 10.5px;
         font-weight: normal;
         line-height: 1;
         text-align: left;
