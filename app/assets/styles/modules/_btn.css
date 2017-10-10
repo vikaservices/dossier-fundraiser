@@ -9,6 +9,8 @@
   margin-left: 10px;
   vertical-align: middle;
   text-align: center;
+  border-radius: 1px;
+  overflow: hidden;
 
   @mixin atSmall {
     width: auto;
@@ -46,6 +48,7 @@
     padding: 0 4px;
     @mixin nav-btn--mobile-lato;
     order: 1;
+    color: $white-three;
 
     @mixin atSmall {
       padding: 0px 11px;
@@ -53,12 +56,12 @@
     }
 
     &:hover {
-      border-color: $warm-grey;
-      color: $warm-grey;
+      border-color: $pinkish-grey;
+      color: $pinkish-grey;
     }
     &--pressed {
-      border-color: $brownish-grey;
-      color: $brownish-grey !important;
+      border-color: $white-three;
+      color: $white-three !important;
     }
     &--dispabled {
 

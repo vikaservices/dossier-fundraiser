@@ -5,6 +5,9 @@
   text-decoration: none;
   vertical-align: middle;
   text-align: center;
+  border-radius: 1px;
+  overflow: hidden;
+
 
   @mixin atMedium {
     width: 100%;
@@ -18,21 +21,29 @@
     padding: 10px 0;
 
     &--label-lg {
+      color: $white;
       @mixin btn-support--primary--lg;
     }
 
     &--label-sm {
       padding-top: 5px;
+      color: $white;
       @mixin btn-support--primary--sm;
     }
 
     &:hover {
       background-color: $copper;
-      color: $blush;
+      .btn-support--primary--label-lg,
+      .btn-support--primary--label-sm {
+        color: $blush;
+      }
     }
     &--pressed {
       background-color: $copper;
-      color: $white !important;
+      .btn-support--primary--label-lg,
+      .btn-support--primary--label-sm {
+        color: $white !important;
+      }
     }
     &--dispabled {
 
@@ -48,6 +59,7 @@
     padding: 11px 0;
     margin-top: 22px;
     margin-bottom: 28px;
+    color: $brownish-grey;
 
     @mixin atSmall {
       @mixin btn-support--small;

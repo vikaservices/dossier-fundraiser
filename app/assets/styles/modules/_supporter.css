@@ -3,6 +3,8 @@
   .grid-item {
     width: 100%;
     margin-bottom: 30px;
+    border-radius: 1px;
+    overflow: hidden;
 
     @mixin atSmall {
       width: 30%;

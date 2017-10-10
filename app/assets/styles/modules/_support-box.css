@@ -1,5 +1,8 @@
 .support-box {
 
+  border-radius: 1px;
+  overflow: hidden;
+
   .support-container--bg-grey {
     display: flex;
     flex-flow: row wrap;
@@ -23,6 +26,9 @@
       height: 33px;
       background-color: $white;
       margin-bottom: 7px;
+      border-radius: 1px;
+      overflow: hidden;
+
 
       span {
         height: 33px;

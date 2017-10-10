@@ -87,6 +87,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var headerMenu = new _menu2.default();
 var btnPrimary = new _btn2.default("btn--primary");
 var btnSecondary = new _btn2.default("btn--secondary");
+var btnSupportPrimary = new _btn2.default("btn-support--primary");
+var btnSupportSecondary = new _btn2.default("btn-support--secondary");
 var fluidVideo = new _fluid_video2.default();
 
 /***/ }),
@@ -114,6 +116,8 @@ var Menu = function () {
     this.menuContent = document.getElementsByClassName("menu__links")[0];
     // mobile hamburger icon
     this.menuIcon = document.getElementsByClassName("menu__menu-icon")[0];
+    // global menu close handler
+    window.addEventListener("click", this.hideMenu);
     this.events();
   }
 
@@ -128,10 +132,17 @@ var Menu = function () {
   }, {
     key: "handleTitleClick",
     value: function handleTitleClick(e) {
+      e.stopPropagation();
       // toggle menu visibility
       this.menuContent.classList.toggle("menu__links--is-visible");
       // change menu icon
       this.menuIcon.classList.toggle("menu__menu-icon--close-x");
+    }
+  }, {
+    key: "hideMenu",
+    value: function hideMenu() {
+      document.getElementsByClassName("menu__links")[0].classList.remove("menu__links--is-visible");
+      document.getElementsByClassName("menu__menu-icon")[0].classList.remove("menu__menu-icon--close-x");
     }
   }]);
 
