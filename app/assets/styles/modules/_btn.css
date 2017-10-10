@@ -20,15 +20,11 @@
     background-color: $tomato;
     font-size: 0;
     @mixin nav-btn--mobile--aleo;
-    order: 1;
+    order: 2;
 
     @mixin atSmall {
-      padding: 0px 15px;
+      padding: 0px 11px;
       @mixin nav-btn;
-    }
-
-    @mixin atMedium {
-      order: 2;
     }
 
     &:hover {
@@ -49,15 +45,11 @@
     font-size: 0;
     padding: 0 4px;
     @mixin nav-btn--mobile-lato;
-    order: 2;
+    order: 1;
 
     @mixin atSmall {
-      padding: 0px 15px;
+      padding: 0px 11px;
       @mixin nav-btn--small;
-    }
-
-    @mixin atMedium {
-      order: 1;      
     }
 
     &:hover {
