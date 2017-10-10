@@ -40,47 +40,29 @@
         margin: 0;
       }
       &--large {
+        position: relative;
+        top: -3px;
         display: block;
-        line-height: 24px !important;
-        @mixin nav-brand--mobile--large;
+        line-height: 1;
 
         @mixin atSmall {
-          @mixin nav-brand--large;
-          line-height: 28px !important;
+          top: -5px;
         }
 
-        &__title {
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-        &__logo {
-          display: inline-block;
-          background: $topaz-two url('/app/assets/images/magnifier.png') no-repeat center;
-          margin-left: 5px;
-          width: 24px;
-          height: 24px;
-          border-radius: 24px;
-          vertical-align: middle;
-          position: relative;
-          top: -2px;
-          left: -2px;
+        img {
+          height: 26px;
 
           @mixin atSmall {
-            width: 28px;
-            height: 28px;
-            border-radius: 28px;
+            height: auto;
           }
         }
       }
       &--small {
         @mixin nav-brand--mobile--small;
         display: block;
-        padding-top: 3px;
 
         @mixin atSmall {
           @mixin nav-brand--small;
-          padding-top: 5px;
         }
       }
     }

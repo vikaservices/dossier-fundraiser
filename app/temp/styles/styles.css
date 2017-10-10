@@ -343,77 +343,49 @@ img {
       }
 
 .main-header .header__brand--large {
+        position: relative;
+        top: -3px;
         display: block;
-        line-height: 24px !important;
-        font-family: Aleo;
-        font-size: 22px;
         line-height: 1;
-        text-align: left;
-        color: #fbfbfb;
-        font-weight: 300;
       }
 
 @media (min-width: 768px) {
 
 .main-header .header__brand--large {
-          font-family: Aleo;
-          font-size: 24px;
-          line-height: 1;
-          text-align: left;
-          color: #fbfbfb;
-          font-weight: 300;
-          line-height: 28px !important
+          top: -5px
       }
   }
 
-.main-header .header__brand--large__title {
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-.main-header .header__brand--large__logo {
-          display: inline-block;
-          background: #17adbd url('/app/assets/images/magnifier.png') no-repeat center;
-          margin-left: 5px;
-          width: 24px;
-          height: 24px;
-          border-radius: 24px;
-          vertical-align: middle;
-          position: relative;
-          top: -2px;
-          left: -2px;
+.main-header .header__brand--large img {
+          height: 26px;
         }
 
 @media (min-width: 768px) {
 
-.main-header .header__brand--large__logo {
-            width: 28px;
-            height: 28px;
-            border-radius: 28px
+.main-header .header__brand--large img {
+            height: auto
         }
   }
 
 .main-header .header__brand--small {
         font-family: Lato;
         font-size: 11px;
-        font-weight: 300;
+        font-weight: normal;
         line-height: 1;
         text-align: left;
         color: #fbfbfb;
         display: block;
-        padding-top: 3px;
       }
 
 @media (min-width: 768px) {
 
 .main-header .header__brand--small {
           font-family: Lato;
-          font-size: 12px;
-          font-weight: 300;
+          font-size: 13px;
+          font-weight: normal;
           line-height: 1;
           text-align: left;
-          color: #fbfbfb;
-          padding-top: 5px
+          color: #fbfbfb
       }
   }
 
@@ -1070,7 +1042,7 @@ footer .footer .footer__brand--large__logo {
 footer .footer .footer__brand--small {
         font-family: Lato;
         font-size: 11px;
-        font-weight: 300;
+        font-weight: normal;
         line-height: 1;
         text-align: left;
         color: #fbfbfb;
