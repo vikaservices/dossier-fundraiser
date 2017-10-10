@@ -124,7 +124,7 @@
     &__buttons {
       float: right;
       display: flex;
-      margin-right: 40px;
+      margin-right: 44px;
       height: 55px;
 
       @mixin atSmall {

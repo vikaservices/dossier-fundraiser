@@ -474,7 +474,7 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-right: 40px;
+      margin-right: 44px;
       height: 55px;
     }
 
@@ -809,7 +809,7 @@ img {
   width: 48px;
   height: 34px;
   line-height: 34px;
-  margin-left: 10px;
+  margin-left: 11px;
   vertical-align: middle;
   text-align: center;
   border-radius: 1px;
