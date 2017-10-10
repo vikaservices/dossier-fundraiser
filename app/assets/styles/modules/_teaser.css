@@ -28,6 +28,7 @@
 
     h3 {
       @mixin heading--special--small;
+      font-weight: normal;
       text-transform: uppercase;
       margin: 0;
       margin-left: 11px;

@@ -2155,6 +2155,7 @@ footer .footer .footer__links li a:hover {
       line-height: 1.69;
       text-align: left;
       color: #6d6d6d;
+      font-weight: normal;
       text-transform: uppercase;
       margin: 0;
       margin-left: 11px;
