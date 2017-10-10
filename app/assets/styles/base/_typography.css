@@ -300,6 +300,22 @@
  color: $brownish-grey;
 }
 
+@define-mixin link {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: $topaz-two;
+}
+
+@define-mixin link-mobile {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 2.06;
+  text-align: left;
+  color: $topaz-two;
+}
+
 
 .title {
   font-family: Aleo;

@@ -2136,9 +2136,22 @@ footer .footer .footer__links li a:hover {
 .teaser-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap
 }
+  }
+
+.teaser-container .teaser__more-stories {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+  }
+
+@media (min-width: 768px) {
+
+.teaser-container .teaser__more-stories {
+      margin: 27px 0
+  }
   }
 
 .teaser {
@@ -2442,3 +2455,23 @@ footer .footer .footer__links li a:hover {
 .supporter .grid-item img {
       width: 100%;
     }
+
+.link {
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 2.06;
+  text-align: left;
+  color: #17adbd;
+}
+
+@media (min-width: 768px) {
+
+.link {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 1.83;
+    text-align: left;
+    color: #17adbd
+}
+  }

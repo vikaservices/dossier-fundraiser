@@ -4,9 +4,18 @@
   justify-content: space-between;
 
   @mixin atSmall {
-    flex-flow: row;
+    flex-flow: row wrap;
+  }
+
+  .teaser__more-stories {
+    flex: 1 100%;
+
+    @mixin atSmall {
+      margin: 27px 0;
+    }
   }
 }
+
 .teaser {
   flex: 1;
   border: 1px solid $white-two;
