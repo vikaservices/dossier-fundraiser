@@ -21,7 +21,7 @@
   line-height: 1.83;
   text-align: left;
   color: $white;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 @define-mixin nav-sticky {
