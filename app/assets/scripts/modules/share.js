@@ -18,6 +18,7 @@ class Share {
     while( el && !$(el).hasClass("share__item") ) {
       el = el.parentNode;
     }
+    if( el.dataset.name === undefined ) { return false; }
     el.classList.add(el.dataset.name + "--pressed");
   }
 

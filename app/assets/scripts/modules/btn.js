@@ -13,12 +13,19 @@ class Btn {
   }
 
   handleMouseDown(e) {
-    e.target.classList.add( this.my_class + "--pressed" );
-    e.stopPropagation();
+    var el = e.target;
+    while( el && !$(el).hasClass(this.my_class) ) {
+      el = el.parentNode;
+    }
+    el.classList.add(this.my_class + "--pressed");
   }
 
   handleMouseUp(e) {
-    e.target.classList.remove( this.my_class + "--pressed" );
+    var el = e.target;
+    while( el && !$(el).hasClass(this.my_class) ) {
+      el = el.parentNode;
+    }
+    el.classList.remove(this.my_class + "--pressed");
   }
 }
 
