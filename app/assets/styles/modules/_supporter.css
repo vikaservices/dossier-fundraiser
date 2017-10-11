@@ -47,8 +47,8 @@
       margin: 0;
     }
 
-
-    &--visible {
+    &:hover,
+    &:focus {
       opacity: .8;
       transition: opacity .3s ease-out;
     }
