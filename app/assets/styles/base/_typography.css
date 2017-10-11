@@ -342,6 +342,15 @@
   color: $topaz-two;
 }
 
+@define-mixin heading--xsmall {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.69;
+  text-align: left;
+  color: $white;
+}
+
 
 .title {
   font-family: Aleo;

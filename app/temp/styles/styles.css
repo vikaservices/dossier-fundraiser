@@ -2481,6 +2481,42 @@ footer .footer .footer__links li a:hover {
       width: 100%;
     }
 
+.supporter__info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    background-color: #ea5d36;
+  }
+
+.supporter__info h2 {
+      font-family: Lato;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1.69;
+      text-align: left;
+      color: #fbfbfb;
+      margin: 0 0 5px 0;
+    }
+
+.supporter__info p {
+      font-family: Lato;
+      font-size: 13px;
+      line-height: 1.23;
+      text-align: left;
+      color: #fbfbfb;
+      margin: 0;
+    }
+
+.supporter__info:hover {
+      opacity: .8;
+      -webkit-transition: opacity .3s ease-out;
+      transition: opacity .3s ease-out;
+    }
+
 .link {
   text-decoration: none;
   font-family: Lato;
