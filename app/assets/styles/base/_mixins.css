@@ -1,7 +1,8 @@
 /* Mobile */
 /* width: 0 -> 767px */
 @define-mixin onMobile {
-  @media (max-width: 767px) {
+/*  @media (max-width: 767px) { */
+  @media (max-width: 555px) {
     @mixin-content;
   }
 }
@@ -9,7 +10,8 @@
 /* tablet */
 /* width: 768px -> 1023px */
 @define-mixin atSmall {
-  @media (min-width: 768px) {
+/*  @media (min-width: 768px) { */
+  @media (min-width: 556px) {
     @mixin-content;
   }
 }
@@ -17,7 +19,8 @@
 /* Desktop */
 /* width: 1024px ->  */
 @define-mixin atMedium {
-  @media (min-width: 1024px) {
+/*  @media (min-width: 1024px) { */
+  @media (min-width: 782px) {
     @mixin-content;
   }
 }
