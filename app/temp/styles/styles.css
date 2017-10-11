@@ -1182,6 +1182,8 @@ footer .footer .footer__links li a:hover {
     line-height: 1.05;
     text-align: left;
     color: #3f3f3f;
+    margin-top: 33px;
+    margin-bottom: 11px;
   }
 
 @media (min-width: 768px) {
@@ -1203,6 +1205,8 @@ footer .footer .footer__links li a:hover {
     line-height: 1.38;
     text-align: left;
     color: #3f3f3f;
+    margin-top: 22px;
+    margin-bottom: 0;
   }
 
 @media (min-width: 768px) {
@@ -1213,9 +1217,7 @@ footer .footer .footer__links li a:hover {
       font-weight: bold;
       line-height: 1.83;
       text-align: left;
-      color: #3f3f3f;
-      margin-top: 36px;
-      margin-bottom: 14px
+      color: #3f3f3f
   }
   }
 
@@ -1226,6 +1228,7 @@ footer .footer .footer__links li a:hover {
     line-height: 1.38;
     text-align: left;
     color: #3f3f3f;
+    margin: 11px 0;
   }
 
 @media (min-width: 768px) {
@@ -1236,14 +1239,14 @@ footer .footer .footer__links li a:hover {
       font-weight: 300;
       line-height: 1.83;
       text-align: left;
-      color: #3f3f3f;
-      margin: 14px 0
+      color: #3f3f3f
   }
   }
 
 .article img {
     width: 100%;
     border-radius: 1px;
+    margin: 11px 0;
     overflow: hidden;
   }
 
@@ -2262,6 +2265,8 @@ footer .footer .footer__links li a:hover {
     line-height: 1.05;
     text-align: left;
     color: #3f3f3f;
+    margin-top: 33px;
+    margin-bottom: 11px;
   }
 
 @media (min-width: 768px) {
@@ -2283,7 +2288,8 @@ footer .footer .footer__links li a:hover {
     line-height: 1.38;
     text-align: left;
     color: #3f3f3f;
-    margin-top: 1.5em;
+    margin-top: 22px;
+    margin-bottom: 0;
   }
 
 @media (min-width: 768px) {
@@ -2294,9 +2300,7 @@ footer .footer .footer__links li a:hover {
       font-weight: bold;
       line-height: 1.83;
       text-align: left;
-      color: #3f3f3f;
-      margin-top: 10px;
-      margin-bottom: 14px
+      color: #3f3f3f
   }
   }
 
@@ -2307,6 +2311,7 @@ footer .footer .footer__links li a:hover {
     line-height: 1.38;
     text-align: left;
     color: #3f3f3f;
+    margin: 11px 0;
   }
 
 @media (min-width: 768px) {
@@ -2317,14 +2322,13 @@ footer .footer .footer__links li a:hover {
       font-weight: 300;
       line-height: 1.83;
       text-align: left;
-      color: #3f3f3f;
-      margin: 14px 0
+      color: #3f3f3f
   }
   }
 
 .news-item img {
     width: 100%;
-    margin-top: 20px;
+    margin: 11px 0;
     border-radius: 1px;
     overflow: hidden;
   }
@@ -2347,7 +2351,7 @@ footer .footer .footer__links li a:hover {
 
 .news-item__video {
     width: 100%;
-    margin: 30px 0;
+    margin: 11px 0;
     border-radius: 1px;
     overflow: hidden;
   }

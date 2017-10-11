@@ -17,6 +17,8 @@
 
   h1 {
     @mixin heading--mobile;
+    margin-top: 33px;
+    margin-bottom: 11px;
 
     @mixin atSmall {
       @mixin heading;
@@ -25,27 +27,26 @@
 
   h2 {
     @mixin heading--small--mobile;
-    margin-top: 1.5em;
+    margin-top: 22px;
+    margin-bottom: 0;
 
     @mixin atSmall {
       @mixin heading--small;
-      margin-top: 10px;
-      margin-bottom: 14px;
     }
   }
 
   p {
     @mixin text--mobile;
+    margin: 11px 0;
 
     @mixin atSmall {
       @mixin text;
-      margin: 14px 0;
     }
   }
 
   img {
     width: 100%;
-    margin-top: 20px;
+    margin: 11px 0;
     border-radius: 1px;
     overflow: hidden;
   }
@@ -63,7 +64,7 @@
 
   &__video {
     width: 100%;
-    margin: 30px 0;
+    margin: 11px 0;
     border-radius: 1px;
     overflow: hidden;
 

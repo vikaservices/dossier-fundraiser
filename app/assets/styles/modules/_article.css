@@ -3,6 +3,8 @@
 
   h1 {
     @mixin heading--mobile;
+    margin-top: 33px;
+    margin-bottom: 11px;
 
     @mixin atSmall {
       @mixin heading;
@@ -11,26 +13,27 @@
 
   h2 {
     @mixin heading--small--mobile;
+    margin-top: 22px;
+    margin-bottom: 0;
 
     @mixin atSmall {
       @mixin heading--small;
-      margin-top: 36px;
-      margin-bottom: 14px;
     }
   }
 
   p {
     @mixin text--mobile;
+    margin: 11px 0;
 
     @mixin atSmall {
       @mixin text;
-      margin: 14px 0;
     }
   }
 
   img {
     width: 100%;
     border-radius: 1px;
+    margin: 11px 0;
     overflow: hidden;
   }
 
