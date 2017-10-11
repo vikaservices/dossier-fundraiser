@@ -2512,7 +2512,7 @@ footer .footer .footer__links li a:hover {
     }
 
 .supporter__info:hover,
-    .supporter__info:focus {
+    .supporter__info:active {
       opacity: .8;
       -webkit-transition: opacity .3s ease-out;
       transition: opacity .3s ease-out;

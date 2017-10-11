@@ -48,7 +48,7 @@
     }
 
     &:hover,
-    &:focus {
+    &:active {
       opacity: .8;
       transition: opacity .3s ease-out;
     }
