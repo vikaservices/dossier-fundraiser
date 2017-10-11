@@ -1,5 +1,6 @@
 .share {
 
+  max-width: 470px;
   margin-top: 40px;
 
   header {
@@ -7,17 +8,15 @@
   }
 
   ul {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 0;
 
     li {
-      display: inline-block;
-      margin-right: 22px;
-      margin-bottom: 22px;
-
+      flex: 1 0 10%;
       a, span {
         width: 32px;
         height: 32px;
@@ -27,18 +26,21 @@
         position: relative;
 
         img {
-          margin: 0;
           width: auto;
           display: block;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          padding: 0;
         }
       }
-      &:last-child {
-        width: 240px;
-      }
+    }
+    li:first-child a {
+      margin-left: 0;
+    }
+    li:last-child {
+      flex: 1 0 60%;
     }
     li:last-child span input {
       @mixin text--xsmall;
