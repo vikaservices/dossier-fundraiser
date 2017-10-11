@@ -1,6 +1,4 @@
 .article {
-  padding-bottom: 50px;
-
   h1 {
     @mixin heading--mobile;
     margin-top: 33px;
