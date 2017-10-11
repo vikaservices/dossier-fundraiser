@@ -40,8 +40,8 @@
   &__mail:hover {
     background-color: $warm-grey;
   }
-  &__mail--focus {
-    background-color: $greyish-brown;
+  &__mail--pressed {
+    background-color: $greyish-brown !important;
   }
   &__mail--disabled {
     background-color: $white-three;
@@ -53,8 +53,8 @@
   &__facebook:hover {
     background-color: $topaz;
   }
-  &__facebook--focus {
-    background-color: $blue-green;
+  &__facebook--pressed {
+    background-color: $blue-green !important;
   }
   &__facebook--disabled {
     background-color: $light-teal;
@@ -66,8 +66,8 @@
   &__twitter:hover {
     background-color: $tiffany-blue;
   }
-  &__twitter--focus {
-    background-color: $topaz-two;
+  &__twitter--pressed {
+    background-color: $topaz-two !important;
   }
   &__twitter--disabled {
     background-color: $light-teal;

@@ -795,8 +795,8 @@ img {
     background-color: #9b9b9b;
   }
 
-.header-share__mail--focus {
-    background-color: #3f3f3f;
+.header-share__mail--pressed {
+    background-color: #3f3f3f !important;
   }
 
 .header-share__mail--disabled {
@@ -811,8 +811,8 @@ img {
     background-color: #12c0d2;
   }
 
-.header-share__facebook--focus {
-    background-color: #168e9a;
+.header-share__facebook--pressed {
+    background-color: #168e9a !important;
   }
 
 .header-share__facebook--disabled {
@@ -827,8 +827,8 @@ img {
     background-color: #75dae5;
   }
 
-.header-share__twitter--focus {
-    background-color: #17adbd;
+.header-share__twitter--pressed {
+    background-color: #17adbd !important;
   }
 
 .header-share__twitter--disabled {
@@ -1344,8 +1344,8 @@ footer .footer .footer__links li a:hover {
     background-color: #9b9b9b;
   }
 
-.share__mail--focus {
-    background-color: #3f3f3f;
+.share__mail--pressed {
+    background-color: #3f3f3f !important;
   }
 
 .share__mail--disabled {
@@ -1360,8 +1360,8 @@ footer .footer .footer__links li a:hover {
     background-color: #12c0d2;
   }
 
-.share__facebook--focus {
-    background-color: #168e9a;
+.share__facebook--pressed {
+    background-color: #168e9a !important;
   }
 
 .share__facebook--disabled {
@@ -1376,8 +1376,8 @@ footer .footer .footer__links li a:hover {
     background-color: #75dae5;
   }
 
-.share__twitter--focus {
-    background-color: #17adbd;
+.share__twitter--pressed {
+    background-color: #17adbd !important;
   }
 
 .share__twitter--disabled {
@@ -1392,8 +1392,8 @@ footer .footer .footer__links li a:hover {
     background-color: #3cb934;
   }
 
-.share__whatsapp--focus {
-    background-color: #0c763d;
+.share__whatsapp--pressed {
+    background-color: #0c763d !important;
   }
 
 .share__whatsapp--disabled {
@@ -1407,8 +1407,8 @@ footer .footer .footer__links li a:hover {
 .share__link:hover {
   }
 
-.share__link--focus {
-    background-color: #3f3f3f;
+.share__link--pressed {
+    background-color: #3f3f3f !important;
   }
 
 .share__link--disabled {

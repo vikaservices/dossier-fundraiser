@@ -82,6 +82,10 @@ var _fluid_video = __webpack_require__(3);
 
 var _fluid_video2 = _interopRequireDefault(_fluid_video);
 
+var _share = __webpack_require__(4);
+
+var _share2 = _interopRequireDefault(_share);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var headerMenu = new _menu2.default();
@@ -90,6 +94,7 @@ var btnSecondary = new _btn2.default("btn--secondary");
 var btnSupportPrimary = new _btn2.default("btn-support--primary");
 var btnSupportSecondary = new _btn2.default("btn-support--secondary");
 var fluidVideo = new _fluid_video2.default();
+var share = new _share2.default();
 
 /***/ }),
 /* 1 */
@@ -259,6 +264,69 @@ var FluidVideo = function () {
 }();
 
 exports.default = FluidVideo;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Share = function () {
+  function Share() {
+    _classCallCheck(this, Share);
+
+    this.shareBtns = document.getElementsByClassName("share__item");
+
+    this.events();
+  }
+
+  _createClass(Share, [{
+    key: "events",
+    value: function events() {
+      if (this.shareBtns === undefined) {
+        return false;
+      }
+      for (var i = 0; i < this.shareBtns.length; i++) {
+        this.shareBtns[i].addEventListener("mousedown", this.handleMouseDown.bind(this), false);
+        this.shareBtns[i].addEventListener("mouseup", this.handleMouseUp.bind(this), false);
+      }
+    }
+  }, {
+    key: "handleMouseDown",
+    value: function handleMouseDown(e) {
+      var el = e.target;
+      while (el && !$(el).hasClass("share__item")) {
+        el = el.parentNode;
+      }
+      el.classList.add(el.dataset.name + "--pressed");
+    }
+  }, {
+    key: "handleMouseUp",
+    value: function handleMouseUp(e) {
+      var el = e.target;
+      while (el && !$(el).hasClass("share__item")) {
+        el = el.parentNode;
+      }
+      if (el.dataset.name === undefined) {
+        return false;
+      }
+      el.classList.remove(el.dataset.name + "--pressed");
+    }
+  }]);
+
+  return Share;
+}();
+
+exports.default = Share;
 
 /***/ })
 /******/ ]);
