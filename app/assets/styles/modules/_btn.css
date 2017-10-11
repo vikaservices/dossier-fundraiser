@@ -43,7 +43,7 @@
   }
 
   &--secondary {
-    border: 1px solid $white;
+    border: 1px solid $white-three;
     font-size: 0;
     padding: 0 4px;
     @mixin nav-btn--mobile-lato;
