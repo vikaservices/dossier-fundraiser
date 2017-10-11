@@ -26,22 +26,17 @@
   src: url('/app/assets/fonts/Lato-Regular.woff');
   font-weight: 400;
 }
-/*
 @font-face {
   font-family: Lato;
   src: url('/app/assets/fonts/Lato-Italic.woff');
   font-weight: 400;
   font-style: italic;
 }
-*/
 @font-face {
   font-family: Lato;
   src: url('/app/assets/fonts/Lato-Bold.woff');
   font-weight: bold;
 }
-
-
-
 
 
 
