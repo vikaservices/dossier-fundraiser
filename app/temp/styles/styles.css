@@ -2511,7 +2511,8 @@ footer .footer .footer__links li a:hover {
       margin: 0;
     }
 
-.supporter__info:hover {
+.supporter__info:hover,
+    .supporter__info--visible {
       opacity: .8;
       -webkit-transition: opacity .3s ease-out;
       transition: opacity .3s ease-out;

@@ -47,7 +47,8 @@
       margin: 0;
     }
 
-    &:hover {
+    &:hover,
+    &--visible {
       opacity: .8;
       transition: opacity .3s ease-out;
     }
