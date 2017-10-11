@@ -757,6 +757,7 @@ img {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 0;
   }
 
 .header-share ul li {
@@ -784,8 +785,8 @@ img {
         }
 
 .header-share ul li:first-child {
-      margin-left: 0;
-    }
+        margin-left: 0;
+      }
 
 .header-share__mail {
     background-color: #6d6d6d;
