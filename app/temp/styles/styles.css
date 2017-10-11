@@ -1221,7 +1221,7 @@ footer .footer .footer__links li a:hover {
   }
   }
 
-.article p {
+.article p, .article ul, .article ol {
     font-family: Lato;
     font-size: 16px;
     font-weight: 300;
@@ -1233,7 +1233,7 @@ footer .footer .footer__links li a:hover {
 
 @media (min-width: 768px) {
 
-.article p {
+.article p, .article ul, .article ol {
       font-family: Lato;
       font-size: 18px;
       font-weight: 300;
@@ -2304,7 +2304,7 @@ footer .footer .footer__links li a:hover {
   }
   }
 
-.news-item p {
+.news-item p, .news-item ul, .news-item ol {
     font-family: Lato;
     font-size: 16px;
     font-weight: 300;
@@ -2316,7 +2316,7 @@ footer .footer .footer__links li a:hover {
 
 @media (min-width: 768px) {
 
-.news-item p {
+.news-item p, .news-item ul, .news-item ol {
       font-family: Lato;
       font-size: 18px;
       font-weight: 300;

@@ -21,7 +21,7 @@
     }
   }
 
-  p {
+  p, ul, ol {
     @mixin text--mobile;
     margin: 11px 0;
 
