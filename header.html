@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <style>
+    html,body {
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      width: 100%;
+      max-width: 1000px;
+      height: 60px;
+      background-color: #999;
+      margin: 0 auto;
+      font-size: 0;
+    }
+    #logo-box {display: inline-block; line-height: 60px; width: 100px; background-color: #aaa; font-size: 16px; float: left; text-align: center;}
+    #menu-box {display: inline-block; line-height: 60px; width: calc(100% - 250px); font-size: 16px; overflow-x: hidden;}
+    #buttons-box {display: inline-block; line-height: 60px; width: 150px; background-color: #aaa; font-size: 16px; float: right; text-align: center;}
+    #menu {float: left;}
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+    li {
+      display: inline-block;
+      line-height: 60px;
+      padding: 0 12px;
+      border-left: 0px solid #ccc;
+    }
+
+    #dropdown ul {
+      display: block;
+      visibility: hidden;
+      background-color: #999;
+    }
+
+    #dropdown li {
+      display: none;
+      line-height: 40px;
+    }
+    .show-item {
+      visibility: visible !important;
+    }
+  </style>
+
+  <script>
+    var shrink = false;
+    var previous_menu_box_w;
+
+    $(document).ready(function() {
+      $("#dropdown").click(function() {
+        $("#dropdown ul").toggleClass("show-item");
+      });
+
+      previous_menu_box_w = $("#menu-box").width();
+
+      setLinkVisibility();
+    });
+
+    $(window).resize(function() {
+      setLinkVisibility();
+    });
+
+    function setLinkVisibility() {
+      $("#menu .menu__link").show();
+      $("#dropdown__links li").hide();
+
+      var i = 0;
+      for( i=0; i < 7; i++ ) {
+        var menu_box_w = $("#menu-box").width();
+        var menu_w = $("#menu").width();
+        if( menu_w > menu_box_w ) {
+          console.log("should hide something");
+          // hide item in header
+          $("#menu .menu__link:visible").last().hide();
+          // show item in dropdown
+          $("#dropdown__links li:hidden").last().css("display", "block");
+        }
+        else {
+          break;
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <header>
+    <div id="logo-box">logo</div>
+    <div id="menu-box">
+      <ul id="menu">
+        <li class="menu__link">linkki 1</li>
+        <li class="menu__link">linkki 2</li>
+        <li class="menu__link">linkki 3</li>
+        <li class="menu__link">linkki 4</li>
+        <li class="menu__link">linkki 5</li>
+        <li class="menu__link">linkki 6</li>
+        <li class="menu__link">linkki 7</li>
+        <li class="menu__link">linkki 8</li>
+        <li id="dropdown">
+          <a id="dropdown__title">More ></a>
+          <ul id="dropdown__links">
+            <li>linkki 1</li>
+            <li>linkki 2</li>
+            <li>linkki 3</li>
+            <li>linkki 4</li>
+            <li>linkki 5</li>
+            <li>linkki 6</li>
+            <li>linkki 7</li>
+            <li>linkki 8</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="buttons-box">buttons here</div>
+  </header>
+</body>
+</html>
