@@ -312,8 +312,6 @@ img {
 }
 
 .main-header {
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 100;
   display: block;
@@ -324,6 +322,8 @@ img {
 @media (min-width: 556px) {
 
 .main-header {
+    position: fixed;
+    top: 0;
     height: 68px
 }
   }
@@ -384,8 +384,15 @@ img {
 .main-header .header--right {
       display: inline-block;
       float: right;
-      width: 260px;
+      width: 170px;
     }
+
+@media (min-width: 556px) {
+
+.main-header .header--right {
+        width: 260px
+    }
+  }
 
 @media (min-width: 782px) {
 
@@ -1130,7 +1137,6 @@ footer .footer .footer__links li a:hover {
 
 .content {
   padding: 117px;
-  padding-bottom: 80px;
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -1138,6 +1144,7 @@ footer .footer .footer__links li a:hover {
 @media (min-width: 556px) {
 
 .content {
+    padding-bottom: 80px;
     padding-left: 33px;
     padding-right: 33px
 }

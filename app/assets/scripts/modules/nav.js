@@ -17,9 +17,9 @@ class Nav {
         // change menu icon
         $(this).toggleClass("menu__menu-icon--close-x");
         // disable scroll
-        $("body").toggleClass("disable-scroll");
+        //$("body").toggleClass("disable-scroll");
         // add opacity to rest of document
-        $(".wrapper").toggleClass("opaque");
+        // $(".wrapper").toggleClass("opaque");
       });
 
       that.setLinkVisibility();
@@ -56,8 +56,8 @@ class Nav {
   hideMenu() {
     $(".menu__dropdown .menu__dropdown__links").removeClass("menu--show-item");
     $(".menu__dropdown .menu__menu-icon").removeClass("menu__menu-icon--close-x");
-    $("body").removeClass("disable-scroll");
-    $(".wrapper").removeClass("opaque");
+    //$("body").removeClass("disable-scroll");
+    //$(".wrapper").removeClass("opaque");
   }
 }
 

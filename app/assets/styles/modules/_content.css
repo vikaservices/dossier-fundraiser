@@ -1,11 +1,12 @@
 .content {
   padding: 117px;
-  padding-bottom: 80px;
+/*  padding-bottom: 80px; */
   padding-left: 22px;
   padding-right: 22px;
 
 
   @mixin atSmall {
+    padding-bottom: 80px;
     padding-left: 33px;
     padding-right: 33px;
   }

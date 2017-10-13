@@ -1,6 +1,6 @@
 .main-header {
-  position: fixed;
-  top: 0;
+/*  position: fixed; */
+/*  top: 0; */
   width: 100%;
   z-index: 100;
   display: block;
@@ -8,6 +8,8 @@
   background-color: $greyish-brown;
 
   @mixin atSmall {
+    position: fixed;
+    top: 0;
     height: 68px;
   }
 
@@ -48,7 +50,11 @@
     &--right {
       display: inline-block;
       float: right;
-      width: 260px;
+      width: 170px;
+
+      @mixin atSmall {
+        width: 260px;
+      }
 
       @mixin atMedium {
         width: 390px;
