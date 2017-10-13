@@ -70,9 +70,9 @@
 "use strict";
 
 
-var _menu = __webpack_require__(1);
+var _nav = __webpack_require__(1);
 
-var _menu2 = _interopRequireDefault(_menu);
+var _nav2 = _interopRequireDefault(_nav);
 
 var _btn = __webpack_require__(2);
 
@@ -88,7 +88,10 @@ var _share2 = _interopRequireDefault(_share);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var headerMenu = new _menu2.default();
+var nav = new _nav2.default();
+// const headerMenu = new Menu();
+
+// import Menu from './modules/menu';
 var btnPrimary = new _btn2.default("btn--primary");
 var btnSecondary = new _btn2.default("btn--secondary");
 var btnSupportPrimary = new _btn2.default("btn-support--primary");
@@ -111,58 +114,78 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Menu = function () {
-  function Menu() {
-    _classCallCheck(this, Menu);
+var Nav = function () {
+  function Nav() {
+    _classCallCheck(this, Nav);
 
-    // menu title
-    this.menu = document.getElementsByClassName("menu__title")[0];
-    // menu links box
-    this.menuContent = document.getElementsByClassName("menu__links")[0];
-    // mobile hamburger icon
-    this.menuIcon = document.getElementsByClassName("menu__menu-icon")[0];
-    // content wrapper
-    this.contentWrapper = document.getElementsByClassName("wrapper")[0];
     this.events();
   }
 
-  _createClass(Menu, [{
+  _createClass(Nav, [{
     key: "events",
     value: function events() {
-      // click handler for sticky menu title
-      this.menu.addEventListener("click", this.handleTitleClick.bind(this));
-      // click handler for mobile
-      this.menuIcon.addEventListener("click", this.handleTitleClick.bind(this));
-      // global menu close handler
-      window.addEventListener("click", this.hideMenu.bind(this));
+      var that = this;
+      $(document).ready(function () {
+        $(".menu__dropdown").click(function (event) {
+          // show menu
+          $(".menu__dropdown .menu__dropdown__links").toggleClass("menu--show-item");
+          event.stopPropagation();
+        });
+
+        // mobile hamburger menu icon click handler
+        $(".menu__dropdown .menu__menu-icon").click(function () {
+          // change menu icon
+          $(this).toggleClass("menu__menu-icon--close-x");
+          // disable scroll
+          $("body").toggleClass("disable-scroll");
+          // add opacity to rest of document
+          $(".wrapper").toggleClass("opaque");
+        });
+
+        that.setLinkVisibility();
+      });
+
+      $(window).resize(function () {
+        that.setLinkVisibility();
+      });
+
+      $(window).click(that.hideMenu);
     }
   }, {
-    key: "handleTitleClick",
-    value: function handleTitleClick(e) {
-      e.stopPropagation();
-      // toggle menu visibility
-      this.menuContent.classList.toggle("menu__links--is-visible");
-      // change menu icon
-      this.menuIcon.classList.toggle("menu__menu-icon--close-x");
-      // disable scroll
-      document.body.classList.toggle("disable-scroll");
-      // add opacity to rest of document
-      this.contentWrapper.classList.toggle("opaque");
+    key: "setLinkVisibility",
+    value: function setLinkVisibility() {
+      $(".menu .menu__link").show();
+      $(".menu__dropdown__links").children("li").hide();
+
+      var elem_cnt = $(".menu .menu__link").length;
+      for (var i = 0; i < elem_cnt; i++) {
+
+        var menu_box_w = $(".header--middle").width();
+        var menu_w = $(".menu").width();
+        if (menu_w > menu_box_w) {
+          // hide item in header
+          $(".menu .menu__link:visible").last().hide();
+          // show item in dropdown
+          $(".menu__dropdown__links").children("li:hidden").last().css("display", "block");
+        } else {
+          break;
+        }
+      }
     }
   }, {
     key: "hideMenu",
     value: function hideMenu() {
-      document.getElementsByClassName("menu__links")[0].classList.remove("menu__links--is-visible");
-      document.getElementsByClassName("menu__menu-icon")[0].classList.remove("menu__menu-icon--close-x");
-      document.body.classList.remove("disable-scroll");
-      this.contentWrapper.classList.remove("opaque");
+      $(".menu__dropdown .menu__dropdown__links").removeClass("menu--show-item");
+      $(".menu__dropdown .menu__menu-icon").removeClass("menu__menu-icon--close-x");
+      $("body").removeClass("disable-scroll");
+      $(".wrapper").removeClass("opaque");
     }
   }]);
 
-  return Menu;
+  return Nav;
 }();
 
-exports.default = Menu;
+exports.default = Nav;
 
 /***/ }),
 /* 2 */

@@ -1,38 +1,121 @@
 .menu {
-  display: inline-block;
-  background-color: $greyish-brown;
-  position: relative;
+  background-color: transparent;
   float: right;
 
   @mixin atSmall {
-    margin-left: 26px;
-    float: none;
+    display: flex;
+    float: left;
+    margin: 0 0 0 26px;
+    padding: 0;
   }
   @mixin atMedium {
-    margin-left: 20px;
+    list-style-type: none;
+    margin: 0;
+    white-space: nowrap;
   }
 
-  &__title {
+  &__link {
     display: none;
-    @mixin nav-sticky;
-    vertical-align: middle;
     line-height: 55px;
+    padding: 0 22px 0 0;
+
+    &:first-child {
+      padding-left: 22px;
+    }
 
     @mixin atSmall {
       display: inline-block;
       line-height: 66px;
     }
 
-    &::after {
-      content: url('/app/assets/images/menu-arrow.png');
-      font-size: 22px;
-      position: relative;
-      top: 2px;
-      left: 2px;
+    a {
+      height: 55px;
+
+      @mixin atSmall {
+        height: 66px;
+      }
     }
   }
-  &__title:hover {
-    color: $white-three;
+
+  &__dropdown {
+    &__links {
+      position: absolute;
+      display: block;
+      margin: 0;
+      padding: 40px 0 30px 0;
+      visibility: hidden;
+      background-color: $greyish-brown;
+      white-space: nowrap;
+      left: 0;
+      right: 0;
+
+      @mixin atSmall {
+        left: auto;
+        right: auto;
+        margin-left: -22px;
+        padding: 18px 0 21px 0;
+      }
+
+      li {
+         line-height: 2;
+         padding: 0 23px;
+
+         a {
+           line-height: 2;
+           height: 2em;
+         }
+       }
+    }
+
+    &__title {
+      position: relative;
+      top: -1px;
+      display: none;
+      visibility: hidden;
+      @mixin nav-sticky;
+      vertical-align: middle;
+      line-height: 55px;
+      height: 55px;
+      white-space: nowrap;
+
+      @mixin atSmall {
+        display: inline-block;
+        visibility: visible;
+        line-height: 66px;
+        height: 66px;
+      }
+
+      &::after {
+        content: url('/app/assets/images/menu-arrow.png');
+        font-size: 22px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+      }
+    }
+    &__title:hover {
+      color: $white-three;
+    }
+  }
+
+  .menu--show-item {
+    visibility: visible !important;
+  }
+
+  a {
+    @mixin nav-link;
+    display: inline-block;
+    line-height: 55px;
+    text-decoration: none;
+    vertical-align: middle;
+
+    @mixin atSmall {
+      line-height: 66px;
+    }
+
+    &:hover {
+      color: $pinkish-grey;
+    }
   }
 
   &__menu-icon {
@@ -95,70 +178,28 @@
   }
 
   &__links {
-    display: none;
-    background-color: $greyish-brown;
-    list-style-type: none;
-    margin: 0;
-    padding: 35px 0 11px 0;
-    position: fixed;
-    top: 55px;
-    right: 0;
-    left: 0;
-    z-index: 100;
-
-    @mixin atSmall {
-      position: absolute;
-      top: 66px;
-      right: auto;
-      left: -22px;
-      padding-top: 10px;
-    }
-
-    li {
-      line-height: 1;
-      margin-bottom: 11px;
-      a {
-        @mixin nav-link;
-        text-decoration: none;
-        padding: 0 23px;
-      }
-      a:hover {
-        color: $pinkish-grey;
-      }
-    }
     &--active {
       color: $topaz !important;
     }
 
-    &--is-visible {
-      display:block;
-    }
-
-    .link-c-1 {
-      display: block !important;
-
-      @mixin atSmall {
-        display: none !important;
-      }
-    }
-    .link-c-2 {
-      display: block !important;
-
-      @mixin atMedium {
-        display: none !important;
-      }
-    }
   }
 
   &__share-container {
     display: inline-block;
     line-height: normal;
     padding-left: 23px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 15px;
+
+    @mixin atSmall {
+      margin-top: 20px;
+    }
 
     ul li {
       margin-bottom: 0;
+      margin-left: 0 !important;
+      padding-left: 0;
+      padding-right: 15px;
     }
 
     @mixin atMedium {

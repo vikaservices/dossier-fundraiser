@@ -25,7 +25,7 @@
     order: 2;
 
     @mixin atSmall {
-      padding: 0px 11px;
+      padding: 0 11px;
       @mixin nav-btn;
     }
 

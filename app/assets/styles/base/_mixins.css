@@ -25,6 +25,14 @@
   }
 }
 
+
+/* Max width of content */
+@define-mixin atMaxContentWidth {
+  @media (min-width: 1024px) {
+    @mixin-content;
+  }
+}
+
 /* Large */
 @define-mixin atLarge {
   @media (min-width: 1300px) {
