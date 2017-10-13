@@ -13,128 +13,136 @@
   </script>
 </head>
 <body>
-
+  
   <header class="main-header">
     <nav class="header">
-      <a href="frontpage.html" class="header__brand">
-        <span class="header__brand--large">
-          <img srcset="/app/assets/images/logo.png 140w,
-                       /app/assets/images/logo@2x.png 280w,
-                       /app/assets/images/logo@3x.png 420w"
-               sizes="(max-width: 320px) 140px,
-                      (max-width: 480px) 140px,
-                      140px"
-               src="/app/assets/images/logo.png">
-        </span>
-        <span class="header__brand--small">GENOSSENSCHAFT</span>
-      </a>
+      <div class="header--left">
+        <a href="frontpage.html" class="header__brand">
+          <span class="header__brand--large">
+            <img srcset="/app/assets/images/logo.png 140w,
+                         /app/assets/images/logo@2x.png 280w,
+                         /app/assets/images/logo@3x.png 420w"
+                 sizes="(max-width: 320px) 140px,
+                        (max-width: 480px) 140px,
+                        140px"
+                 src="/app/assets/images/logo.png">
+          </span>
+          <span class="header__brand--small">GENOSSENSCHAFT</span>
+        </a>
+      </div> <!-- header--left -->
 
-      <ul class="header__links">
-        <li class="link-c-1"><a href="news.html" class="nav-link">Aktuelles</a></li>
-        <li class="link-c-1"><a href="mission.html" class="nav-link">Mission</a></li>
-        <li class="link-c-2"><a href="team.html" class="nav-link">Team</a></li>
-        <li class="link-c-2"><a href="#" class="nav-link">Fragen</a></li>
-      </ul>
-
-      <div class="menu"> <!-- COMPONENT -->
-        <span class="menu__title">MEHR </span>
-        <div class="menu__menu-icon">
-          <div class="menu__menu-icon__middle"></div>
-        </div>
-        <ul class="menu__links">
-          <li class="link-c-1"><a href="news.html" class="menu-link">Aktuelles</a></li>
-          <li class="link-c-1"><a href="mission.html" class="menu-link">Mission</a></li>
-          <li class="link-c-2"><a href="team.html" class="menu-link">Team</a></li>
-          <li class="link-c-2"><a href="#" class="menu-link">Fragen</a></li>
-          <li><a href="#" class="menu-link">Genossenschaft</a></li>
-          <li><a href="#" class="menu-link">Kontakt</a></li>
-          <li><a href="#" class="-link">Geschichten</a></li>
-          <div class="menu__share-container">
-            <div class="header-share"> <!-- COMPONENT -->
-              <ul>
-                <li>
-                  <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
-                    <img srcset="/app/assets/images/mail.png 20w,
-                                 /app/assets/images/mail@2x.png 40w,
-                                 /app/assets/images/mail@3x.png 60w"
-                         sizes="(max-width: 320px) 20px,
-                                (max-width: 480px) 20px,
-                                20px"
-                         src="/app/assets/images/mail.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
-                    <img srcset="/app/assets/images/facebook.png 20w,
-                                 /app/assets/images/facebook@2x.png 40w,
-                                 /app/assets/images/facebook@3x.png 60w"
-                         sizes="(max-width: 320px) 20px,
-                                (max-width: 480px) 20px,
-                                20px"
-                         src="/app/assets/images/facebook.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
-                    <img srcset="/app/assets/images/twitter.png 20w,
-                                 /app/assets/images/twitter@2x.png 40w,
-                                 /app/assets/images/twitter@3x.png 60w"
-                         sizes="(max-width: 320px) 20px,
-                                (max-width: 480px) 20px,
-                                20px"
-                         src="/app/assets/images/twitter.png">
-                  </a>
-                </li>
-              </ul>
+      <div class="header--middle">
+        <ul class="menu">
+          <li class="menu__link"><a href="news.html" class="nav-link">Aktuelles</a></li>
+          <li class="menu__link"><a href="mission.html" class="nav-link">Mission</a></li>
+          <li class="menu__link"><a href="team.html" class="nav-link">Team</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Fragen</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Genossenschaft</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Kontakt</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Geschichten</a></li>
+          <li class="menu__dropdown">
+            <a class="menu__dropdown__title">Mehr </a>
+            <div class="menu__menu-icon">
+              <div class="menu__menu-icon__middle"></div>
             </div>
-          </div>
+            <ul class="menu__dropdown__links">
+              <li><a href="news.html" class="nav-link">Aktuelles</a></li>
+              <li><a href="mission.html" class="nav-link">Mission</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="#" class="nav-link">Fragen</a></li>
+              <li><a href="#" class="nav-link">Genossenschaft</a></li>
+              <li><a href="#" class="nav-link">Kontakt</a></li>
+              <li><a href="#" class="nav-link">Geschichten</a></li>
+              <div class="menu__share-container">
+                <div class="header-share"> <!-- COMPONENT -->
+                  <ul>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
+                        <img srcset="/app/assets/images/mail.png 20w,
+                                     /app/assets/images/mail@2x.png 40w,
+                                     /app/assets/images/mail@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/mail.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
+                        <img srcset="/app/assets/images/facebook.png 20w,
+                                     /app/assets/images/facebook@2x.png 40w,
+                                     /app/assets/images/facebook@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/facebook.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
+                        <img srcset="/app/assets/images/twitter.png 20w,
+                                     /app/assets/images/twitter@2x.png 40w,
+                                     /app/assets/images/twitter@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/twitter.png">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
         </ul>
-      </div>
+      </div> <!-- header--middle -->
 
-      <div class="header__share-buttons">
-        <div class="header-share"> <!-- COMPONENT -->
-          <ul>
-            <li>
-              <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
-                <img srcset="/app/assets/images/mail.png 20w,
-                             /app/assets/images/mail@2x.png 40w,
-                             /app/assets/images/mail@3x.png 60w"
-                     sizes="(max-width: 320px) 20px,
-                            (max-width: 480px) 20px,
-                            20px"
-                     src="/app/assets/images/mail.png">
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
-                <img srcset="/app/assets/images/facebook.png 20w,
-                             /app/assets/images/facebook@2x.png 40w,
-                             /app/assets/images/facebook@3x.png 60w"
-                     sizes="(max-width: 320px) 20px,
-                            (max-width: 480px) 20px,
-                            20px"
-                     src="/app/assets/images/facebook.png">
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
-                <img srcset="/app/assets/images/twitter.png 20w,
-                             /app/assets/images/twitter@2x.png 40w,
-                             /app/assets/images/twitter@3x.png 60w"
-                     sizes="(max-width: 320px) 20px,
-                            (max-width: 480px) 20px,
-                            20px"
-                     src="/app/assets/images/twitter.png">
-              </a>
-            </li>
-          </ul>
+      <div class="header--right">
+        <div class="header__share-buttons">
+          <div class="header-share"> <!-- COMPONENT -->
+            <ul>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
+                  <img srcset="/app/assets/images/mail.png 20w,
+                               /app/assets/images/mail@2x.png 40w,
+                               /app/assets/images/mail@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/mail.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
+                  <img srcset="/app/assets/images/facebook.png 20w,
+                               /app/assets/images/facebook@2x.png 40w,
+                               /app/assets/images/facebook@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/facebook.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
+                  <img srcset="/app/assets/images/twitter.png 20w,
+                               /app/assets/images/twitter@2x.png 40w,
+                               /app/assets/images/twitter@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="header__buttons">
-        <a href="donate.html" class="btn btn--secondary">Einfach<br />spenden</a>
-        <a href="" class="btn btn--primary">Mitglied werden</a>
-      </div>
+        <div class="header__buttons">
+          <a href="donate.html" class="btn btn--secondary">Einfach<br />spenden</a>
+          <a href="" class="btn btn--primary">Mitglied werden</a>
+        </div>
+      </div> <!-- header--right -->
     </nav>
   </header>
 
