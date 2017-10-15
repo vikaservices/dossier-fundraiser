@@ -2,6 +2,7 @@
 
 $color-greyscale-100    : #0F0F0F;
 $color-greyscale-80     : #3B3B3B;
+$color-greyscale-70     : #3F3F3F;
 $color-greyscale-60     : #505050;
 $color-greyscale-50     : #666666;
 $color-greyscale-40     : #929292;
@@ -19,13 +20,16 @@ $size-grid : 24px;
 $size-base : 16px;
 
 $font-size-xlarge       : 34px;
+$font-size-mlarge        : 26px;
 $font-size-large        : 20px;
+$font-size-medium       : 18px;
 $line-height-large      : $size-grid * 1.25;
 $font-size-small        : 14px;
 
 $transition-all         : all 500ms ease-in-out;
 $transition-all-fast    : all 200ms ease-in-out;
 
+$font-family-lato       : "Lato";
 
 /******************* BREAKPOINTS ********************/
 
@@ -39,10 +43,11 @@ $bp-smartphone : 568px;
 
 /* step-1 */
 
-.label--donation, #donation { font-size: $font-size-xlarge; color: $color-support-60; display: block; line-height: 35px; }
-.label--donation { float: left; padding-right: 4px; position: relative; top: 3px; }
-#donation { background-color: transparent; border: 1px solid $color-greyscale-30; width: $size-grid * 5; }
-.support-anonymous { padding-top: $size-grid / 2; }
+.label--donation, #donation { font-family: $font-family-lato; font-size: $font-size-mlarge; color: $color-greyscale-70; display: inline-block; line-height: 35px; }
+.label--donation { float: none; padding-right: 4px; position: relative; top: 3px; }
+#donation { font-family: $font-family-lato; font-size: $font-size-mlarge; background-color: transparent; border: 0; border-bottom: 1px solid $color-greyscale-30; width: $size-grid * 5; }
+.support-anonymous { margin: 0; margin-bottom: 60px; display: inline-block;}
+
 
 /* step-2 */
 
@@ -50,6 +55,7 @@ $bp-smartphone : 568px;
 .stated_supporter-wrap--act { visibility: visible; }
 
 .checkbox--hidden { display: none; }
+label { font-family: $font-family-lato; font-size: $font-size-medium; color: $color-greyscale-80 }
 .label--hidden { visibility: hidden;  }
 
 .stated_supporter-wrap__info { display: none; }
@@ -58,7 +64,7 @@ $bp-smartphone : 568px;
 
 /* step-3 */
 
-.validate-title { display: none; }
+.validate-title { display: none; margin-top: 0; }
 .validate-title--visible { display: block; }
 .validate-memb { clear: both; }
 

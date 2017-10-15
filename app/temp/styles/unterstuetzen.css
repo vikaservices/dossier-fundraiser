@@ -1,11 +1,24 @@
+@charset "UTF-8";
 /******************* VARIABLES ********************/
 /******************* BREAKPOINTS ********************/
 /******************* DEF ********************/
 h3, p {
   margin-bottom: 0; }
 
+p {
+  font-family: "Lato";
+  font-size: 15px;
+  color: #3F3F3F;
+  line-height: 1.47; }
+
+h3 {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
+  color: #3F3F3F; }
+
 .small {
-  font-size: 14px; }
+  font-size: 13px; }
 
 .xsmall {
   font-size: 12px; }
@@ -19,22 +32,28 @@ h3, p {
 .separator--invisible {
   visibility: hidden; }
 
+label.error {
+  display: block;
+  color: #EA5D36;
+  font-size: 12px;
+  padding-top: 10px; }
+
 .error-msg {
   color: #EA5D36;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.2em;
+  margin: 0;
+  line-height: 1;
   display: none; }
 
 .error-msg--visible {
   display: block; }
 
 body .carousel a {
-  color: #EA5D36;
+  color: #17ADBD;
   text-decoration: underline; }
 
 .form__row {
-  margin-bottom: 6px;
+  margin-bottom: 23px;
   overflow: hidden; }
 
 .form__row__col {
@@ -49,15 +68,21 @@ body .carousel a {
   padding-left: 2px; }
 
 .form input {
-  width: 100%;
-  box-sizing: border-box; }
+  width: 92%;
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.83;
+  color: #9B9B9B;
+  outline: none; }
 
 .form .checkbox, .form .radio {
   width: auto; }
 
 .form input {
   background-color: transparent;
-  border: 1px solid #BEBEBE; }
+  border: 0;
+  border-bottom: 1px solid #BEBEBE; }
 
 .form input.error {
   border-color: #EA5D36; }
@@ -76,13 +101,13 @@ body .carousel a {
   -webkit-animation: load8 1.1s infinite linear;
   animation: load8 1.1s infinite linear;
   float: left;
-  margin: 5px 12px 0 0; }
+  margin: 5px 14px 0 0; }
 
 .loader,
 .loader:after {
   border-radius: 50%;
-  width: 12px;
-  height: 12px; }
+  width: 14px;
+  height: 14px; }
 
 @-webkit-keyframes load8 {
   0% {
@@ -116,14 +141,14 @@ body#meta.nonav .article-wrap {
 /********** article-header **********/
 .article-header {
   max-width: none;
-  padding: 24px;
+  padding: 28px;
   text-align: center; }
 
 .article-header--support {
   background-color: #FBDFD7; }
 
 .article-header__title {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   padding-top: 6px; }
 
 .article-header__title--support {
@@ -133,14 +158,14 @@ body#meta.nonav .article-wrap {
   color: #0F0F0F;
   text-align: center;
   font-size: 20px;
-  line-height: 30px; }
+  line-height: 35px; }
 
 /********** carousel **********/
 .carousel {
-  margin: 24px auto;
-  height: 432px;
+  margin: 0 auto;
+  height: 392px;
   position: relative;
-  max-width: 612px;
+  max-width: 912px;
   display: block; }
 
 .carousel-step {
@@ -161,7 +186,7 @@ body#meta.nonav .article-wrap {
 
 /***** carousel-header *****/
 .carousel-header {
-  margin: 12px 0;
+  margin: 14px 0;
   border-bottom: 1px solid #D6D6D6; }
 
 .carousel-header__title {
@@ -169,28 +194,28 @@ body#meta.nonav .article-wrap {
   font-family: "Lato";
   font-size: 26px;
   line-height: 1.27;
-  margin: 0 0 6px; }
+  margin: 0 0 7px; }
 
 /***** carousel-content *****/
 .carousel-content {
-  margin: 12px 0;
-  height: 384px;
+  margin: 14px 0;
+  height: 448px;
   display: table;
   width: 100%; }
 
 .carousel-content-wrap {
   display: table-cell;
   vertical-align: top;
-  padding-top: 40px; }
+  padding-top: 10px; }
 
 .carousel-content__col {
   float: left;
   box-sizing: border-box;
-  padding-left: 6px; }
+  padding-left: 7px; }
 
 .carousel-content__col--col1 {
   padding-left: 0;
-  padding-right: 6px; }
+  padding-right: 7px; }
 
 .carousel-content__col--col1-3 {
   width: 33.33333%; }
@@ -207,11 +232,11 @@ body#meta.nonav .article-wrap {
 
 /* step-1 */
 .special__info {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   color: #EA5D36; }
 
 .membshp-item {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   opacity: 0.4;
   cursor: pointer; }
 
@@ -231,9 +256,9 @@ body#meta.nonav .article-wrap {
 
 .membshp-advtg__item {
   font-size: 20px;
-  line-height: 30px;
-  margin-left: 24px;
-  margin-bottom: 6px;
+  line-height: 35px;
+  margin-left: 28px;
+  margin-bottom: 7px;
   opacity: 0.4;
   transition: all 200ms ease-in-out; }
 
@@ -241,7 +266,7 @@ body#meta.nonav .article-wrap {
   font-family: 'icomoon';
   content: "\e60f";
   color: #EA5D36;
-  margin-left: -21px; }
+  margin-left: -25px; }
 
 .membshp--sp--act .membshp-advtg__item--sp {
   opacity: 1; }
@@ -267,28 +292,56 @@ body#meta.nonav .article-wrap {
   float: left; }
 
 .form__row--payment-method h3, .form__row--payment-method label {
-  margin-right: 12px; }
+  margin-right: 14px; }
+
+.form__row--payment-method h3 {
+  margin-top: 0; }
+
+.form__row--agb {
+  margin-bottom: 15px; }
+
+.form__row--agb label {
+  font-size: 15px;
+  line-height: 1.47; }
+
+.form__row--newsletter {
+  margin-bottom: 15px; }
+
+.form__row--newsletter label {
+  font-size: 15px;
+  line-height: 1.47; }
 
 .validate-address {
-  margin-top: 24px; }
+  margin-top: 12px; }
 
 .validate-memb {
-  clear: both; }
+  clear: both;
+  font-size: 18px;
+  font-family: "Lato";
+  line-height: 1.83;
+  color: #3F3F3F;
+  padding: 15px 0 30px 0; }
+
+.validate-user {
+   margin-top: 12px; }
+
+#agb, #newsletter {
+  margin-left: 0; }
 
 /* step-4 */
 body .carousel .share {
-  padding: 6px 12px;
+  padding: 7px 14px;
   float: left;
   background-color: #00BBCE;
   color: #FFFFFF;
   font-weight: 500;
   text-decoration: none;
-  margin: 0 6px 6px 0; }
+  margin: 0 7px 7px 0; }
 
 .share:before {
   font-family: 'icomoon';
-  font-size: 24px;
-  padding-right: 6px;
+  font-size: 28px;
+  padding-right: 7px;
   position: relative;
   top: 2px; }
 
@@ -305,23 +358,24 @@ body .carousel .share {
 /* controls */
 .carousel-controls {
   clear: both;
-  margin-bottom: 24px;
-  height: 36px;
-  max-width: 612px;
-  margin: 0 auto 24px; }
+  margin-bottom: 28px;
+  height: 42px;
+  max-width: 912px;
+  margin: 0 auto 28px; }
 
 .carousel-controls__button {
   background-color: #EA5D36;
-  padding: 6px 8px 6px 12px;
+  padding: 7px 9.33333px 7px 14px;
   float: left;
   color: #FFFFFF;
   font-weight: 500;
   display: none;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
 
 .carousel-controls__button:before, .carousel-controls__button:after {
   font-family: 'icomoon';
-  font-size: 24px;
+  font-size: 28px;
   position: relative;
   top: 3px; }
 
@@ -332,31 +386,45 @@ body .carousel .share {
   background-color: #EB7A5B; }
 
 .carousel-controls__button--back {
-  background-color: #3B3B3B;
-  padding: 6px 12px 6px 8px; }
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: bold;
+  color: #3F3F3F;
+  border: 1px solid #3F3F3F;
+  background-color: transparent;
+  padding: 11px 11px 11px 20px; }
 
 .carousel-controls__button--back:before {
-  content: "\e60c";
-  right: 3px;
-  font-size: 16px; }
+  content: url("/app/assets/images/icon-previous.png");
+  right: 10px;
+  position: relative;
+  top: 2px;
+  font-size: 15px; }
 
 .carousel-controls__button--back:hover {
-  background-color: #666666; }
+  background-color: transparent;
+  color: #9B9B9B; }
 
 .carousel-controls__button--next {
   float: right;
-  font-size: 20px; }
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 20px 11px 11px; }
 
 .carousel-controls__button--next:after {
-  content: "\e60b";
-  left: 3px; }
+  content: url("/app/assets/images/icon-next.png");
+  right: -10px;
+  position: relative;
+  top: 2px;
+  font-size: 15px; }
 
 /********** progress **********/
 .progress {
-  height: 48px;
+  height: 56px;
   position: relative;
-  max-width: 612px;
-  margin: 0 auto 48px;
+  max-width: 912px;
+  margin: 0 auto 56px;
   clear: both;
   background-color: #FBFBFB; }
 
@@ -365,13 +433,14 @@ body .carousel .share {
   height: 1px;
   background-color: #BEBEBE;
   position: absolute;
-  top: 6px; }
+  top: 7px; }
 
 .progress-wrap {
   margin: 0 -17.5%;
   font-size: 18px;
   line-height: 1;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 .progress__item {
   width: 25%;
@@ -379,14 +448,14 @@ body .carousel .share {
   position: relative; }
 
 .progress__item__bullet {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background-color: #BEBEBE;
-  border-radius: 6px;
+  border-radius: 7px;
   position: relative;
   z-index: 10;
   left: 50%;
-  margin-left: -6px;
+  margin-left: -7px;
   position: relative;
   transition: all 500ms ease-in-out; }
 
@@ -399,7 +468,7 @@ body .carousel .share {
   height: 1px;
   background-color: #0F0F0F;
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: -50%;
   transition: all 500ms ease-in-out; }
 
@@ -427,18 +496,18 @@ body .carousel .share {
   article {
     /* padding: 0; */ }
   .carousel {
-    height: 480px; }
+    height: 560px; }
   .carousel-step {
-    padding: 0 24px;
+    padding: 0 28px;
     box-sizing: border-box; }
   .carousel-step--2 .small {
     display: none; }
   .form__row--payment-method h3 {
     float: none; }
   .carousel-content {
-    height: 432px; }
+    height: 504px; }
   .carousel-controls {
-    padding: 0 24px; }
+    padding: 0 28px; }
   .progress-wrap {
     margin: 0; }
   .progress__line {
@@ -452,7 +521,7 @@ body .carousel .share {
   .separator {
     margin: 0; }
   .carousel label {
-    line-height: 24px; }
+    line-height: 28px; }
   .form__row {
     margin-bottom: 10px; }
   .form input {
@@ -463,12 +532,12 @@ body .carousel .share {
   .error-msg {
     line-height: 16px; }
   .carousel {
-    height: 504px;
+    height: 588px;
     overflow: hidden; }
   .carousel-step {
-    padding: 0 12px; }
+    padding: 0 14px; }
   .carousel-content {
-    height: 456px; }
+    height: 532px; }
   .carousel-header__title {
     margin: 0; }
   .carousel-content__col {
@@ -496,12 +565,12 @@ body .carousel .share {
     padding-left: 8px; }
   .support-anonymous {
     position: absolute;
-    bottom: 24px;
+    bottom: 28px;
     text-align: center;
     width: 100%;
-    padding-right: 48px;
+    padding-right: 56px;
     box-sizing: border-box;
-    font-size: 14px; }
+    font-size: 13px; }
   .carousel-controls {
     position: relative;
     z-index: 10;
@@ -526,7 +595,7 @@ body .carousel .share {
   .progress__item--act .progress__item__name {
     color: #0F0F0F;
     font-weight: 500;
-    max-width: 120px;
+    max-width: 140px;
     margin: 0 auto;
     line-height: 16px; }
   .progress__item .progress__item__name:before {
@@ -542,10 +611,10 @@ body .carousel .share {
   .progress__item--4 .progress__item__name:before {
     content: "Schritt 4 / 4: \a"; }
   .membshp-advtg {
-    margin-bottom: 24px; }
+    margin-bottom: 28px; }
   .membshp-advtg__item {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     margin-left: 0; }
   /***** step 2 *****/
   .carousel-step--2 label {
@@ -553,7 +622,7 @@ body .carousel .share {
     line-height: 16px; }
   /***** step 3 *****/
   .carousel-step--3 p, .carousel-step--3 label {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px; }
   .carousel-step--3 label {
     display: block; }
@@ -562,10 +631,12 @@ body .carousel .share {
     margin: 2px 2px 7px 0; }
   .carousel-step--3 .separator {
     margin: 8px 0; }
+  .validate-user {
+    line-height: 16px;
+    margin-top: 10px; }
   .validate-address {
-    margin-top: 0; }
-  .validate-user, .validate-address {
-    line-height: 16px; }
+    line-height: 16px;
+    margin-top: 30px; }
   .form__row--payment-method label {
     margin-right: 26px; }
   .form .checkbox {

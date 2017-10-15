@@ -3,24 +3,30 @@
 /******************* PAGE ********************/
 /* step-1 */
 .label--donation, #donation {
-  font-size: 34px;
-  color: #EA5D36;
-  display: block;
+  font-family: "Lato";
+  font-size: 26px;
+  color: #3F3F3F;
+  display: inline-block;
   line-height: 35px; }
 
 .label--donation {
-  float: left;
+  float: none;
   padding-right: 4px;
   position: relative;
   top: 3px; }
 
 #donation {
+  font-family: "Lato";
+  font-size: 26px;
   background-color: transparent;
-  border: 1px solid #BEBEBE;
+  border: 0;
+  border-bottom: 1px solid #BEBEBE;
   width: 120px; }
 
 .support-anonymous {
-  padding-top: 12px; }
+  margin: 0;
+  margin-bottom: 60px;
+  display: inline-block; }
 
 /* step-2 */
 .stated_supporter-wrap {
@@ -31,6 +37,11 @@
 
 .checkbox--hidden {
   display: none; }
+
+label {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #3B3B3B; }
 
 .label--hidden {
   visibility: hidden; }
@@ -43,7 +54,8 @@
 
 /* step-3 */
 .validate-title {
-  display: none; }
+  display: none;
+  margin-top: 0; }
 
 .validate-title--visible {
   display: block; }

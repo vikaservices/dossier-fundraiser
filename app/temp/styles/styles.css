@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fbfbfb;
+  overflow-x: hidden;
 }
 
 img {
@@ -1156,6 +1157,17 @@ footer .footer .footer__links li a:hover {
     padding-left: 66px;
     padding-right: 0
 }
+  }
+
+.content--padding-right {
+    padding-right: 33px;
+  }
+
+@media (min-width: 782px) {
+
+.content--padding-right {
+      padding-right: 66px
+  }
   }
 
 @media (max-width: 555px) {

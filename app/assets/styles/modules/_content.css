@@ -16,6 +16,14 @@
     padding-right: 0;
   }
 
+  &--padding-right {
+    padding-right: 33px;
+
+    @mixin atMedium {
+      padding-right: 66px;         
+    }
+  }
+
   &--no-left-padding-mobile {
     @mixin onMobile {
       padding-left: 0;

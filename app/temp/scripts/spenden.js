@@ -211,9 +211,15 @@ $(function () {
 				required: true
 			}
 		},
-		errorPlacement: function errorPlacement(error, element) {
-			return true;
+		messages: {
+			firstname: "Vorname",
+			lastname: "Nachname",
+			email: "E-Mail Adresse",
+			address: "Straße & Hausnumme",
+			city: "PLZ & Ort",
+			country: "Land"
 		}
+
 	});
 
 	/*********** CONTROLS *********/
@@ -320,7 +326,7 @@ $(function () {
 				} else {
 
 					$('.error-msg--2').addClass('error-msg--visible');
-					$('.error-msg--2').html("<b>Bitte füllen Sie die markierten Felder vollständig aus.</b>");
+					$('.error-msg--2').html("Bitte füllen Sie die markierten Felder vollständig aus.");
 				}
 			}
 
