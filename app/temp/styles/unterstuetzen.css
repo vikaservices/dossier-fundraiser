@@ -91,7 +91,12 @@ body .carousel a {
   outline: none; }
 
 .form .checkbox, .form .radio {
-  width: auto; }
+  margin-top: 1px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 7px;
+  width: 15px;
+  height: 15px; }
 
 .form input {
   background-color: transparent;
@@ -617,7 +622,7 @@ a.share:hover {
   .form input.input--narrow-on-mobile {
     width: 92%; }
   .form .checkbox, .form .radio {
-    margin-top: 4px;
+    margin-top: 2px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 7px;
@@ -738,10 +743,10 @@ a.share:hover {
     display: block; }
   .carousel-step--3 .form .radio {
     clear: both;
-    margin: 5px 11px 0 2px; }
+    margin: 2px 11px 0 2px; }
   .carousel-step--3 .form .checkbox {
     clear: both;
-    margin: 3px 11px 20px 2px; }
+    margin: 2px 11px 20px 2px; }
   .carousel-step--3 .separator {
     margin: 8px 0; }
   .validate-title {

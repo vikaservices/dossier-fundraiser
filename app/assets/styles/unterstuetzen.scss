@@ -79,7 +79,7 @@ body .carousel a { color: $color-topaz-two; text-decoration: underline; }
 .form__row__col:nth-child(1) { padding-right: 2px; }
 .form__row__col:nth-child(2) { padding-left: 2px; }
 .form input { width: 92%; box-sizing: border-box; font-family: $font-family-lato; font-size: $font-size-medium; line-height: $line-height-medium; color: $color-greyscale-35; outline: none; }
-.form .checkbox, .form .radio { width: auto; }
+.form .checkbox, .form .radio { margin-top: 1px; margin-bottom: 0; margin-left: 0; margin-right: 7px; width: 15px; height: 15px; }
 .form input { background-color: transparent; border: 0; border-bottom: 1px solid $color-greyscale-30; }
 .form input.error { border-color: $color-support-60; }
 
@@ -309,7 +309,7 @@ article { /* padding: 0; */ }
 .form__row { margin-bottom: 19px; }
 .form input { width: 100%; font-size: 16px; line-height: 22px; margin-top: 0; }
 .form input.input--narrow-on-mobile { width: 92%; }
-.form .checkbox, .form .radio { margin-top: 4px; margin-bottom: 0; margin-left: 0; margin-right: 7px; width: 15px; height: 15px; }
+.form .checkbox, .form .radio { margin-top: 2px; margin-bottom: 0; margin-left: 0; margin-right: 7px; width: 15px; height: 15px; }
 .error-msg { line-height: $size-base; }
 
 .carousel { height: $size-grid * 15;}
@@ -371,8 +371,8 @@ article { /* padding: 0; */ }
 
 .carousel-step--3 p, .carousel-step--3 label { font-size: $font-size-small; line-height: $size-base; }
 .carousel-step--3 label { display: block; }
-.carousel-step--3 .form .radio { clear: both; margin: 5px 11px 0 2px;}
-.carousel-step--3 .form .checkbox { clear: both; margin: 3px 11px 20px 2px;}
+.carousel-step--3 .form .radio { clear: both; margin: 2px 11px 0 2px;}
+.carousel-step--3 .form .checkbox { clear: both; margin: 2px 11px 20px 2px;}
 .carousel-step--3 .separator { margin: $size-base / 2 0; }
 .validate-title { font-size: 16px; }
 p.validate-user { font-size: 15px; line-height: 22px; margin-top: 10px; }
