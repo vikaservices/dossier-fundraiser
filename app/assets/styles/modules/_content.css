@@ -3,7 +3,6 @@
   padding-left: 22px;
   padding-right: 22px;
 
-
   @mixin atSmall {
     padding-top: 117px;
     padding-bottom: 80px;

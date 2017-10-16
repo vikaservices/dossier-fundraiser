@@ -180,7 +180,7 @@ if (act_step == 1 ) {
 		user_data.donation.amount = $('#donation').val();
 
 		$('.carousel').removeClass('carousel-step--1--height');
-		$('.carousel').addClass('carousel-step--2--height');
+		$('.carousel').addClass('carousel-step--2--height'); 
 
 		next();
 
