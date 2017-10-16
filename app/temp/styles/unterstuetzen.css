@@ -17,11 +17,25 @@ h3 {
   font-weight: bold;
   color: #3F3F3F; }
 
+h4 {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: bold;
+  color: #6D6D6D;
+  margin: 14px 0; }
+
 .small {
   font-size: 13px; }
 
 .xsmall {
   font-size: 12px; }
+
+.medium {
+  font-size: 18px;
+  line-height: 1.83; }
+
+.medium--small-margin-top {
+  margin-top: 8px; }
 
 .important {
   color: #EA5D36; }
@@ -298,14 +312,14 @@ body#meta.nonav .article-wrap {
   margin-top: 0; }
 
 .form__row--agb {
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 .form__row--agb label {
   font-size: 15px;
   line-height: 1.47; }
 
 .form__row--newsletter {
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 .form__row--newsletter label {
   font-size: 15px;
@@ -328,15 +342,27 @@ body#meta.nonav .article-wrap {
 #agb, #newsletter {
   margin-left: 0; }
 
+.newsletter-wrap label {
+  font-size: 15px;
+  color: #3F3F3F; }
+
+.newsletter-wrap input {
+  font-size: 15px; }
+
+.newsletter-wrap .error {
+  font-size: 13px;
+  color: #EA5D36;
+  padding-top: 0; }
+
 /* step-4 */
 body .carousel .share {
-  padding: 7px 14px;
-  float: left;
-  background-color: #00BBCE;
-  color: #FFFFFF;
+  line-height: 32px;
+  padding: 7px 14px 7px 0;
+  display: block;
+  color: #17ADBD;
   font-weight: 500;
   text-decoration: none;
-  margin: 0 7px 7px 0; }
+  margin: 0 7px 0 0; }
 
 .share:before {
   font-family: 'icomoon';
@@ -345,11 +371,54 @@ body .carousel .share {
   position: relative;
   top: 2px; }
 
-.share--facebook:before {
-  content: "\e602"; }
+a.share:hover {
+  color: #75dae5; }
 
-.share--twitter:before {
-  content: "\e603"; }
+.share span {
+  position: relative;
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: black;
+  display: inline-block; }
+
+.share span img {
+  margin: 0;
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.share--mail span {
+  background-color: #6D6D6D; }
+
+.share--mail span:hover {
+  background-color: #9b9b9b; }
+
+.share--mail span:active {
+  background-color: #3F3F3F; }
+
+.share--facebook span {
+  background-color: #168e9a; }
+
+.share--facebook span:hover {
+  background-color: #12c0d2; }
+
+.share--facebook span:active {
+  background-color: #03717c; }
+
+.share--twitter span {
+  background-color: #12c0d2; }
+
+.share--twitter span:hover {
+  background-color: #75dae5; }
+
+.share--twitter span:active {
+  background-color: #12c0d2; }
 
 .carousel-controls__button a {
   color: #FFFFFF;
@@ -481,6 +550,10 @@ body .carousel .share {
 .progress__item--act .progress__item__line {
   width: 100%; }
 
+.progress__item--act .progress__item__line--inact {
+  width: 100%;
+  background-color: #f6b8a6 !important; }
+
 .progress__item--past .progress__item__bullet {
   background-color: #0F0F0F; }
 
@@ -490,29 +563,41 @@ body .carousel .share {
 .progress__item--past .progress__item__line {
   width: 100%; }
 
+.progress__item--inact .progress__item__bullet {
+  background-color: #f6b8a6; }
+
+.progress__item--inact .progress__item__name {
+  color: #f6b8a6; }
+
+.progress__item--inact .progress__item__line {
+  width: 100%;
+  background-color: #f6b8a6; }
+
+.progress__item--act .progress__item__line--inact {
+  width: 100%;
+  background-color: #f6b8a6 !important; }
+
 /******************* RESPONSIVE ********************/
 /********** tablet **********/
 @media screen and (max-width: 816px) {
   article {
     /* padding: 0; */ }
   .carousel {
-    height: 560px; }
+    height: 392px; }
   .carousel-step {
-    padding: 0 28px;
+    padding: 0;
     box-sizing: border-box; }
   .carousel-step--2 .small {
     display: none; }
-  .form__row--payment-method h3 {
-    float: none; }
   .carousel-content {
-    height: 504px; }
+    height: 392px; }
   .carousel-controls {
-    padding: 0 28px; }
-  .progress-wrap {
-    margin: 0; }
+    padding: 0; }
   .progress__line {
-    width: 75%;
-    margin-left: 12.5%; } }
+    width: 100%;
+    margin-left: 0; }
+  .error {
+    font-size: 13px; } }
 
 /********** smartphone **********/
 @media screen and (max-width: 568px) {
@@ -523,23 +608,37 @@ body .carousel .share {
   .carousel label {
     line-height: 28px; }
   .form__row {
-    margin-bottom: 10px; }
+    margin-bottom: 19px; }
   .form input {
-    line-height: 16px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
     margin-top: 0; }
+  .form input.input--narrow-on-mobile {
+    width: 92%; }
   .form .checkbox, .form .radio {
-    margin-top: 0px; }
+    margin-top: 4px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 7px;
+    width: 15px;
+    height: 15px; }
   .error-msg {
     line-height: 16px; }
   .carousel {
-    height: 588px;
+    height: 420px; }
+  .carousel--large-height {
+    height: 560px;
     overflow: hidden; }
   .carousel-step {
-    padding: 0 14px; }
+    padding: 0; }
   .carousel-content {
-    height: 532px; }
+    height: 420px; }
+  .carousel-header {
+    margin: -7px 0 14px 0; }
   .carousel-header__title {
-    margin: 0; }
+    margin: 0;
+    font-size: 21px; }
   .carousel-content__col {
     padding-left: 0;
     float: none; }
@@ -548,9 +647,16 @@ body .carousel .share {
   .carousel-content__col--col1-2 {
     width: 100%; }
   .carousel-content__col--col1 {
-    padding-right: 0; }
+    padding-right: 0;
+    padding-bottom: 30px; }
   .carousel-content__col--col2 {
     padding-left: 0; }
+  .carousel-step--1--height {
+    height: 370px; }
+  .carousel-step--2--height {
+    height: 450px; }
+  .carousel-step--3--height {
+    height: 540px; }
   /***** step 1 *****/
   .membshp-item {
     float: left;
@@ -563,14 +669,15 @@ body .carousel .share {
     width: 40%; }
   .membshp-item__desc {
     padding-left: 8px; }
+  /*
+.support-anonymous { position: absolute; bottom: $size-grid; text-align: center; width: 100%; padding-right: $size-grid * 2; box-sizing: border-box; font-size: $font-size-small; }
+
+*/
   .support-anonymous {
-    position: absolute;
-    bottom: 28px;
-    text-align: center;
-    width: 100%;
-    padding-right: 56px;
-    box-sizing: border-box;
-    font-size: 13px; }
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 15px; }
   .carousel-controls {
     position: relative;
     z-index: 10;
@@ -619,7 +726,10 @@ body .carousel .share {
   /***** step 2 *****/
   .carousel-step--2 label {
     display: block;
-    line-height: 16px; }
+    line-height: 22px;
+    font-size: 16px; }
+  .error-msg--2 {
+    display: none; }
   /***** step 3 *****/
   .carousel-step--3 p, .carousel-step--3 label {
     font-size: 13px;
@@ -628,17 +738,50 @@ body .carousel .share {
     display: block; }
   .carousel-step--3 .form .radio {
     clear: both;
-    margin: 2px 2px 7px 0; }
+    margin: 5px 11px 0 2px; }
+  .carousel-step--3 .form .checkbox {
+    clear: both;
+    margin: 3px 11px 20px 2px; }
   .carousel-step--3 .separator {
     margin: 8px 0; }
-  .validate-user {
-    line-height: 16px;
+  .validate-title {
+    font-size: 16px; }
+  p.validate-user {
+    font-size: 15px;
+    line-height: 22px;
     margin-top: 10px; }
-  .validate-address {
-    line-height: 16px;
-    margin-top: 30px; }
+  p.validate-address {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 10px; }
+  p.validate-memb {
+    font-size: 16px; }
+  .form__row--payment-method h3 {
+    font-size: 16px;
+    margin-bottom: 15px; }
   .form__row--payment-method label {
-    margin-right: 26px; }
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 26px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    color: #3F3F3F; }
+  .form__row--agb {
+    margin-bottom: 15px; }
+  .form__row--agb label, .form__row--newsletter label {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 26px;
+    margin-bottom: 0px;
+    margin-left: 1px;
+    color: #3F3F3F; }
+  .form__row--newsletter {
+    margin-bottom: 0; }
+  .newsletter-wrap label {
+    font-size: 16px;
+    color: #3F3F3F; }
+  .newsletter-wrap .error {
+    padding-top: 10px; }
   .form .checkbox {
     float: left; }
   /***** step 4 *****/

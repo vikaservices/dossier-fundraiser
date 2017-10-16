@@ -5,6 +5,7 @@ $color-greyscale-80     : #3B3B3B;
 $color-greyscale-80     : #3F3F3F;
 $color-greyscale-60     : #505050;
 $color-greyscale-50     : #666666;
+$color-greyscale-55     : #6D6D6D;
 $color-greyscale-40     : #929292;
 $color-greyscale-35     : #9B9B9B;
 $color-greyscale-30     : #BEBEBE;
@@ -12,7 +13,14 @@ $color-greyscale-20     : #EAEAEA;
 $color-greyscale-0      : #FFFFFF;
 
 $color-greyish-brown    : #3F3F3F;
+$color-warm-grey        : #9b9b9b;;
 $color-white-three      : #D6D6D6;
+$color-topaz            : #12c0d2;
+$color-topaz-two        : #17ADBD;
+$color-blue-green       : #168e9a;
+$color-tiffany-blue     : #75dae5;
+$color-bluegreen        : #03717c;
+$color-blush            : #f6b8a6;
 
 $color-primary-60      : #00BBCE;
 
@@ -20,7 +28,6 @@ $color-support-60       : #EA5D36;
 $color-support-40       : #EB7A5B;
 $color-support-20       : #FBDFD7;
 
-$color-topaz-two        : #17ADBD;
 
 $size-grid : 28px;
 $size-base : 16px;
@@ -54,8 +61,11 @@ $bp-smartphone : 568px;
 h3, p { margin-bottom: 0; }
 p { font-family: $font-family-lato; font-size: $font-size-msmall; color: $color-greyscale-80; line-height: $line-height-msmall; }
 h3 { font-family: $font-family-lato; font-size: $font-size-medium; font-weight: bold; color: $color-greyscale-80; }
+h4 { font-family: $font-family-lato; font-size: $font-size-msmall; font-weight: bold; color: $color-greyscale-55; margin: 14px 0;}
 .small { font-size: $font-size-small;}
 .xsmall { font-size: $font-size-xsmall;}
+.medium { font-size: $font-size-medium; line-height: $line-height-medium; }
+.medium--small-margin-top { margin-top: 8px; }
 .important { color: $color-support-60; }
 .separator { clear: both; }
 .separator--invisible { visibility: hidden; }
@@ -199,21 +209,34 @@ body#meta.nonav .article-wrap { margin-top: 58px; }
 .form__row--payment-method h3, .form__row--payment-method input, .form__row--payment-method label { float: left; }
 .form__row--payment-method h3, .form__row--payment-method label { margin-right: $size-grid / 2; }
 .form__row--payment-method h3 { margin-top: 0;}
-.form__row--agb { margin-bottom: 15px; }
+.form__row--agb { margin-bottom: 10px; }
 .form__row--agb label { font-size: $font-size-msmall; line-height: $line-height-msmall;}
-.form__row--newsletter { margin-bottom: 15px; }
+.form__row--newsletter { margin-bottom: 10px; }
 .form__row--newsletter label { font-size: $font-size-msmall; line-height: $line-height-msmall; }
 .validate-address { margin-top: 12px; }
 .validate-memb { clear: both; font-size: $font-size-medium; font-family: $font-family-lato; line-height: $line-height-medium; color: $color-greyscale-80; padding: 15px 0 30px 0;}
 .validate-user { margin-top: 12px; }
 #agb, #newsletter { margin-left: 0; }
+.newsletter-wrap label { font-size: 15px; color: $color-greyscale-80; }
+.newsletter-wrap input { font-size: 15px; }
+.newsletter-wrap .error { font-size: 13px; color: $color-support-60; padding-top: 0;}
 
 /* step-4 */
 
-body .carousel .share { padding: $size-grid / 4 $size-grid / 2; float: left; background-color: $color-primary-60; color: $color-greyscale-0; font-weight: 500; text-decoration: none; margin: 0 $size-grid / 4 $size-grid / 4 0; }
+body .carousel .share { line-height: 32px; padding: $size-grid / 4 $size-grid / 2 $size-grid / 4 0; display: block; color: $color-topaz-two; font-weight: 500; text-decoration: none; margin: 0 $size-grid / 4 0 0; }
 .share:before { font-family: 'icomoon'; font-size: $size-grid; padding-right: $size-grid / 4; position: relative; top: 2px; }
-.share--facebook:before { content: "\e602"; }
-.share--twitter:before { content: "\e603"; }
+a.share:hover { color: $color-tiffany-blue; }
+.share span { position: relative; vertical-align: middle; margin-right: 12px; width: 32px; height: 32px; border-radius: 16px; background-color: black; display: inline-block; }
+.share span img { margin: 0; width: auto; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.share--mail span { background-color: $color-greyscale-55; }
+.share--mail span:hover { background-color: $color-warm-grey; }
+.share--mail span:active { background-color: $color-greyscale-80; }
+.share--facebook span { background-color: $color-blue-green; }
+.share--facebook span:hover { background-color: $color-topaz; }
+.share--facebook span:active { background-color: $color-bluegreen; }
+.share--twitter span { background-color: $color-topaz; }
+.share--twitter span:hover { background-color: $color-tiffany-blue; }
+.share--twitter span:active { background-color: $color-topaz; }
 .carousel-controls__button a { color: $color-greyscale-0; text-decoration: none; }
 
 
@@ -244,11 +267,16 @@ body .carousel .share { padding: $size-grid / 4 $size-grid / 2; float: left; bac
 .progress__item--act .progress__item__bullet { background-color: $color-support-60; }
 .progress__item--act .progress__item__name { color: $color-support-60; }
 .progress__item--act .progress__item__line { width: 100%; }
+.progress__item--act .progress__item__line--inact { width: 100%; background-color: $color-blush !important; }
 
 .progress__item--past .progress__item__bullet { background-color: $color-greyscale-100; }
 .progress__item--past .progress__item__name { color: $color-greyscale-100; }
 .progress__item--past .progress__item__line { width: 100%;  }
 
+.progress__item--inact .progress__item__bullet { background-color: $color-blush; }
+.progress__item--inact .progress__item__name { color: $color-blush; }
+.progress__item--inact .progress__item__line { width: 100%; background-color: $color-blush; }
+.progress__item--act .progress__item__line--inact { width: 100%; background-color: $color-blush !important; }
 
 /******************* RESPONSIVE ********************/
 
@@ -257,17 +285,17 @@ body .carousel .share { padding: $size-grid / 4 $size-grid / 2; float: left; bac
 @media screen and (max-width: $bp-tablet) {
 
 article { /* padding: 0; */ }
-.carousel { height: $size-grid * 20; }
-.carousel-step { padding: 0 $size-grid; box-sizing: border-box;}
+.carousel { height: $size-grid * 14; }
+.carousel-step { padding: 0; box-sizing: border-box;}
 
 .carousel-step--2 .small { display: none; }
-.form__row--payment-method h3 { float: none; }
+.form__row--payment-method h3 { }
 
-.carousel-content { height: $size-grid * 18; }
-.carousel-controls { padding: 0 $size-grid; }
-.progress-wrap { margin: 0; }
-.progress__line { width: 75%; margin-left: 12.5%; }
-
+.carousel-content { height: $size-grid * 14; }
+.carousel-controls { padding: 0; }
+.progress-wrap { }
+.progress__line { width: 100%; margin-left: 0; }
+.error { font-size: 13px; }
 }
 
 /********** smartphone **********/
@@ -278,22 +306,28 @@ article { /* padding: 0; */ }
 
 .separator { margin: 0; }
 .carousel label { line-height: $size-grid;}
-.form__row { margin-bottom: 10px; }
-.form input { line-height: $size-base; margin-top: 0; }
-.form .checkbox, .form .radio { margin-top: 0px; }
+.form__row { margin-bottom: 19px; }
+.form input { width: 100%; font-size: 16px; line-height: 22px; margin-top: 0; }
+.form input.input--narrow-on-mobile { width: 92%; }
+.form .checkbox, .form .radio { margin-top: 4px; margin-bottom: 0; margin-left: 0; margin-right: 7px; width: 15px; height: 15px; }
 .error-msg { line-height: $size-base; }
-.carousel p { }
 
-.carousel { height: $size-grid * 21; overflow: hidden; }
-.carousel-step { padding: 0 $size-grid / 2; }
+.carousel { height: $size-grid * 15;}
+.carousel--large-height { height: $size-grid * 20; overflow: hidden; }
+.carousel-step { padding: 0 }
 
-.carousel-content { height: $size-grid * 19; }
-.carousel-header__title { margin: 0; }
+.carousel-content { height: $size-grid * 15; }
+.carousel-header { margin: -7px 0 14px 0; }
+.carousel-header__title { margin: 0; font-size: 21px; }
 .carousel-content__col { padding-left: 0; float: none; }
 .carousel-content__col--col1-3, .carousel-content__col--col2-3 { width: 100%; }
 .carousel-content__col--col1-2 { width: 100%;}
-.carousel-content__col--col1 { padding-right: 0; }
+.carousel-content__col--col1 { padding-right: 0; padding-bottom: 30px;}
 .carousel-content__col--col2 { padding-left: 0; }
+
+.carousel-step--1--height { height: 370px; }
+.carousel-step--2--height { height: 450px; }
+.carousel-step--3--height { height: 540px; }
 
 
 /***** step 1 *****/
@@ -303,7 +337,10 @@ article { /* padding: 0; */ }
 .membshp-item--in { width: 31%; }
 .membshp-item--kr { width: 40%; }
 .membshp-item__desc { padding-left: $size-base / 2; }
+/*
 .support-anonymous { position: absolute; bottom: $size-grid; text-align: center; width: 100%; padding-right: $size-grid * 2; box-sizing: border-box; font-size: $font-size-small; }
+
+*/.support-anonymous { display: block; margin-top: 15px; margin-bottom: 30px; font-size: $font-size-msmall; }
 
 .carousel-controls { position: relative; z-index: 10; padding: 0; }
 .progress { position: absolute; margin-bottom: 0; bottom: - $size-base + 2; width: 100%; left: -3%; }
@@ -327,17 +364,27 @@ article { /* padding: 0; */ }
 
 /***** step 2 *****/
 
-.carousel-step--2 label { display: block; line-height: 16px;}
+.carousel-step--2 label { display: block; line-height: 22px; font-size: 16px;}
+.error-msg--2 { display: none; }
 
 /***** step 3 *****/
 
 .carousel-step--3 p, .carousel-step--3 label { font-size: $font-size-small; line-height: $size-base; }
 .carousel-step--3 label { display: block; }
-.carousel-step--3 .form .radio { clear: both; margin: 2px 2px 7px 0;}
+.carousel-step--3 .form .radio { clear: both; margin: 5px 11px 0 2px;}
+.carousel-step--3 .form .checkbox { clear: both; margin: 3px 11px 20px 2px;}
 .carousel-step--3 .separator { margin: $size-base / 2 0; }
-.validate-user { line-height: $size-base; margin-top: 10px; }
-.validate-address  { line-height: $size-base; margin-top: 30px; }
-.form__row--payment-method label { margin-right: 26px; }
+.validate-title { font-size: 16px; }
+p.validate-user { font-size: 15px; line-height: 22px; margin-top: 10px; }
+p.validate-address  { font-size: 15px; line-height: 22px; margin-top: 10px; }
+p.validate-memb { font-size: 16px; }
+.form__row--payment-method h3 { font-size: 16px; margin-bottom: 15px;}
+.form__row--payment-method label { font-size: 16px; line-height: 22px; margin-right: 26px; margin-bottom: 10px; margin-left: 1px; color: $color-greyscale-80; }
+.form__row--agb { margin-bottom: 15px; }
+.form__row--agb label, .form__row--newsletter label { font-size: 16px; line-height: 22px; margin-right: 26px; margin-bottom: 0px; margin-left: 1px; color: $color-greyscale-80; }
+.form__row--newsletter { margin-bottom: 0; }
+.newsletter-wrap label { font-size: 16px; color: $color-greyscale-80; }
+.newsletter-wrap .error { padding-top: 10px; }
 .form .checkbox { float: left; }
 
 /***** step 4 *****/

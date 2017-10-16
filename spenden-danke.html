@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dossier fundraiser</title>
+  <link rel="stylesheet" href="/app/temp/styles/styles.css">
+  <link rel="stylesheet" href="/app/temp/styles/spenden.css">
+  <link rel="stylesheet" href="/app/temp/styles/unterstuetzen.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="header">
+      <div class="header--left">
+        <a href="frontpage.html" class="header__brand">
+          <span class="header__brand--large">
+            <img srcset="/app/assets/images/logo.png 140w,
+                         /app/assets/images/logo@2x.png 280w,
+                         /app/assets/images/logo@3x.png 420w"
+                 sizes="(max-width: 320px) 140px,
+                        (max-width: 480px) 140px,
+                        140px"
+                 src="/app/assets/images/logo.png">
+          </span>
+          <span class="header__brand--small">GENOSSENSCHAFT</span>
+        </a>
+      </div> <!-- header--left -->
+
+      <div class="header--middle">
+        <ul class="menu">
+          <li class="menu__link"><a href="news.html" class="nav-link">Aktuelles</a></li>
+          <li class="menu__link"><a href="mission.html" class="nav-link">Mission</a></li>
+          <li class="menu__link"><a href="team.html" class="nav-link">Team</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Fragen</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Genossenschaft</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Kontakt</a></li>
+          <li class="menu__link"><a href="#" class="nav-link">Geschichten</a></li>
+          <li class="menu__dropdown">
+            <a class="menu__dropdown__title">Mehr </a>
+            <div class="menu__menu-icon">
+              <div class="menu__menu-icon__middle"></div>
+            </div>
+            <ul class="menu__dropdown__links">
+              <li><a href="news.html" class="nav-link">Aktuelles</a></li>
+              <li><a href="mission.html" class="nav-link">Mission</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="#" class="nav-link">Fragen</a></li>
+              <li><a href="#" class="nav-link">Genossenschaft</a></li>
+              <li><a href="#" class="nav-link">Kontakt</a></li>
+              <li><a href="#" class="nav-link">Geschichten</a></li>
+              <div class="menu__share-container">
+                <div class="header-share"> <!-- COMPONENT -->
+                  <ul>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
+                        <img srcset="/app/assets/images/mail.png 20w,
+                                     /app/assets/images/mail@2x.png 40w,
+                                     /app/assets/images/mail@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/mail.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
+                        <img srcset="/app/assets/images/facebook.png 20w,
+                                     /app/assets/images/facebook@2x.png 40w,
+                                     /app/assets/images/facebook@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/facebook.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
+                        <img srcset="/app/assets/images/twitter.png 20w,
+                                     /app/assets/images/twitter@2x.png 40w,
+                                     /app/assets/images/twitter@3x.png 60w"
+                             sizes="(max-width: 320px) 20px,
+                                    (max-width: 480px) 20px,
+                                    20px"
+                             src="/app/assets/images/twitter.png">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div> <!-- header--middle -->
+
+      <div class="header--right">
+        <div class="header__share-buttons">
+          <div class="header-share"> <!-- COMPONENT -->
+            <ul>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__mail" data-name="header-share__mail">
+                  <img srcset="/app/assets/images/mail.png 20w,
+                               /app/assets/images/mail@2x.png 40w,
+                               /app/assets/images/mail@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/mail.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__facebook" data-name="header-share__facebook">
+                  <img srcset="/app/assets/images/facebook.png 20w,
+                               /app/assets/images/facebook@2x.png 40w,
+                               /app/assets/images/facebook@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/facebook.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" class="share__item header-share__twitter" data-name="header-share__twitter">
+                  <img srcset="/app/assets/images/twitter.png 20w,
+                               /app/assets/images/twitter@2x.png 40w,
+                               /app/assets/images/twitter@3x.png 60w"
+                       sizes="(max-width: 320px) 20px,
+                              (max-width: 480px) 20px,
+                              20px"
+                       src="/app/assets/images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__buttons">
+          <a href="donate.html" class="btn btn--secondary">Einfach<br />spenden</a>
+          <a href="" class="btn btn--primary">Mitglied werden</a>
+        </div>
+      </div> <!-- header--right -->
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="content content--padding-right">
+
+      <!--
+      PAGE MAIN CONTENT
+      -->
+      <div class="content__wrapper">
+
+
+        <!--###THX_FORM###-->
+        <main class="carousel carousel--large-height">
+            <section class="carousel-step carousel-step--4 carousel-step--act">
+                <header class="carousel-header">
+                    <h2 class="carousel-header__title">Wir danken Ihnen für Ihr Vertrauen</h2>
+                </header>
+                <section class="carousel-content">
+                    <div class="carousel-content-wrap">
+
+                      <div class="carousel-content__col carousel-content__col--col1 carousel-content__col--col1-2">
+                        <div class="form">
+                          <div class="form__row">
+                            <p class="medium medium--small-margin-top">Wir freuen uns, dass Sie uns mit Ihrer Spende unterstützen. Dank Ihnen können wir unabhängig recherchieren und kritisch berichten.</p>
+                            <hr class="separator separator--invisible">
+                            <p class="info-transaction important"></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-content__col carousel-content__col--col1-2">
+                        <div class="form">
+                          <div class="form__row">
+                            <h4>WEITERSAGEN:</h4>
+                            <p>Erzählen Sie Ihren Freunden, dass Sie DOSSIER unterstützen! So helfen Sie uns, möglichst viele Menschen von unserer Idee zu überzeugen.</p>
+                            <hr class="separator separator--invisible">
+                            <a class="share share--mail" href="" target="_blank"><span><img src="/app/assets/images/mail.png" /></span>Per E-Mail weitersagen</a>
+                            <a class="share share--facebook" href="https://www.facebook.com/dialog/feed?app_id=239645642856268&display=popup&mobile_iframe=true&quote=Ich%20habe%20gerade%20DOSSIER%20mit%20einer%20Spende%20unterstützt.&link=https://www.dossier.at/index.php?id=640" target="_blank"><span><img src="/app/assets/images/facebook.png" /></span>Auf Facebook teilen</a>
+                            <a class="share share--twitter" href="https://twitter.com/intent/tweet?text=Ich%20habe%20gerade%20DOSSIER%20mit%20einer%20Spende%20unterstützt.&via=dossier_&url=https://www.dossier.at/index.php?id=640" target="_blank"><span><img src="/app/assets/images/twitter.png" /></span>Auf Twitter teilen</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- carousel-content-wrap -->
+                </section>
+            </section>
+        </main>
+        <div class="carousel-controls">
+            <div class="carousel-controls__button carousel-controls__button--back">zurück</div>
+            <div class="carousel-controls__button carousel-controls__button--next carousel-controls__button--enabled"><a href="###STARTSEITE_LINK###">Zum Magazin</a></div>
+        </div>
+        <footer class="progress">
+            <div class="progress__line"></div>
+            <ol class="progress-wrap">
+              <li class="progress__item progress__item--1 progress__item--inact">
+          			<div class="progress__item__bullet"></div>
+          			<p class="progress__item__name">Spende</p>
+          		</li>
+          		<li class="progress__item progress__item--2 progress__item--inact">
+          			<div class="progress__item__line"></div>
+          			<div class="progress__item__bullet"></div>
+          			<p class="progress__item__name">Daten</p>
+          		</li>
+          		<li class="progress__item progress__item--3 progress__item--inact">
+          			<div class="progress__item__line"></div>
+          			<div class="progress__item__bullet"></div>
+          			<p class="progress__item__name">Zahlungsdetails</p>
+          		</li>
+          		<li class="progress__item progress__item--4 progress__item--act">
+          			<div class="progress__item__line progress__item__line--inact"></div>
+          			<div class="progress__item__bullet"></div>
+          			<p class="progress__item__name">Danke!</p>
+          		</li>
+            </ol>
+        </footer>
+        <!--###THX_FORM###-->
+
+      </div> <!-- content_wrapper -->
+
+    </div> <!-- content -->
+
+    <footer> <!-- COMPONENT -->
+      <div class="footer">
+        <nav>
+          <a href="#" class="footer__brand">
+            <span class="footer__brand--large">
+              <img src="/app/assets/images/logo.png"
+                   srcset="/app/assets/images/logo@2x.png 2x,
+                           /app/assets/images/logo@3x.png 3x">
+            </span>
+            <span class="footer__brand--small">GENOSSENSCHAFT</span>
+          </a>
+
+          <ul class="footer__links">
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Statuten</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/app/temp/scripts/vendor/jquery-3.2.1.min.js"></script>
+  <script src="/app/temp/scripts/vendor/jquery.validate.min.js"></script>
+  <script src="/app/temp/scripts/App.js"></script>
+  <script src="/app/temp/scripts/spenden.js"></script>
+</body>
+</html>

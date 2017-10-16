@@ -148,7 +148,8 @@ $('#form').validate({
 			email: "E-Mail Adresse",
 			address: "Straße & Hausnumme",
 			city: "PLZ & Ort",
-			country: "Land"
+			country: "Land",
+			"email-step-3": "E-Mail Adresse"
 		},
 
 });
@@ -177,6 +178,9 @@ if (act_step == 1 ) {
 	if ($('#donation').val()) {
 
 		user_data.donation.amount = $('#donation').val();
+
+		$('.carousel').removeClass('carousel-step--1--height');
+		$('.carousel').addClass('carousel-step--2--height');
 
 		next();
 
@@ -213,6 +217,9 @@ else if (act_step == 2 ) {
 	$('.error-msg--2').html("");
 
 	if ($("#form").valid()) {
+
+		$('.carousel').removeClass('carousel-step--3--height');
+		$('.carousel').addClass('carousel-step--3--height');
 
 		if (status_payment != "failed") {
 

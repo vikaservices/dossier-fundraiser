@@ -1137,7 +1137,7 @@ footer .footer .footer__links li a:hover {
         }
 
 .content {
-  padding: 117px;
+  padding-top: 50px;
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -1145,6 +1145,7 @@ footer .footer .footer__links li a:hover {
 @media (min-width: 556px) {
 
 .content {
+    padding-top: 117px;
     padding-bottom: 80px;
     padding-left: 33px;
     padding-right: 33px
@@ -1160,7 +1161,14 @@ footer .footer .footer__links li a:hover {
   }
 
 .content--padding-right {
-    padding-right: 33px;
+    padding-right: 22px;
+  }
+
+@media (min-width: 556px) {
+
+.content--padding-right {
+      padding-right: 33px
+  }
   }
 
 @media (min-width: 782px) {
@@ -1202,6 +1210,15 @@ footer .footer .footer__links li a:hover {
 
 .content__wrapper {
     position: relative;
+
+    margin-bottom: 80px;
+  }
+
+@media (min-width: 556px) {
+
+.content__wrapper {
+      margin-bottom: 0
+  }
   }
 
 .content__wrapper__main {

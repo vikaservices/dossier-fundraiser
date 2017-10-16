@@ -151,7 +151,7 @@
       <div class="content__wrapper">
 
         <!--###SPENDEN_FORM###-->
-        <main class="carousel">
+        <main class="carousel carousel-step--1--height">
         	<form id="form" action="/fileadmin/php/checkout.php?mode=spende" method="post">
         	<section class="carousel-step carousel-step--1">
         		<header class="carousel-header">
@@ -185,12 +185,12 @@
         					<div class="form">
         						<div class="form__row">
         							<input class="checkbox" type="checkbox" id="stated_supporter" name="stated_supporter" checked="checked">
-        							<label for="stated_supporter">Als UnterstützerIn genannt werden</label>
+        							<label for="stated_supporter">Ich möchte als SpenderIn genannt werden</label>
         						</div>
         						<div class="form__row">
         							<div class="stated_supporter-wrap stated_supporter-wrap--act">
         								<div class="form__row__col">
-        									<input type="text" placeholder="Vorname" id="firstname" name="firstname">
+        									<input type="text" class="input--narrow-on-mobile" placeholder="Vorname" id="firstname" name="firstname">
         								</div>
         								<div class="form__row__col">
         									<input type="text" placeholder="Nachname" id="lastname" name="lastname">
@@ -203,7 +203,7 @@
         					<div class="form">
         						<div class="form__row">
         							<input class="checkbox" type="checkbox" id="invoice" name="invoice">
-        							<label for="invoice">Rechnung erhalten</label>
+        							<label for="invoice">Ich möchte eine Rechnung erhalten</label>
         						</div>
         						<div class="invoice-wrap">
         							<div class="form__row">
@@ -214,7 +214,7 @@
         							</div>
         							<div class="form__row">
         								<div class="form__row__col">
-        									<input type="text" placeholder="PLZ & Ort" id="city" name="city">
+        									<input type="text" class="input--narrow-on-mobile" placeholder="PLZ & Ort" id="city" name="city">
         								</div>
         								<div class="form__row__col">
         									<input type="text" placeholder="Land" id="country" name="country">
@@ -255,7 +255,7 @@
         					</div>
         					<div class="form__row form__row--agb">
         						<input class="checkbox" type="checkbox" id="agb" name="agb">
-        						<label for="agb"><a href="###AGB_LINK###">AGB / Datenschutzrichtlinien</a> gelesen und akzeptiert</label>
+        						<label for="agb">AGB / Datenschutzrichtlinien und Vereinsstatuten gelesen und akzeptiert</label>
         					</div>
         					<div class="form__row form__row--newsletter">
         						<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" checked="checked">
