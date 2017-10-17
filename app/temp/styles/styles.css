@@ -441,7 +441,7 @@ img {
 .main-header .header__brand--small {
         font-family: Lato;
         font-size: 10.5px;
-        font-weight: normal;
+        font-weight: 300;
         line-height: 1;
         text-align: left;
         color: #fbfbfb;
@@ -453,7 +453,7 @@ img {
 .main-header .header__brand--small {
           font-family: Lato;
           font-size: 13px;
-          font-weight: normal;
+          font-weight: 300;
           line-height: 1;
           text-align: left;
           color: #fbfbfb
@@ -1084,7 +1084,7 @@ footer .footer .footer__brand--large img {
 footer .footer .footer__brand--small {
         font-family: Lato;
         font-size: 10.5px;
-        font-weight: normal;
+        font-weight: 300;
         line-height: 1;
         text-align: left;
         color: #fbfbfb;
