@@ -371,7 +371,7 @@ img {
 
 .main-header .header--middle {
       display: inline-block;
-      width: calc(100% - 410px);
+      width: calc(100% - 420px);
       overflow-x: hidden;
     }
 
@@ -546,7 +546,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     float: left;
-    margin: 0 0 0 26px;
+    padding: 0 0 0 26px;
     padding: 0
 }
   }

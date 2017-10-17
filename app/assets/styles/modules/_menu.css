@@ -5,7 +5,7 @@
   @mixin atSmall {
     display: flex;
     float: left;
-    margin: 0 0 0 26px;
+    padding: 0 0 0 26px;
     padding: 0;
   }
   @mixin atMedium {

@@ -38,7 +38,7 @@
     }
     &--middle {
       display: inline-block;
-      width: calc(100% - 410px);
+      width: calc(100% - 420px);
       overflow-x: hidden;
 
       @mixin atMedium {
