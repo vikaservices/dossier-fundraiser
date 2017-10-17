@@ -9,6 +9,7 @@ class Nav {
       $(".menu__dropdown").click(function(event) {
         // show menu
         $(".menu__dropdown .menu__dropdown__links").toggleClass("menu--show-item");
+        $(".menu__dropdown .menu__dropdown__title").toggleClass("menu__dropdown__title--active");
         event.stopPropagation();
       });
 
@@ -17,9 +18,9 @@ class Nav {
         // change menu icon
         $(this).toggleClass("menu__menu-icon--close-x");
         // disable scroll
-        //$("body").toggleClass("disable-scroll");
+        $("body").toggleClass("disable-scroll");
         // add opacity to rest of document
-        // $(".wrapper").toggleClass("opaque");
+        $(".wrapper").toggleClass("opaque");
       });
 
       that.setLinkVisibility();
@@ -56,8 +57,9 @@ class Nav {
   hideMenu() {
     $(".menu__dropdown .menu__dropdown__links").removeClass("menu--show-item");
     $(".menu__dropdown .menu__menu-icon").removeClass("menu__menu-icon--close-x");
-    //$("body").removeClass("disable-scroll");
-    //$(".wrapper").removeClass("opaque");
+    $(".menu__dropdown .menu__dropdown__title").removeClass("menu__dropdown__title--active");
+    $("body").removeClass("disable-scroll");
+    $(".wrapper").removeClass("opaque");
   }
 }
 
