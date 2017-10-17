@@ -73,6 +73,7 @@
       .val {
         display: inline-block;
         width: 60%;
+        font-family: Lato;
 
         @mixin atSmall {
           width: auto;

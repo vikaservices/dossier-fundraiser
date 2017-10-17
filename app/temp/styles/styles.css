@@ -1730,6 +1730,7 @@ footer .footer .footer__links li a:hover {
 .support-box__stats__participant .val {
         display: inline-block;
         width: 60%;
+        font-family: Lato;
       }
 
 @media (min-width: 556px) {
