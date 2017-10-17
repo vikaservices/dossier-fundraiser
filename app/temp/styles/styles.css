@@ -2604,6 +2604,7 @@ footer .footer .footer__links li a:hover {
       text-align: left;
       color: #fbfbfb;
       margin: 0;
+      font-weight: 300;
     }
 
 html.non-touch .supporter__info:hover {

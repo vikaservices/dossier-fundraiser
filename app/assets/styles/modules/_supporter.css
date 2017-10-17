@@ -45,13 +45,14 @@
       text-align: left;
       color: $white;
       margin: 0;
+      font-weight: 300;
     }
 
     html.non-touch &:hover {
       opacity: .8;
       transition: opacity .3s ease-out;
     }
-    
+
     &--visible {
       opacity: .8;
       transition: opacity .3s ease-out;
