@@ -73,7 +73,6 @@
       .val {
         display: inline-block;
         width: 60%;
-        font-family: Lato;
 
         @mixin atSmall {
           width: auto;
@@ -89,6 +88,11 @@
           @mixin heading;
           padding-right: 5px;
           line-height: 1;
+        }
+
+        span:last-child {
+          font-family: Lato;
+          font-size: 15px;
         }
       }
     }

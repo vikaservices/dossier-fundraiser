@@ -1729,7 +1729,6 @@ footer .footer .footer__links li a:hover {
 .support-box__stats__participant .val {
         display: inline-block;
         width: 60%;
-        font-family: Lato;
       }
 
 @media (min-width: 556px) {
@@ -1757,6 +1756,11 @@ footer .footer .footer__links li a:hover {
           color: #3f3f3f;
           padding-right: 5px;
           line-height: 1;
+        }
+
+.support-box__stats__participant .val span:last-child {
+          font-family: Lato;
+          font-size: 15px;
         }
 
 .support-box__stats__amount {
