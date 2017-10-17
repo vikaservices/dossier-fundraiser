@@ -48,7 +48,7 @@
     &--right {
       display: inline-block;
       float: right;
-      width: 170px;
+      width: 120px;
 
       @mixin atSmall {
         width: 260px;
@@ -139,7 +139,7 @@
     &__buttons {
       float: right;
       display: flex;
-      margin-right: 44px;
+      margin-right: 33px;
       height: 55px;
 
       @mixin atSmall {

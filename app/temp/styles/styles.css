@@ -385,7 +385,7 @@ img {
 .main-header .header--right {
       display: inline-block;
       float: right;
-      width: 170px;
+      width: 120px;
     }
 
 @media (min-width: 556px) {
@@ -522,7 +522,7 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-right: 44px;
+      margin-right: 33px;
       height: 55px;
     }
 
