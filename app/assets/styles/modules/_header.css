@@ -1,4 +1,6 @@
 .main-header {
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 100;
   display: block;
@@ -6,8 +8,6 @@
   background-color: $greyish-brown;
 
   @mixin atSmall {
-    position: fixed;
-    top: 0;
     height: 68px;
   }
 

@@ -313,6 +313,8 @@ img {
 }
 
 .main-header {
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 100;
   display: block;
@@ -323,8 +325,6 @@ img {
 @media (min-width: 556px) {
 
 .main-header {
-    position: fixed;
-    top: 0;
     height: 68px
 }
   }
@@ -1137,7 +1137,7 @@ footer .footer .footer__links li a:hover {
         }
 
 .content {
-  padding-top: 50px;
+  padding-top: 117px;
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -1145,7 +1145,6 @@ footer .footer .footer__links li a:hover {
 @media (min-width: 556px) {
 
 .content {
-    padding-top: 117px;
     padding-bottom: 80px;
     padding-left: 33px;
     padding-right: 33px
