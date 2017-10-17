@@ -54,7 +54,7 @@
   font-family: Lato;
   font-size: 15px;
   text-align: left;
-  color: $pinkish-grey !important;
+  color: $pinkish-grey;
 }
 
 @define-mixin nav-sticky-item {

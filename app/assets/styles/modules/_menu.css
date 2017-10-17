@@ -29,10 +29,18 @@
     }
 
     a {
-      height: 55px;
+      @mixin nav-link;
+      display: inline-block;
+      line-height: 55px;
+      text-decoration: none;
+      vertical-align: middle;
 
       @mixin atSmall {
-        height: 66px;
+        line-height: 66px;
+      }
+
+      &:hover {
+        color: $pinkish-grey;
       }
     }
   }
@@ -61,8 +69,15 @@
          padding: 0 23px;
 
          a {
+           @mixin nav-link;
            line-height: 2;
            height: 2em;
+           text-decoration: none;
+           vertical-align: middle;
+
+           &:hover {
+             color: $pinkish-grey;
+           }
          }
        }
     }
@@ -77,12 +92,22 @@
       line-height: 55px;
       height: 55px;
       white-space: nowrap;
+      cursor: pointer;
+      text-transform: uppercase;
 
       @mixin atSmall {
         display: inline-block;
         visibility: visible;
         line-height: 66px;
         height: 66px;
+      }
+
+      &:hover {
+        color: $white-three;
+      }
+
+      &:active {
+        color: $white-two;
       }
 
       &::after {
@@ -92,30 +117,21 @@
         top: 2px;
         left: 2px;
       }
-    }
-    &__title:hover {
-      color: $white-three;
+
+      &--active {
+        color: $white-two !important;
+
+        &::after {
+          display: inline-block;
+          transform: rotateZ(90deg);
+          left: 5px;
+        }
+      }
     }
   }
 
   .menu--show-item {
     visibility: visible !important;
-  }
-
-  a {
-    @mixin nav-link;
-    display: inline-block;
-    line-height: 55px;
-    text-decoration: none;
-    vertical-align: middle;
-
-    @mixin atSmall {
-      line-height: 66px;
-    }
-
-    &:hover {
-      color: $pinkish-grey;
-    }
   }
 
   &__menu-icon {

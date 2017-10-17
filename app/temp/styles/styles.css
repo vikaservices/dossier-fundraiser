@@ -579,15 +579,28 @@ img {
   }
 
 .menu__link a {
-      height: 55px;
+      font-family: Aleo;
+      font-size: 18px;
+      line-height: 1.83;
+      text-align: left;
+      color: #fbfbfb;
+      font-weight: normal;
+      display: inline-block;
+      line-height: 55px;
+      text-decoration: none;
+      vertical-align: middle;
     }
 
 @media (min-width: 556px) {
 
 .menu__link a {
-        height: 66px
+        line-height: 66px
     }
   }
+
+.menu__link a:hover {
+        color: #bdbdbd;
+      }
 
 .menu__dropdown__links {
       position: absolute;
@@ -617,9 +630,21 @@ img {
        }
 
 .menu__dropdown__links li a {
+           font-family: Aleo;
+           font-size: 18px;
+           line-height: 1.83;
+           text-align: left;
+           color: #fbfbfb;
+           font-weight: normal;
            line-height: 2;
            height: 2em;
+           text-decoration: none;
+           vertical-align: middle;
          }
+
+.menu__dropdown__links li a:hover {
+             color: #bdbdbd;
+           }
 
 .menu__dropdown__title {
       position: relative;
@@ -629,11 +654,13 @@ img {
       font-family: Lato;
       font-size: 15px;
       text-align: left;
-      color: #bdbdbd !important;
+      color: #bdbdbd;
       vertical-align: middle;
       line-height: 55px;
       height: 55px;
       white-space: nowrap;
+      cursor: pointer;
+      text-transform: uppercase;
     }
 
 @media (min-width: 556px) {
@@ -646,6 +673,14 @@ img {
     }
   }
 
+.menu__dropdown__title:hover {
+        color: #d6d6d6;
+      }
+
+.menu__dropdown__title:active {
+        color: #efefef;
+      }
+
 .menu__dropdown__title::after {
         content: url('/app/assets/images/menu-arrow.png');
         font-size: 22px;
@@ -654,37 +689,20 @@ img {
         left: 2px;
       }
 
-.menu__dropdown__title:hover {
-      color: #d6d6d6;
-    }
+.menu__dropdown__title--active {
+        color: #efefef !important;
+      }
+
+.menu__dropdown__title--active::after {
+          display: inline-block;
+          -webkit-transform: rotateZ(90deg);
+                  transform: rotateZ(90deg);
+          left: 5px;
+        }
 
 .menu .menu--show-item {
     visibility: visible !important;
   }
-
-.menu a {
-    font-family: Aleo;
-    font-size: 18px;
-    line-height: 1.83;
-    text-align: left;
-    color: #fbfbfb;
-    font-weight: normal;
-    display: inline-block;
-    line-height: 55px;
-    text-decoration: none;
-    vertical-align: middle;
-  }
-
-@media (min-width: 556px) {
-
-.menu a {
-      line-height: 66px
-  }
-  }
-
-.menu a:hover {
-      color: #bdbdbd;
-    }
 
 .menu__menu-icon {
     width: 23px;
