@@ -1,4 +1,4 @@
-Fundraising page template for Dossier Gmbh. [dossier-fundraiser.herokuapp.com](dossier-fundraiser.herokuapp.com)
+Fundraising page template for Dossier Gmbh. [https://dossier-fundraiser.herokuapp.com](https://dossier-fundraiser.herokuapp.com)
 
 * fully responsive
 * component for making donations by credit card
